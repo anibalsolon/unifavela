@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>UniFavela</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+
+<body>
+    <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />    
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+            </filter>
+        </defs>
+    </svg>
+
+    <div id="header">
+        <div id="menu">
+            <a href="#">Active</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </div>
+        <div id="social">
+            <a href="#" class="facebook"></a>
+            <a href="#" class="instagram"></a>
+            <a href="#" class="twitter"></a>
+        </div>
+    </div>
+<!-- 
+    <div id="jumbo">
+        <div id="casebre"></div>
+    </div> -->
+
+    <div id="jumbo">
+        <div class="carousel"></div>
+        <div class="logo"></div>
+    </div>
+
+    <div id="intro" class="row no-gutters">
+        <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+            <p>
+                A UniFavela é um projeto socioeducativo com foco em favelizar espaços de construção 
+                de conhecimento acadêmico e não-acadêmico. O projeto se constitui por meio meio da 
+                construção de comunidades de ensino-aprendizagem, potencializando  direitos sociais 
+                e direitos humanos em território favelizado visando a educação como prática da liberdade.
+            </p>
+        </div>
+    </div>
+
+    <div id="goals" class="row no-gutters">
+        <div class="col-md-10 col-lg-8">
+            <h2>Objetivos</h2>
+            <ul>
+                <li>Favelizar espaços de construção de conhecimento acadêmico e não acadêmico;</li>
+                <li>Construir comunidades de ensino-aprendizagem para a prática da liberdade;</li>
+                <li>Potencializar direitos sociais e direitos humanos em território favelizado;</li>
+                <li>Promover o exercício do pensamento crítico, da autonomia, da solidariedade e da cidadania;</li>
+                <li>Atuar em prol do empoderamento e afirmação da favela, das faveladas e dos favelados por meio do ensino-aprendizagem libertário, horizontal e empático;</li>
+                <li>Contribuir para a emancipação da população favelada;</li>
+                <li>Ouvir e agir coletivamente com as/os moradores a partir de suas demandas, sonhos e propostas para o território em que vivem.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="path" class="row no-gutters">
+        <div class="col-md-12">
+            <h2>Histórico</h2>
+        </div>
+        <div class="col-md-6 text">
+            <p>
+                O UniFavela é um dos três cursos Pré-Vestibulares que atuam no complexo de favelas da
+                Maré, um conjunto composto por 17 favelas com um total de 140 mil habitantes. A
+                desproporção desses números é um dado revelador sobre a precarização de direitos
+                sociais, e os baixos índices de desenvolvimento social, na região.
+            </p>
+            <p>
+                Formado por jovens professores voluntários, a motivação essencial do projeto é a inserção
+                de jovens e adultos da Maré na universidade, corrigindo um déficit de formação universitária
+                de qualidade na população local. Por intermédio do Edital RUA 2019,
+                <strong>o UniFavela tornou-se um curso de extensão da UFRJ</strong>, tendo recebido menção honrosa.
+            </p>
+            <p>
+                O projeto teve que se adaptar a dificuldades de localização: começou a funcionar em junho de
+                2018 na Lona Cultural Hebert Vianna, desenvolveu por um período suas ações em uma laje na Favela
+                Nova Holanda, com capacidade de abrigar em média 15 estudantes, e atualmente funciona
+                no Instituto Vida Real.
+            </p>
+            <p class="bigger">
+                <strong>Em 2018, o seu índice de aprovação foi de 100%.</strong>
+            </p>
+        </div>
+        <div id="timeline" class="col-md-6">
+            <div class="timeline">
+                <div class="periods-container">
+                    <section class="period-single" period="period-2018">
+                        <h4 class="year">2018</h4>
+                    </section>
+                    <section class="period-single" period="period-2019">
+                        <h4 class="year">2019</h4>
+                    </section>
+                    <section class="period-single" period="period-2020">
+                        <h4 class="year">2020</h4>
+                    </section>
+                    <div class="btn-back"></div>
+                    <div class="btn-next"></div>
+                </div>
+                <div class="timeline-container">
+                    <div class="timeline-steps"></div>
+                    <div class="btn-back">
+                        <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="none" d="M0 0h30v30H0z" />
+                            <path fill="#D8D8D8" fill-rule="evenodd" d="M11.828 15l7.89-7.89-2.83-2.828L6.283 14.89l.11.11-.11.11L16.89 25.72l2.828-2.83" />
+                        </svg>
+                    </div>
+                    <div class="btn-next">
+                        <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="none" d="M0 0h30v30H0z" />
+                            <path fill="#D8D8D8" fill-rule="evenodd" d="M18.172 14.718l-7.89-7.89L13.112 4l10.606 10.607-.11.11.11.11-10.608 10.61-2.828-2.83 7.89-7.89" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="cards-container">
+                    <section class="card-single" period="period-2018">
+                        <div class="content">
+                            <img src="images/WhatsApp Image 2019-01-26 at 20.04.54 (2).jpeg" />
+                        </div>
+                    </section>
+                    <section class="card-single" period="period-2018">
+                        <div class="content">
+                            <img src="images/WhatsApp Image 2019-01-26 at 20.04.54 (2).jpeg" />
+                        </div>
+                    </section>
+                    <section class="card-single" period="period-2019">
+                        <div class="content">
+                            <img src="images/WhatsApp Image 2019-01-26 at 20.04.54 (2).jpeg" />
+                        </div>
+                    </section>
+                    <section class="card-single" period="period-2020">
+                        <div class="content">
+                            <img src="images/WhatsApp Image 2019-01-26 at 20.04.54 (2).jpeg" />
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="social" class="row no-gutters">
+        <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+            <h2>Açōes Sociais</h2>
+            <p>
+                O UniFavela não se limita a atuar em sala de aula, também desempenha ações sociais. 
+            </p>
+            <div>
+                <h3>Ação Brinque Leitura</h3>
+                <p>
+                    A ação Brinque Leitura foi uma ação projetada para tornar atrativo o ato de leitura
+                    entre as crianças do Complexo de Favelas da Maré. Cerca de 180 crianças receberam de
+                    presente de natal dezenas de livros infantis e  brinquedos. Por sermos um projeto
+                    socioeducativo, entendemos que leitura do mundo e a leitura da palavra estão dinamicamente
+                    juntas. O comando da leitura e da escrita se dá a partir de palavras e de temas
+                    significativos dentro do território favelizado, ou seja, não é apenas formar leitores
+                    futuros, mas ser um auxílio para ler o quanto o território da Maré é rico e potente.
+                </p>
+            </div>
+
+            <div>
+                <h3>Maré de Natal</h3>
+                <p>
+                Projeto UniFavela do Complexo da Maré realiza campanha para arrecadação de alimentos
+                que vai beneficiar os moradores da comunidade. Eles se inspiraram na ação social do Voz
+                das Comunidades. Veja a reportagem da Gisele Duarte #PorUmNatalMelhor
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div id="teacher"></div>
+        <div id="form"></div>
+    </div>
+
+    <script type="text/javascript">
+        // var _gaq = _gaq || [];
+        // _gaq.push(['_setAccount', 'UA-XXXXXXXX-Y']);
+        // _gaq.push(['_trackPageview']);
+        // (function() {
+        //     var ga = document.createElement('script');
+        //     ga.type = 'text/javascript';
+        //     ga.async = true;
+        //     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        //     var s = document.getElementsByTagName('script')[0];
+        //     s.parentNode.insertBefore(ga, s);
+        // })();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <script>
+        var Timeline = function() {
+            function Timeline(target) {
+                this.base = target;
+                this.periodContainer = $(this.base).find('.periods-container');
+                this.cardContainer = $(this.base).find('.cards-container');
+                this.timelineNodeContainer = $(this.base).find('.timeline-container .timeline-steps');
+                this._parseData();
+                this._generateTimeline();
+                this._setStateClasses();
+                this._assignBtn();
+                this._adjustPeriodContainer();
+                this._adjustCardContainer();
+            }
+            Timeline.prototype._parseData = function() {
+                var base = this.base;
+                var periods = $(base).find('.periods-container section');
+                for (var i = 0; i < periods.length; i++) {
+                    var section = periods[i];
+                    section.period = $(section).attr('period');
+                    section.index = $(section).index();
+                }
+                this.periodData = periods;
+                var data = $(base).find('.cards-container section');
+                for (var i = 0; i < data.length; i++) {
+                    var section = data[i];
+                    section.period = $(section).attr('period');
+                    section.index = $(section).index();
+                }
+                this.cardData = data;
+                this.activePeriod = this.periodData[0];
+                this.activePeriodIndex = 0;
+                this.activeCard = this.cardData[0];
+                this.activeCardIndex = 0;
+            };
+            Timeline.prototype._setStateClasses = function() {
+                $(this.base).find('.periods-container section.active').removeClass('active');
+                $(this.base).find('.periods-container section.prev').removeClass('prev');
+                $(this.base).find('.periods-container section.next').removeClass('next');
+                $(this.activePeriod).addClass('active');
+                if ($(this.activePeriod).prev().length != 0) {
+                    $(this.activePeriod).prev().addClass('prev');
+                    $(this.base).find('.periods-container .btn-back').removeClass('hide');
+                } else {
+                    $(this.base).find('.periods-container .btn-back').addClass('hide');
+                }
+                if ($(this.activePeriod).next().length != 0) {
+                    $(this.activePeriod).next().addClass('next');
+                    $(this.base).find('.periods-container .btn-next').removeClass('hide');
+                } else {
+                    $(this.base).find('.periods-container .btn-next').addClass('hide');
+                }
+
+                $(this.base).find('.cards-container section.active').removeClass('active');
+                $(this.base).find('.cards-container section.prev').removeClass('prev');
+                $(this.base).find('.cards-container section.next').removeClass('next');
+                $(this.activeCard).addClass('active');
+                if ($(this.activeCard).prev().length != 0) {
+                    $(this.activeCard).prev().addClass('prev');
+                }
+                if ($(this.activeCard).next().length != 0) {
+                    $(this.activeCard).next().addClass('next');
+                }
+                
+                $(this.base).find('.timeline-steps li.active').removeClass('active');
+                $(this.timelineData[this.activeCard.index]).addClass('active');
+                this.timelineData.removeClass('active-period');
+                this.timelineData.filter('.' + this.activePeriod.period).addClass('active-period');
+                var timelineB = $(this.base).find('.timeline-container .btn-back');
+                var timelineN = $(this.base).find('.timeline-container .btn-next');
+                if (this.activeCardIndex === 0) {
+                    timelineB.addClass('hide');
+                } else {
+                    timelineB.removeClass('hide');
+                }
+                if (this.activeCardIndex >= this.cardData.length - 1) {
+                    timelineN.addClass('hide');
+                } else {
+                    timelineN.removeClass('hide');
+                }
+            };
+            Timeline.prototype._generateTimeline = function() {
+                var htmlWrap = '<ol></ol>';
+                $(this.timelineNodeContainer).append(htmlWrap);
+                var wrap = $(this.timelineNodeContainer).find('ol');
+                var numNode = this.cardData.length;
+                for (var i = 0; i < numNode; i++) {
+                    var el = wrap.append('<li class="' + this.cardData[i].period + '"></li>');
+                }
+                var nodeList = $(this.base).find('.timeline-steps ol li');
+                this.timelineData = nodeList;
+            };
+            Timeline.prototype._assignBtn = function() {
+                var _this = this;
+                var periodPrev = $(this.base).find('.periods-container .btn-back');
+                var periodNext = $(this.base).find('.periods-container .btn-next');
+                periodPrev.click(function() {
+                    if (_this.activePeriodIndex > 0) {
+                        _this.activePeriodIndex -= 1;
+                        _this.activePeriod = _this.periodData[_this.activePeriodIndex];
+                        _this._chainActions('period');
+                        _this._setStateClasses();
+                    }
+                    _this._adjustPeriodContainer();
+                });
+                periodNext.click(function() {
+                    if (_this.activePeriodIndex < _this.periodData.length - 1) {
+                        _this.activePeriodIndex += 1;
+                        _this.activePeriod = _this.periodData[_this.activePeriodIndex];
+                        _this._chainActions('period');
+                        _this._setStateClasses();
+                    }
+                    _this._adjustPeriodContainer();
+                });
+                var timelinePrev = $(this.base).find('.timeline-container .btn-back');
+                var timelineNext = $(this.base).find('.timeline-container .btn-next');
+                timelinePrev.click(function() {
+                    if (_this.activeCardIndex > 0) {
+                        _this.activeCardIndex -= 1;
+                        _this.activeCard = _this.cardData[_this.activeCardIndex];
+                        _this._chainActions('timeline');
+                        _this._setStateClasses();
+                    }
+                    _this._adjustCardContainer();
+                    _this._adjustPeriodContainer();
+                });
+                timelineNext.click(function() {
+                    if (_this.activeCardIndex < _this.cardData.length - 1) {
+                        _this.activeCardIndex += 1;
+                        _this.activeCard = _this.cardData[_this.activeCardIndex];
+                        _this._chainActions('timeline');
+                        _this._setStateClasses();
+                    }
+                    _this._adjustCardContainer();
+                    _this._adjustPeriodContainer();
+                });
+                var _loop_1 = function(i) {
+                    $(this_1.timelineData[i]).click(function() {
+                        _this.activeCardIndex = _this.cardData[i].index;
+                        _this.activeCard = _this.cardData[_this.activeCardIndex];
+                        _this._chainActions('timeline');
+                        _this._setStateClasses();
+                        _this._adjustCardContainer();
+                        _this._shiftTimeline();
+                    });
+                };
+                var this_1 = this;
+                for (var i = 0; i < this.timelineData.length; i++) {
+                    _loop_1(i);
+                }
+            };
+            Timeline.prototype._adjustPeriodContainer = function() {
+                // var activeH = $(this.activePeriod).outerHeight();
+                // $(this.periodContainer).height(activeH);
+            };
+            Timeline.prototype._adjustCardContainer = function() {
+                var activeH = $(this.activeCard).outerHeight() + 24;
+                $(this.cardContainer).height(activeH);
+            };
+            Timeline.prototype._shiftTimeline = function() {
+                $(this.timelineNodeContainer).css('left', '-' + ((this.activeCardIndex + 1) * 4) + '%');
+            };
+            Timeline.prototype._chainActions = function(state) {
+                switch (state) {
+                    case 'period':
+                        if (this.activePeriod.period != this.activeCard.period) {
+                            var ta = [];
+                            for (var i = 0; i < this.cardData.length; i++) {
+                                var temp = this.cardData[i];
+                                if (this.activePeriod.period === temp.period)
+                                    ta.push(temp);
+                            }
+                            this.activeCard = ta[0];
+                            this.activeCardIndex = ta[0].index;
+                        }
+                        break;
+                    case 'timeline':
+                        if (this.activeCard.period != this.activePeriod.period) {
+                            var ta = void 0;
+                            for (var i = 0; i < this.periodData.length; i++) {
+                                var temp = this.periodData[i];
+                                if (this.activeCard.period === temp.period)
+                                    ta = temp;
+                            }
+                            this.activePeriod = ta;
+                            this.activePeriodIndex = ta.index;
+                        }
+                        break;
+                }
+
+                this._shiftTimeline();
+                this._adjustCardContainer();
+            };
+            return Timeline;
+        }();
+        $(document).ready(function() {
+            var timeline = new Timeline($('#timeline .timeline'))
+            $(window).on('resize', function() {
+                setTimeout(timeline._adjustCardContainer, 1000);
+            }).resize()
+        });
+    </script>
+</body>
+
+</html>
