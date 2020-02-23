@@ -270,6 +270,26 @@ h1, h2, h3, h4, h5, h6 {
   to { transform: translateX(0); }
 }
 
+
+@keyframes bounceAlpha {
+  0% {
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+  }
+  25% {
+      opacity: 0;
+      transform: translateX(10px) scale(0.9);
+  }
+  26% {
+      opacity: 0;
+      transform: translateX(-10px) scale(0.9);
+  }
+  55% {
+      opacity: 1;
+      transform: translateX(0px) scale(1);
+  }
+}
+
 #intro {
   position: relative;
   background-color: $color-blue-light;
@@ -300,11 +320,41 @@ h1, h2, h3, h4, h5, h6 {
   a {
     display: block;
     margin-top: 2%;
-    color: $color-white;
-    font-size: 300%;
-    transform: rotate(180deg);
+    transform: rotate(90deg);
     text-decoration: none;
+
+    position: relative;
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 6px;
+
+    .arrow {
+      width: 12px;
+      height: 12px;
+      background-size: contain;
+      background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+    }
+    .arrow:nth-child(1) {
+      animation-name: bounceAlpha;
+      animation-duration: 1.4s;
+      animation-delay: 0.3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    .arrow:nth-child(2) {
+      animation-name: bounceAlpha;
+      animation-duration: 1.4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
   }
+
 }
 
 #video {
