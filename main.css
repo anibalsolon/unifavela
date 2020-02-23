@@ -9899,27 +9899,6 @@ h3 {
   font-weight: bold;
 }
 
-.highlight {
-  position: relative;
-  display: inline-block;
-}
-.highlight::before {
-  content: "";
-  display: block;
-  height: 100%;
-  width: 106%;
-  margin-left: -3px;
-  margin-right: -3px;
-  position: absolute;
-  background: #ba7404;
-  transform: rotate(2deg);
-  top: 4px;
-  left: -1px;
-  border-radius: 30% 25% 20% 24%;
-  padding: 10px 3px 3px 10px;
-  opacity: 0.4;
-}
-
 strong {
   background-image: url(images/underline.svg);
   background-size: 8em 2.8rem;
@@ -10340,6 +10319,10 @@ h1[title]::after, h2[title]::after, h3[title]::after, h4[title]::after, h5[title
 #path .text p.bigger {
   color: #fff;
   font-size: 1.3rem;
+}
+#path .text p.bigger strong {
+  font-size: 1.5rem;
+  background-size: 8em 3.8rem;
 }
 
 #timeline {

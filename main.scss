@@ -38,27 +38,6 @@ $color-blue-lighter: #76a0f4;
   }
 }
 
-.highlight {
-  position: relative;
-  display: inline-block;
-  &::before {
-    content: "";
-    display: block;
-    height: 100%;
-    width: 106%;
-    margin-left: -3px;
-    margin-right: -3px;
-    position: absolute;
-    background: $color-yellow-darker;
-    transform: rotate(2deg);
-    top: 4px;
-    left: -1px;
-    border-radius: 30% 25% 20% 24%;
-    padding: 10px 3px 3px 10px;
-    opacity: 0.4;
-  }
-}
-
 strong {
   background-image: url(images/underline.svg);
   background-size: 8em 2.8rem;
@@ -513,6 +492,10 @@ h1, h2, h3, h4, h5, h6 {
       &.bigger {
         color:#fff;
         font-size: 1.3rem;
+        strong {
+          font-size: 1.5rem;
+          background-size: 8em 3.8rem;
+        }
       }
     }
   }
