@@ -10225,7 +10225,7 @@ h1[title]::after, h2[title]::after, h3[title]::after, h4[title]::after, h5[title
 }
 #goals::after {
   bottom: 0;
-  background: #3d72f4;
+  background: #76a0f4;
 }
 #goals .image {
   position: relative;
