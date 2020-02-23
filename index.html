@@ -8,6 +8,7 @@
     <title>UniFavela</title>
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.5.10/plyr.css" />
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 
@@ -34,10 +35,6 @@
             <a href="#" class="twitter"></a>
         </div>
     </div>
-<!-- 
-    <div id="jumbo">
-        <div id="casebre"></div>
-    </div> -->
 
     <div id="jumbo">
         <div class="carousel"></div>
@@ -51,6 +48,10 @@
             construção de comunidades de ensino-aprendizagem, potencializando  direitos sociais 
             e direitos humanos em território favelizado visando a educação como prática da liberdade.
         </p>
+        <a href="#video">⇪</a>
+    </div>
+    <div id="video">
+        <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="R1DUSATj1Ho"></div>
     </div>
 
     <div id="goals">
@@ -205,7 +206,7 @@
     </script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-
+    <script src="https://cdn.plyr.io/3.5.10/plyr.polyfilled.js"></script>
     <script>
         var Timeline = function() {
             function Timeline(target) {
@@ -406,6 +407,11 @@
             $(window).on('resize', function() {
                 setTimeout(timeline._adjustCardContainer, 1000);
             }).resize()
+
+            var player = new Plyr('#player');
+            $('#intro a').click(function(){
+                player.play()
+            })
         });
     </script>
 </body>
