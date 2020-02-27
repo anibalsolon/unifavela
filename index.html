@@ -13,31 +13,34 @@
 </head>
 
 <body>
-    <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
-        <defs>
-            <filter id="goo">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />    
-                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-                <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
-            </filter>
-        </defs>
-    </svg>
-
     <div id="header">
-        <div id="menu">
+        <!-- <div id="menu">
             <a href="#">Active</a>
             <a href="#">Link</a>
             <a href="#">Link</a>
-        </div>
-        <div id="social">
-            <a href="#" class="facebook"></a>
-            <a href="#" class="instagram"></a>
-            <a href="#" class="twitter"></a>
+        </div> -->
+        <div id="socialmedia">
+            <a href="https://www.facebook.com/unifavela/" class="facebook"></a>
+            <a href="https://www.instagram.com/unifavela/" class="instagram"></a>
+            <a href="https://twitter.com/unifavela/" class="twitter"></a>
         </div>
     </div>
 
     <div id="jumbo">
-        <div class="carousel"></div>
+        <div id="carousel">
+            <div class="first">
+                <img src="images/mosaic/0.jpg" />
+                <img src="images/mosaic/1.jpg" />
+                <img src="images/mosaic/2.jpg" />
+                <img src="images/mosaic/3.jpg" />
+                <img src="images/mosaic/4.jpg" />
+                <img src="images/mosaic/5.jpg" />
+                <img src="images/mosaic/6.jpg" />
+                <img src="images/mosaic/7.jpg" />
+                <img src="images/mosaic/8.jpg" />
+                <img src="images/mosaic/9.jpg" />
+            </div>
+        </div>
         <div class="logo"></div>
     </div>
 
@@ -80,7 +83,7 @@
     <div id="path">
         <h2 title="Histórico">Histórico</h2>
         <div  class="row no-gutters">
-            <div class="col-lg-6 text">
+            <div class="col-md-12 col-lg-6 text">
                 <p>
                     O UniFavela é um dos três cursos Pré-Vestibulares que atuam no complexo de favelas da
                     Maré, um conjunto composto por 17 favelas com um total de 140 mil habitantes. A
@@ -106,7 +109,7 @@
                     Em 2020, já são mais de <strong>200</strong> inscritos!
                 </p>
             </div>
-            <div id="timeline" class="col-lg-6">
+            <div id="timeline" class="col-md-12 col-lg-6">
                 <div class="timeline">
                     <div class="periods-container">
                         <section class="period-single" period="period-2018">
@@ -139,22 +142,47 @@
                     <div class="cards-container">
                         <section class="card-single" period="period-2018">
                             <div class="content">
-                                <img src="images/WhatsApp Image 2019-01-26 at 20.04.54 (2).jpeg" />
+                                <img src="images/timeline/2018/1.jpg" />
                             </div>
                         </section>
                         <section class="card-single" period="period-2018">
                             <div class="content">
-                                <img src="images/WhatsApp Image 2019-01-26 at 20.04.54 (2).jpeg" />
+                                <img src="images/timeline/2018/2.jpg" />
+                            </div>
+                        </section>
+                        <section class="card-single" period="period-2018">
+                            <div class="content">
+                                <img src="images/timeline/2018/3.jpg" />
                             </div>
                         </section>
                         <section class="card-single" period="period-2019">
                             <div class="content">
-                                <img src="images/WhatsApp Image 2019-01-26 at 20.04.54 (2).jpeg" />
+                                <img src="images/timeline/2019/1.jpg" />
+                            </div>
+                        </section>
+                        <section class="card-single" period="period-2019">
+                            <div class="content">
+                                <img src="images/timeline/2019/2.jpg" />
+                            </div>
+                        </section>
+                        <section class="card-single" period="period-2019">
+                            <div class="content">
+                                <img src="images/timeline/2019/3.jpg" />
                             </div>
                         </section>
                         <section class="card-single" period="period-2020">
                             <div class="content">
-                                <img src="images/WhatsApp Image 2019-01-26 at 20.04.54 (2).jpeg" />
+                                <img src="images/timeline/2020/1.jpg" />
+                            </div>
+                        </section>
+                        <section class="card-single" period="period-2020">
+                            <div class="content">
+                                <img src="images/timeline/2020/2.jpg" />
+                            </div>
+                        </section>
+                        <section class="card-single" period="period-2020">
+                            <div class="content">
+                                <img src="images/timeline/2020/3.jpg" />
                             </div>
                         </section>
                     </div>
@@ -163,10 +191,14 @@
         </div>
     </div>
 
-
-    <div id="social" class="row no-gutters">
+    <div id="social" class="row">
         <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-            <h2>Açōes Sociais</h2>
+            <h2 title="Açōes Sociais">Açōes Sociais</h2>
+        </div>
+        <div class="col-md-4 offset-md-1 col-lg-3 offset-lg-2">
+            <img src="images/acoes.jpg" class="img-fluid" />
+        </div>
+        <div class="col-md-6 col-lg-5">
             <p>
                 O UniFavela não se limita a atuar em sala de aula, também desempenha ações sociais. 
             </p>
@@ -194,232 +226,149 @@
         </div>
     </div>
 
-    <div id="contact">
-        <div id="teacher"></div>
-        <div id="form"></div>
+    <div id="clipping" class="row no-gutters">
+        <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+            <h2 title="Na Midia">Na Midia</h2>
+            <ul class="row no-gutters">
+                <li class="col-md-4 col-lg-2"><a href="https://globoplay.globo.com/v/7988060/">
+                    <img class="img-fluid" src="images/clipping/globoplay.globo.com.png" />
+                </a></li>
+                <li class="col-md-4 col-lg-2"><a href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2019/09/27/pre-vestibular-comunitario-em-laje-na-mare-aprova-todos-os-estudantes-em-universidades-publicas-do-rio.ghtml">
+                    <img class="img-fluid" src="images/clipping/g1.globo.com.png" />
+                </a></li>
+                <li class="col-md-4 col-lg-2"><a href="https://educacao.estadao.com.br/noticias/geral,unifavela-de-uma-laje-carioca-a-universidade-publica,70002632231">
+                    <img class="img-fluid" src="images/clipping/educacao.estadao.com.br.png" />
+                </a></li>
+                <li class="col-md-4 col-lg-2"><a href="https://rioonwatch.org/?p=50735">
+                    <img class="img-fluid" src="images/clipping/rioonwatch.org.png" />
+                </a></li>
+                <li class="col-md-4 col-lg-2"><a href="https://bandnewsfmrio.com.br/editorias-detalhes/projeto-ajuda-moradores-da-mare-a-se-preparem">
+                    <img class="img-fluid" src="images/clipping/bandnewsfmrio.com.br.png" />
+                </a></li>
+                <li class="col-md-4 col-lg-2"><a href="https://catracalivre.com.br/quem-inova/projeto-ajuda-estudantes-da-periferia-a-entrar-na-faculdade-no-rj/">
+                    <img class="img-fluid" src="images/clipping/catracalivre.com.br.png" />
+                </a></li>
+                <li class="col-md-4 col-lg-2"><a href="http://andrearamal.com.br/ajudar-o-jovem-concretizar-o-sonho-da-universidade-e-gratificante-tambem-para-os-professores/">
+                    <img class="img-fluid" src="images/clipping/andrearamal.com.br.png" />
+                </a></li>
+                <li class="col-md-4 col-lg-2"><a href="https://regiondigital.com/blogs/70-ana-valsera-prieto/2064-razones-para-creer.html">
+                    <img class="img-fluid" src="images/clipping/regiondigital.com.png" />
+                </a></li>
+                <li class="col-md-4 col-lg-2"><a href="https://observatorio3setor.org.br/noticias/universitarios-criam-cursinho-pre-vestibular-no-complexo-da-mare/">
+                    <img class="img-fluid" src="images/clipping/observatorio3setor.org.br.png" />
+                </a></li>
+                <li class="col-md-4 col-lg-2"><a href="https://favelaempauta.com/unifavela-sonha-ir-alem/">
+                    <img class="img-fluid" src="images/clipping/favelaempauta.com.png" />
+                </a></li>
+                <li class="col-md-4 col-lg-2"><a href="http://ebc.com.br/institucional/desempenho-do-unifavela-e-colegio-pedro-ii-e-assunto-no-plantao-enem">
+                    <img class="img-fluid" src="images/clipping/ebc.com.br.png" />
+                </a></li>
+                <li class="col-md-4 col-lg-2"><a href="https://profseducacao.com.br/2019/09/30/unifavela-uma-inspiradora-proposta-de-educacao-popular/">
+                    <img class="img-fluid" src="images/clipping/profseducacao.com.br.png" />
+                </a></li>
+            </ul>
+        </div>
     </div>
 
-    <script type="text/javascript">
-        // var _gaq = _gaq || [];
-        // _gaq.push(['_setAccount', 'UA-XXXXXXXX-Y']);
-        // _gaq.push(['_trackPageview']);
-        // (function() {
-        //     var ga = document.createElement('script');
-        //     ga.type = 'text/javascript';
-        //     ga.async = true;
-        //     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        //     var s = document.getElementsByTagName('script')[0];
-        //     s.parentNode.insertBefore(ga, s);
-        // })();
-    </script>
+    <div id="contact" class="row no-gutters">
+        <div class="col-10 offset-1 col-md-6 offset-md-3 col-lg-6 offset-lg-3">
+            <h2 title="Contato">Contato</h2>
+            <form>
+                <fieldset>
+                    <div>
+                        <input type="text" title="Nome" placeholder="Nome" name="name" />
+                    </div>
+                    <div>
+                        <input type="text" title="E-mail" placeholder="E-mail" name="email" />
+                    </div>
+                    <div>
+                        <input type="text" title="Telefone" placeholder="Telefone" name="phone" />
+                    </div>
+                    <div>
+                        <textarea name="content" placeholder="Mensagem"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar" />
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="https://cdn.plyr.io/3.5.10/plyr.polyfilled.js"></script>
+    <footer>
+        <a href="https://www.facebook.com/unifavela/" class="facebook"></a>
+        <a href="https://www.instagram.com/unifavela/" class="instagram"></a>
+        <a href="https://twitter.com/unifavela/" class="twitter"></a>
+    </footer>
+<!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159251615-1"></script>
     <script>
-        var Timeline = function() {
-            function Timeline(target) {
-                this.base = target;
-                this.periodContainer = $(this.base).find('.periods-container');
-                this.cardContainer = $(this.base).find('.cards-container');
-                this.timelineNodeContainer = $(this.base).find('.timeline-container .timeline-steps');
-                this._parseData();
-                this._generateTimeline();
-                this._setStateClasses();
-                this._assignBtn();
-                this._adjustPeriodContainer();
-                this._adjustCardContainer();
-            }
-            Timeline.prototype._parseData = function() {
-                var base = this.base;
-                var periods = $(base).find('.periods-container section');
-                for (var i = 0; i < periods.length; i++) {
-                    var section = periods[i];
-                    section.period = $(section).attr('period');
-                    section.index = $(section).index();
-                }
-                this.periodData = periods;
-                var data = $(base).find('.cards-container section');
-                for (var i = 0; i < data.length; i++) {
-                    var section = data[i];
-                    section.period = $(section).attr('period');
-                    section.index = $(section).index();
-                }
-                this.cardData = data;
-                this.activePeriod = this.periodData[0];
-                this.activePeriodIndex = 0;
-                this.activeCard = this.cardData[0];
-                this.activeCardIndex = 0;
-            };
-            Timeline.prototype._setStateClasses = function() {
-                $(this.base).find('.periods-container section.active').removeClass('active');
-                $(this.base).find('.periods-container section.prev').removeClass('prev');
-                $(this.base).find('.periods-container section.next').removeClass('next');
-                $(this.activePeriod).addClass('active');
-                if ($(this.activePeriod).prev().length != 0) {
-                    $(this.activePeriod).prev().addClass('prev');
-                    $(this.base).find('.periods-container .btn-back').removeClass('hide');
-                } else {
-                    $(this.base).find('.periods-container .btn-back').addClass('hide');
-                }
-                if ($(this.activePeriod).next().length != 0) {
-                    $(this.activePeriod).next().addClass('next');
-                    $(this.base).find('.periods-container .btn-next').removeClass('hide');
-                } else {
-                    $(this.base).find('.periods-container .btn-next').addClass('hide');
-                }
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-159251615-1');
+    </script> -->
 
-                $(this.base).find('.cards-container section.active').removeClass('active');
-                $(this.base).find('.cards-container section.prev').removeClass('prev');
-                $(this.base).find('.cards-container section.next').removeClass('next');
-                $(this.activeCard).addClass('active');
-                if ($(this.activeCard).prev().length != 0) {
-                    $(this.activeCard).prev().addClass('prev');
-                }
-                if ($(this.activeCard).next().length != 0) {
-                    $(this.activeCard).next().addClass('next');
-                }
-                
-                $(this.base).find('.timeline-steps li.active').removeClass('active');
-                $(this.timelineData[this.activeCard.index]).addClass('active');
-                this.timelineData.removeClass('active-period');
-                this.timelineData.filter('.' + this.activePeriod.period).addClass('active-period');
-                var timelineB = $(this.base).find('.timeline-container .btn-back');
-                var timelineN = $(this.base).find('.timeline-container .btn-next');
-                if (this.activeCardIndex === 0) {
-                    timelineB.addClass('hide');
-                } else {
-                    timelineB.removeClass('hide');
-                }
-                if (this.activeCardIndex >= this.cardData.length - 1) {
-                    timelineN.addClass('hide');
-                } else {
-                    timelineN.removeClass('hide');
-                }
-            };
-            Timeline.prototype._generateTimeline = function() {
-                var htmlWrap = '<ol></ol>';
-                $(this.timelineNodeContainer).append(htmlWrap);
-                var wrap = $(this.timelineNodeContainer).find('ol');
-                var numNode = this.cardData.length;
-                for (var i = 0; i < numNode; i++) {
-                    var el = wrap.append('<li class="' + this.cardData[i].period + '"></li>');
-                }
-                var nodeList = $(this.base).find('.timeline-steps ol li');
-                this.timelineData = nodeList;
-            };
-            Timeline.prototype._assignBtn = function() {
-                var _this = this;
-                var periodPrev = $(this.base).find('.periods-container .btn-back');
-                var periodNext = $(this.base).find('.periods-container .btn-next');
-                periodPrev.click(function() {
-                    if (_this.activePeriodIndex > 0) {
-                        _this.activePeriodIndex -= 1;
-                        _this.activePeriod = _this.periodData[_this.activePeriodIndex];
-                        _this._chainActions('period');
-                        _this._setStateClasses();
-                    }
-                    _this._adjustPeriodContainer();
-                });
-                periodNext.click(function() {
-                    if (_this.activePeriodIndex < _this.periodData.length - 1) {
-                        _this.activePeriodIndex += 1;
-                        _this.activePeriod = _this.periodData[_this.activePeriodIndex];
-                        _this._chainActions('period');
-                        _this._setStateClasses();
-                    }
-                    _this._adjustPeriodContainer();
-                });
-                var timelinePrev = $(this.base).find('.timeline-container .btn-back');
-                var timelineNext = $(this.base).find('.timeline-container .btn-next');
-                timelinePrev.click(function() {
-                    if (_this.activeCardIndex > 0) {
-                        _this.activeCardIndex -= 1;
-                        _this.activeCard = _this.cardData[_this.activeCardIndex];
-                        _this._chainActions('timeline');
-                        _this._setStateClasses();
-                    }
-                    _this._adjustCardContainer();
-                    _this._adjustPeriodContainer();
-                });
-                timelineNext.click(function() {
-                    if (_this.activeCardIndex < _this.cardData.length - 1) {
-                        _this.activeCardIndex += 1;
-                        _this.activeCard = _this.cardData[_this.activeCardIndex];
-                        _this._chainActions('timeline');
-                        _this._setStateClasses();
-                    }
-                    _this._adjustCardContainer();
-                    _this._adjustPeriodContainer();
-                });
-                var _loop_1 = function(i) {
-                    $(this_1.timelineData[i]).click(function() {
-                        _this.activeCardIndex = _this.cardData[i].index;
-                        _this.activeCard = _this.cardData[_this.activeCardIndex];
-                        _this._chainActions('timeline');
-                        _this._setStateClasses();
-                        _this._adjustCardContainer();
-                        _this._shiftTimeline();
-                    });
-                };
-                var this_1 = this;
-                for (var i = 0; i < this.timelineData.length; i++) {
-                    _loop_1(i);
-                }
-            };
-            Timeline.prototype._adjustPeriodContainer = function() {
-                // var activeH = $(this.activePeriod).outerHeight();
-                // $(this.periodContainer).height(activeH);
-            };
-            Timeline.prototype._adjustCardContainer = function() {
-                var activeH = $(this.activeCard).outerHeight() + 24;
-                $(this.cardContainer).height(activeH);
-            };
-            Timeline.prototype._shiftTimeline = function() {
-                $(this.timelineNodeContainer).css('left', '-' + ((this.activeCardIndex + 1) * 4) + '%');
-            };
-            Timeline.prototype._chainActions = function(state) {
-                switch (state) {
-                    case 'period':
-                        if (this.activePeriod.period != this.activeCard.period) {
-                            var ta = [];
-                            for (var i = 0; i < this.cardData.length; i++) {
-                                var temp = this.cardData[i];
-                                if (this.activePeriod.period === temp.period)
-                                    ta.push(temp);
-                            }
-                            this.activeCard = ta[0];
-                            this.activeCardIndex = ta[0].index;
-                        }
-                        break;
-                    case 'timeline':
-                        if (this.activeCard.period != this.activePeriod.period) {
-                            var ta = void 0;
-                            for (var i = 0; i < this.periodData.length; i++) {
-                                var temp = this.periodData[i];
-                                if (this.activeCard.period === temp.period)
-                                    ta = temp;
-                            }
-                            this.activePeriod = ta;
-                            this.activePeriodIndex = ta.index;
-                        }
-                        break;
-                }
 
-                this._shiftTimeline();
-                this._adjustCardContainer();
-            };
-            return Timeline;
-        }();
-        $(document).ready(function() {
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.plyr.io/3.5.10/plyr.polyfilled.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        $(window).on("load", function() {
             var timeline = new Timeline($('#timeline .timeline'))
             $(window).on('resize', function() {
-                setTimeout(timeline._adjustCardContainer, 1000);
+                setTimeout(timeline._adjustCardContainer, 1000)
             }).resize()
 
-            var player = new Plyr('#player');
+            setTimeout(timeline._adjustCardContainer, 2000)
+            setTimeout(timeline._adjustCardContainer, 3000)
+
+            var player = new Plyr('#player')
             $('#intro a').click(function(){
                 player.play()
             })
+
+            var car = $('#carousel')
+
+            var carousel = car.find('> div > img')
+            var width = car.width()
+            var boxes = 0;
+            carousel.map(function(i, el) {
+                var r = ((Math.random() * 140) - 70)
+                var t = r * Math.PI / 180
+                var bw = $(el).width()
+                var bh = $(el).height()
+                var w = (Math.sin(t) * bh + Math.cos(t) * bw)
+                var h = (Math.sin(t) * bw + Math.cos(t) * bh)
+                $(el).data('w', w)
+                $(el).data('h', h)
+                boxes += bw
+                $(el).css({
+                    transform: 'rotate(' + (r) + 'deg)',
+                })
+            })
+
+            boxes /= carousel.length
+
+            carousel.map(function(i, el) {
+                $(el).css({
+                    marginLeft: -(boxes / 2),
+                    zIndex: Math.floor(Math.random() * i * carousel.length),
+                })
+            })
+
+            carousel.sort(() => Math.random() - 0.5)
+            carousel.detach()
+            carousel.map(function (i, el) { car.find('> div').append(el) })
+
+            // var carousel1 = car.find('> div.first')
+            // var carousel2 = carousel1.clone().addClass('second').removeClass('first')
+            // carousel1.css({ left: 0 })
+            // carousel2.css({ left: carousel1.find('img:last').position().left - (boxes / 2) })
+            // car.append(carousel2)
+
+            // carousel1.animate({left: (-carousel1.find('img:last').position().left) + 'px'}, 5000)
+            // carousel2.animate({left: (-carousel1.find('img:last').position().left + car.width()) + 'px'}, 5000)
         });
     </script>
 </body>
