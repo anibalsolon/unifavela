@@ -9882,7 +9882,9 @@ h3 {
   font-style: normal;
 }
 :root {
-  --image-arma: url(images/arma.jpg);
+  --image-arma: "";
+  --image-arma-caroline: url(images/arma.jpg);
+  --image-arma-laerte: url(images/arma-laerte.jpg);
 }
 
 .underlined {
@@ -10077,6 +10079,7 @@ h3 {
   display: flex;
 }
 #jumbo #carousel div img {
+  opacity: 0;
   flex-shrink: 1;
   width: auto;
   height: 100%;
@@ -10115,22 +10118,6 @@ h3 {
   filter: invert(100%);
 }
 
-@keyframes carousel-before {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-@keyframes carousel-after {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
 @keyframes bounceAlpha {
   0% {
     opacity: 1;

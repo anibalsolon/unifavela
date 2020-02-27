@@ -327,6 +327,14 @@
                 player.play()
             })
 
+            document.documentElement.style
+                .setProperty(
+                    '--image-arma', 
+                    getComputedStyle(document.documentElement).getPropertyValue(
+                        Math.random() >= 0.5 ? '--image-arma-caroline' : '--image-arma-laerte'
+                    )
+                )
+
             var car = $('#carousel')
 
             var carousel = car.find('> div > img')
@@ -343,6 +351,7 @@
                 $(el).data('h', h)
                 boxes += bw
                 $(el).css({
+                    opacity: 1.0,
                     transform: 'rotate(' + (r) + 'deg)',
                 })
             })
