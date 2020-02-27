@@ -9920,6 +9920,12 @@ body {
   color: #fff;
   font-family: "Muli", Arial, sans-serif;
 }
+@media (min-width: 992px) {
+  html,
+body {
+    font-size: 110%;
+  }
+}
 
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
