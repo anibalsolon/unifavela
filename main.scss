@@ -94,7 +94,8 @@ h1, h2, h3, h4, h5, h6 {
       font-family: 'BlowBrush', sans-serif;
       color: #DDD;
       white-space: nowrap;
-        
+      opacity: 0.5;
+
       @include media-breakpoint-up(md) {
         top: -30%;
         font-size: 170%;
@@ -112,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
       font-weight: bolder;
       font-family: 'Raleway', Arial, sans-serif;
       text-shadow: 0px 0px 3px #fff;
-      
+
       @include media-breakpoint-up(md) {
       }
     }
@@ -225,7 +226,7 @@ h3 {
 
     div {
       display: flex;
-    
+
       img {
         opacity: 0.0;
         flex-shrink: 1;
@@ -244,7 +245,7 @@ h3 {
     height: 80%;
     width: 100%;
     z-index: 30;
-  
+
     &:after {
       content: "";
       position: absolute;
@@ -532,7 +533,7 @@ h3 {
     }
     &:after {
       color: $color-white;
-      text-shadow: 0px 0px 5px $color-blue-darker; 
+      text-shadow: 0px 0px 5px $color-blue-darker;
     }
   }
 
@@ -590,7 +591,7 @@ h3 {
       &.btn-back { left: 0; }
       &.btn-next { right: 0; }
     }
-    
+
     section {
       width: 60%;
       height: 0;
@@ -606,7 +607,7 @@ h3 {
       h4 {
         margin: 0;
       }
-      
+
       p {
         display: none;
       }
@@ -627,7 +628,7 @@ h3 {
         opacity: 0.4;
         transform: translateX(-100%);
         z-index: 0;
-      
+
         .year {
           text-align: right;
         }
@@ -638,7 +639,7 @@ h3 {
         opacity: 0.4;
         transform: translateX(100%);
         z-index: 0;
-        
+
         .year {
           text-align: left;
         }
@@ -651,7 +652,7 @@ h3 {
     width: 100%;
     height: 50px;
     overflow: hidden;
-  
+
     &:before {
       background-image: linear-gradient(to right, $color-blue-lighter, $color-blue-lighter 50%, rgba(248, 248, 248, 0));
       left: 0;
@@ -662,7 +663,7 @@ h3 {
       height: 100%;
       width: 20vh;
     }
-  
+
     &:after {
       background-image: linear-gradient(to left, $color-blue-lighter, $color-blue-lighter 50%, rgba(248, 248, 248, 0));
       right: 0;
@@ -673,7 +674,7 @@ h3 {
       height: 100%;
       width: 20vh;
     }
-  
+
     .btn-back,
     .btn-next {
       display: inline-block;
@@ -682,23 +683,23 @@ h3 {
       padding: 5px 0;
       z-index: 30;
       transition: all 0.3s ease;
-  
+
       &.btn-back { left: 0; }
       &.btn-next { right: 0; }
-  
+
       &.hide {
         display: none;
       }
     }
-  
+
     .timeline-steps {
       position: absolute;
       display: block;
       width: 100%;
       margin: 15px 0 0;
       transition: left 0.3s ease-in-out;
-  
-  
+
+
       ol {
         display: block;
         width: 200%;
@@ -706,7 +707,7 @@ h3 {
         border-bottom: 2px solid;
         height: 11px;
         list-style: none;
-  
+
         li {
           display: inline-block;
           padding: 5px;
@@ -716,10 +717,10 @@ h3 {
           position: relative;
           cursor: pointer;
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  
+
           &.active {
             box-shadow: none;
-  
+
             &:before {
               content: "";
               display: block;
@@ -730,7 +731,7 @@ h3 {
               top: -25px;
               transition: opacity 0.3s ease-in-out;
             }
-  
+
             &:after {
               content: "";
               display: block;
@@ -833,7 +834,7 @@ h3 {
   .timeline-container .timeline-steps ol li {
     border-color: $color-white;
     background-color: #aaa;
-      
+
     &.active-period {
       background-color: $color-blue-light;
     }
@@ -848,10 +849,15 @@ h3 {
   padding: 8vh 0;
   color: $color-blue-dark;
 
-  img {
-    padding: 10px;
-    background: $color-white;
-    border: 2px solid $color-black;
+  .images {
+    display: flex;
+    align-items: center;
+
+    img {
+      padding: 10px;
+      background: $color-white;
+      border: 2px solid $color-black;
+    }
   }
 
 }
@@ -879,13 +885,12 @@ h3 {
   }
 
   h2 {
-
     &:before {
       color: $color-blue-light;
     }
     &:after {
       color: $color-white;
-      text-shadow: 0px 0px 5px $color-blue-darker; 
+      text-shadow: 0px 0px 5px $color-blue-darker;
     }
   }
 
@@ -904,7 +909,7 @@ h3 {
       padding: 5px;
       border-radius: 8px;
     }
-    
+
   }
 }
 

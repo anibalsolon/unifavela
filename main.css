@@ -9956,6 +9956,7 @@ h1[title]:before, h2[title]:before, h3[title]:before, h4[title]:before, h5[title
   font-family: "BlowBrush", sans-serif;
   color: #DDD;
   white-space: nowrap;
+  opacity: 0.5;
 }
 @media (min-width: 768px) {
   h1[title]:before, h2[title]:before, h3[title]:before, h4[title]:before, h5[title]:before, h6[title]:before {
@@ -10636,7 +10637,11 @@ h3 {
   padding: 8vh 0;
   color: #023ac4;
 }
-#social img {
+#social .images {
+  display: flex;
+  align-items: center;
+}
+#social .images img {
   padding: 10px;
   background: #fff;
   border: 2px solid #000;
