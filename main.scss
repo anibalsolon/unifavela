@@ -897,7 +897,7 @@ h3 {
     }
   }
 
-  ul, li { margin: 0; padding: 0 }
+  ul { margin: 0; padding: 0 }
 
   li {
     margin-bottom: 15px;
@@ -906,13 +906,13 @@ h3 {
     list-style: none;
     display: flex;
     align-items: center;
+    text-align: center;
 
     @include media-breakpoint-up(md) {
       border: 3px solid $color-blue-lighter;
       padding: 5px;
       border-radius: 8px;
     }
-
   }
 }
 
