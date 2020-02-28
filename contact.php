@@ -69,6 +69,7 @@ if ($SUCCESS) {
         $mail->Password = $env['UNIFAVELA_CONTACT_SMTP_PASS'];
         $mail->setFrom($env['UNIFAVELA_CONTACT_SMTP_USER'], $env['UNIFAVELA_CONTACT_SMTP_NAME']);
         $mail->addAddress($env['UNIFAVELA_CONTACT_SMTP_TO_EMAIL'], $env['UNIFAVELA_CONTACT_SMTP_TO_NAME']);
+        $mail->addReplyTo($email, $name);
         $mail->isHTML(true);
         $mail->Subject = "Contato do site: $name";
         $mail->Body = <<<EOT
