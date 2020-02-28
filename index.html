@@ -298,6 +298,17 @@
                     <div>
                         <input type="submit" value="Enviar" />
                     </div>
+                    <div class="feedback">
+                        <div class="success-checkmark">
+                            <div class="check-icon">
+                                <span class="icon-line line-tip"></span>
+                                <span class="icon-line line-long"></span>
+                                <div class="icon-circle"></div>
+                                <div class="icon-fix"></div>
+                            </div>
+                        </div>
+                        <p>Obrigado! Entraremos em contato assim que possível.</p>
+                    </div>
                 </fieldset>
             </form>
         </div>
@@ -389,20 +400,30 @@
 
             $('#contact form').submit(function(e) {
                 e.preventDefault()
+                var t = $(this)
                 grecaptcha.ready(function() {
                     grecaptcha.execute('6LehR90UAAAAAHb2yXJ7kzLnL-A3IIH2Q6SND3rs', { action: 'contact' })
                         .then(function(token) {
                                         
                             var data = {
-                                name: $('input[name=name]').val(),
-                                email: $('input[name=email]').val(),
-                                phone: $('input[name=phone]').val(),
-                                message: $('textarea[name=message]').val(),
+                                name: t.find('[name=name]').val(),
+                                email: t.find('[name=email]').val(),
+                                phone: t.find('[name=phone]').val(),
+                                message: t.find('[name=message]').val(),
                                 captcha: token,
                             }
 
                             $.post("contact.php", data, function(result) {
-                                console.log(result)
+                                t.find('input, textarea').removeClass('error')
+                                if (!result.success) {
+                                    if (result.fields) {
+                                        result.fields.map(function(f){
+                                            t.find('[name=' + f + ']').addClass('error')
+                                        })
+                                    }
+                                } else {
+                                    t.find(".feedback").addClass('active').find(".success-checkmark").show();
+                                }
                             })
                         })
                 })
