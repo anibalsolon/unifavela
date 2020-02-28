@@ -293,7 +293,7 @@
                         <input type="text" title="Telefone" placeholder="Telefone" name="phone" />
                     </div>
                     <div>
-                        <textarea name="content" placeholder="Mensagem"></textarea>
+                        <textarea name="message" placeholder="Mensagem"></textarea>
                     </div>
                     <div>
                         <input type="submit" value="Enviar" />
@@ -397,7 +397,7 @@
                                 name: $('input[name=name]').val(),
                                 email: $('input[name=email]').val(),
                                 phone: $('input[name=phone]').val(),
-                                message: $('input[name=message]').val(),
+                                message: $('textarea[name=message]').val(),
                                 captcha: token,
                             }
 
