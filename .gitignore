@@ -1,5 +1,4 @@
-*.DS_Store
-._*
-node_modules
-.env
-vendor
+node_modules/
+.cache/
+public
+src/gatsby-types.d.ts

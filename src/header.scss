@@ -1,0 +1,40 @@
+$primary:       #1047F9;
+$primary-light: lighten($primary, 10%);
+$secondary:     #FFAA00;
+$secondary-light: lighten($secondary, 10%);
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+) !default;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6.75,
+  8: $spacer * 10.125,
+);
+
+$enable-cssgrid: true;
+
+$font-size-base: 1rem;
+$input-btn-font-size: $font-size-base * 0.875;
+$input-btn-padding-y: $spacer * 0.7;
+$input-btn-padding-x: $spacer * 0.875;
+
+$bootstrap-icons-font: bootstrap-icons !default;
+$bootstrap-icons-font-dir: "~bootstrap-icons/font/fonts" !default;
+$bootstrap-icons-font-file: "#{$bootstrap-icons-font-dir}/#{$bootstrap-icons-font}" !default;
+$bootstrap-icons-font-hash: "8d200481aa7f02a2d63a331fc782cfaf" !default;
+$bootstrap-icons-font-src: #{url("#{$bootstrap-icons-font-file}.woff2?#{$bootstrap-icons-font-hash}") format("woff2"), url("#{$bootstrap-icons-font-file}.woff?#{$bootstrap-icons-font-hash}") format("woff")} !default; 
+  
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,700;0,900;1,400&display=swap');
+
+// @import "~bootstrap";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.scss";
