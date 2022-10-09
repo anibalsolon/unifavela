@@ -93,7 +93,7 @@ export default () => {
             </section>
             <section id="section-historia">
                 <h2>História</h2>
-                <Carousel indicatorLabels={['2020', '2021', '2022']}>
+                <Carousel indicatorLabels={['2020', '2021', '2022']} interval={null}>
                     <Carousel.Item>
                         <div className="container">
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -104,10 +104,6 @@ export default () => {
                                 more recently with desktop publishing software like Aldus PageMaker including
                                 versions of Lorem Ipsum.</p>
 
-                            <div>
-                                <StaticImage src="../images/carina-almeida.png" alt="Carina Almeida" />
-                                <h3>Carina Almeida <span>aluna</span></h3>
-                            </div>
                         </div>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -135,8 +131,50 @@ export default () => {
                     </Carousel.Item>
                 </Carousel>
             </section>
-            <section id="section-depoimentos">
-                <Carousel indicatorLabels={['2020', '2021', '2022']}>
+            <section id="section-equipe">
+                <h2>Equipe</h2>
+                <div className="container">
+                    <div className="row">
+                        <div className="offset-1 col-10">
+                    <div className="row">
+                        <div className="col-4 text-center">
+                            <StaticImage src="../images/equipe-1.png" alt="Bruna Damiana" />
+                            <h3>Bruna Heinsfeld</h3>
+                            <p>Desenvolvimento Institucional</p>
+                        </div>
+                        <div className="col-4 text-center">
+                            <StaticImage src="../images/equipe-1.png" alt="Bruna Damiana" />
+                            <h3>Bruna Heinsfeld</h3>
+                            <p>Desenvolvimento Institucional</p>
+                        </div>
+                        <div className="col-4 text-center">
+                            <StaticImage src="../images/equipe-1.png" alt="Bruna Damiana" />
+                            <h3>Bruna Heinsfeld</h3>
+                            <p>Desenvolvimento Institucional</p>
+                        </div>
+                        <div className="col-4 text-center">
+                            <StaticImage src="../images/equipe-1.png" alt="Bruna Damiana" />
+                            <h3>Bruna Heinsfeld</h3>
+                            <p>Desenvolvimento Institucional</p>
+                        </div>
+                        <div className="col-4 text-center">
+                            <StaticImage src="../images/equipe-1.png" alt="Bruna Damiana" />
+                            <h3>Bruna Heinsfeld</h3>
+                            <p>Desenvolvimento Institucional</p>
+                        </div>
+                        <div className="col-4 text-center">
+                            <StaticImage src="../images/equipe-1.png" alt="Bruna Damiana" />
+                            <h3>Bruna Heinsfeld</h3>
+                            <p>Desenvolvimento Institucional</p>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section-reconhecimento">
+                <h2>Reconhecimento</h2>
+                <Carousel>
                     <Carousel.Item>
                         <div className="container">
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -147,10 +185,6 @@ export default () => {
                                 more recently with desktop publishing software like Aldus PageMaker including
                                 versions of Lorem Ipsum.</p>
 
-                            <div>
-                                <StaticImage src="../images/carina-almeida.png" alt="Carina Almeida" />
-                                <h3>Carina Almeida <span>aluna</span></h3>
-                            </div>
                         </div>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -177,6 +211,102 @@ export default () => {
                         </div>
                     </Carousel.Item>
                 </Carousel>
+            </section>
+            <section id="section-transparencia">
+                <h2>Transparência</h2>
+                <div className="container">
+                    <div className="row">
+                        <div className="offset-3 col-6 mt-5 mb-0 main-card">
+                            <h3>Lorem ipsum dolor sit amet</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            </p>
+                            <p>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                                cupidatat non proident, sunt in culpa qui officia deserunt 
+                                mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="row my-5">
+                        <div className="col-4">
+                            <Card>
+                                <h3>Missão</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                </p>
+                                <a href="https://www.google.com.br">Acessar</a>
+                            </Card>
+                        </div>
+                        <div className="col-4">
+                            <Card>
+                                <h3>Visão</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                </p>
+                                <a href="https://www.google.com.br">Acessar</a>
+                            </Card>
+                        </div>
+                        <div className="col-4">
+                            <Card>
+                                <h3>Valores</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                </p>
+                                <a href="https://www.google.com.br">Acessar</a>
+                            </Card>
+                        </div>
+                        <div className="col-4">
+                            <Card>
+                                <h3>Missão</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                </p>
+                                <a href="https://www.google.com.br">Acessar</a>
+                            </Card>
+                        </div>
+                        <div className="col-4">
+                            <Card>
+                                <h3>Visão</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                </p>
+                                <a href="https://www.google.com.br">Acessar</a>
+                            </Card>
+                        </div>
+                        <div className="col-4">
+                            <Card>
+                                <h3>Valores</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                </p>
+                                <a href="https://www.google.com.br">Acessar</a>
+                            </Card>
+                        </div>
+                    </div>
+                </div>
             </section>
         </Layout>
     )

@@ -92,7 +92,8 @@ nav {
     background: var(--uni-blue);
     z-index: 2;
     border-radius: 100px;
-    box-shadow: 0px ($spacer * -1) ($spacer) rgba(0, 0, 0, 0.25);
+    box-shadow: 0px ($spacer * -1) ($spacer) rgb(0 0 0 / 25%),
+                0px calc($spacer / 2) calc($spacer / 2) rgb(255 255 255 / 25%);
   }
 
   svg {
