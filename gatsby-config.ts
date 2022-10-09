@@ -1,6 +1,8 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+  pathPrefix: `/unifavela`,
+
   siteMetadata: {
     title: `UniFavela`,
     siteUrl: `https://www.yourdomain.tld`,
