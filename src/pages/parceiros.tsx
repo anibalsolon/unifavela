@@ -14,6 +14,9 @@ export default () => {
                     <StaticImage src="../images/quem-somos.png" alt="UniFavela" />
                 </div>
                 <div className="col-6 offset-1 my-auto px-4">
+
+                    {/* @todo não é pra ser o mesmo layout dos projetos e ações não, é um tantinho diferente */}
+                    {/* @todo Meninos, Inverno, UFRJ, Lis, Banana, Instituto Phi */}
                     <h1>Projetos e Ações</h1>
                 </div>
             </section>
@@ -106,6 +109,9 @@ export default () => {
                         </div>
                     </div>
                 </div>
+
+                {/* @todo no final desta página é para ter um parágrafo convidando as pessoas para serem parceiras PJ - aguardando conteúdo da Agatha  */}
+
             </section>
           </Layout>
     )

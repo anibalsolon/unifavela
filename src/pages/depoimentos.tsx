@@ -22,6 +22,10 @@ export default () => {
                 <YoutubeEmbed embedId="y4yhmymlouI" />
             </section>
             <section id="section-depoimentos">
+
+                {/* @todo aqui vamos ter tres depoimentos em texto e tres em video. os em texto pode repetir da index, 
+                mas talvez não em carrossel e sim aparecendo um após o outro, intercalando vídeos e textos - vamos pensar juntos */}
+
                 <Carousel>
                     <Carousel.Item>
                         <div className="container">

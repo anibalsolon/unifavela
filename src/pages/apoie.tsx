@@ -16,6 +16,9 @@ export default () => {
             </section>
             <section id="section-dados">
                 <div className="container">
+
+                    {/* @todo acho que o layout dessa página não faz muito sentido  vamos ver juntos  */}
+
                     <div className="row my-5">
                         <div className="offset-2 col-4">
                             <Card>
@@ -60,7 +63,7 @@ export default () => {
                           fonte de renda, e foi com ela que eu me alimentei e paguei a entrada da casa que
                           eu aluguei. Sem ela eu não teria sequer o básico.
                         </p>
-                        <p>Patrícia Silva</p>
+                        <p>Patrícia Silva - Estudante do pré-vestibular UniFavela beneciada pela bolsa Carolina Maria de Jesus</p>
                       </div>
                     </div>
                 </div>
