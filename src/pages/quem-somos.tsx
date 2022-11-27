@@ -18,7 +18,7 @@ export default () => {
                     <StaticImage src="../images/quem-somos.png" alt="UniFavela" />
                 </div>
                 <div className="col-6 offset-1 my-auto px-4">
-                    <h1>Um pouco mais sobre a Uni</h1>
+                    <h1>Um pouco mais sobre a UniFavela</h1>
                     <p className="text-muted">
                     Somos uma instituição socioeducativa localizada no Complexo da Maré, com a missão de impulsionar jovens e adultos favelados 
                     para que tenham acesso ao ensino superior. Através de uma educação libertária, oferecemos ferramentas para nossos estudantes
@@ -30,20 +30,13 @@ export default () => {
                 <h2>Missão, Visão e Valores</h2>
                 <div className="container">
                     <div className="row">
-                        {/* @todo inventar conteudo pros paragrafos ou deletar aqui, o que ficar melhor visualmente */}
                         <div className="offset-3 col-6 mt-5 mb-0">
-                            <h3>Lorem ipsum dolor sit amet</h3>
+                            <h3>Por que somos?</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                            </p>
-                            <p>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                                cupidatat non proident, sunt in culpa qui officia deserunt 
-                                mollit anim id est laborum.
+                            Sabemos que a realidade educacional brasileira não é favorável para população que se encontra na linha da pobreza. 
+                            Por isso, iniciativas como a nossa precisam existir! Acreditamos que, para haja a aprendizagem significativa, a educação 
+                            precisa ser crítica e oferecer novos caminhos entre inúmeras culturas, etnias e lugares sociais. 
+                            Por isso, estes são os pilares nos quais acreditamos e que aplicamos em nossa prática:  
                             </p>
                         </div>
                     </div>
@@ -177,43 +170,79 @@ export default () => {
             </section>
             <section id="section-reconhecimento">
                 <h2>Reconhecimento</h2>
-                {/* @todo aqui dentro de cada parte de paragrafo tem que ter um titulo, que vai ser o ano. O resto é bullet.  */}
+                {/* @todo aqui dentro de cada parte de paragrafo tem que ter um titulo.*/}
                 <Carousel>
                     <Carousel.Item>
                         <div className="container">
-                            <p>2022
-                                Prêmio Íbero-Americano em Educação e Direitos Humanos, OEI: finalistas na categoria B no Brasil.
-                                Prêmio Sim à Igualdade Racial, ID-BR: vencedores da categoria Educação e Oportunidades.</p>
-                        
-                            <div>
-                                <StaticImage src="../images/carina-almeida.png" alt="Carina Almeida" />
-                                <h3>Carina Almeida <span>aluna</span></h3>
+                            <p>Prêmio Íbero-Americano em Educação e Direitos Humanos - OEI (2022) 
+                               Finalistas na categoria educação não-formal no Prêmio Íbero-Americano em Educação e Direitos Humanos, 
+                               representando o Brasil.</p>
+                        <div>
+                                <StaticImage src="../images/premioibero_unifavela.jpg" alt="Laerte Breno, presidente da instituição, apresentando o trabalho da UniFavela para o comitê do Prêmio Ibero-Americano em Educação e Direitos Humanos, no Chile, em 2022." />
+                                <h3>Laerte Breno <span>Presidente da UniFavela</span></h3>
                             </div>
                         </div>
                     </Carousel.Item>
                     <Carousel.Item>
                         <div className="container">
-                            <p>2020
-                            Edital 4G para Estudar: forneceu tablets e chips de internet para nossos estudantes.
+                            <p>Prêmio Sim à Igualdade Racial - ID_BR (2022)
+                            Vencedores da categoria Educação e Oportunidades no Prêmio Sim à Igualdade Racial do Instituto Identidades do Brasil. 
+                            </p>
+                        <div>
+                                <StaticImage src="../images/premioidbr2022_unifavela" alt="Laerte Breno, presidente da instituição, recebendo o prêmio Sim à Igualdade Racial pelo Institutio Identidades do Brasil, em 2022." />
+                                <h3>Laerte Breno <span>Presidente da UniFavela</span></h3>
+                            </div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="container">
+                            <p>Edital 4G para Estudar - Instituto Nossas (2020)
+                            Em 2020, a UniFavela venceu o Edital 4G para Estudar, do Instituto Nossas. 
+                            Com esse incentivo, pudemos fornecer tablets e chips de internet para os nossos estudantes.
                             </p>
 
                             <div>
-                                <StaticImage src="../images/carina-almeida.png" alt="Carina Almeida" />
-                                <h3>Carina Almeida <span>aluna</span></h3>
+                                <StaticImage src="../images/4gestudar_unifavela.jpg" alt="Imagem da campanha 4G para Estudar divulgada nas redes sociais da UniFavela." />
+                                <h3>lorem ipsum <span>lorem lorem</span></h3>
+                            </div>
+                        </div>
+                    </Carousel.Item>
+                     {/* @todo alguns não têm foto específica. preciso catar algo para substituir. */}
+                    <Carousel.Item>
+                        <div className="container">
+                            <p>Edital RUA- UFRJ (2019)
+                            Possibilitou que nos tornássemos um Projeto de Extensão da UFRJ. 
+                            Hoje, nossos voluntários estudantes da UFRJ recebem certificação e horas complementares. 
+                            </p>
+
+                            <div>
+                                <StaticImage src="../images/4gestudar_unifavela.jpg" alt="Imagem da campanha 4G para Estudar divulgada nas redes sociais da UniFavela." />
+                                <h3>lorem ipsum <span>lorem lorem</span></h3>
                             </div>
                         </div>
                     </Carousel.Item>
                     <Carousel.Item>
                         <div className="container">
-                            <p>2019
-                                Edital RUA: possibilitou que nos tornássemos um Projeto de Extensão da UFRJ. 
-                                Hoje, nossos voluntários estudantes da UFRJ recebem certificação e horas complementares.  
-                                SIAC 2019: ganhamos uma menção honrosa na 10º Semana de Integração Acadêmica da UFRJ, com um projeto de pesquisa sobre o nosso trabalho. 
-                                Prêmio Paulo Freire: prêmio de direitos humanos concedido pela ALERJ.</p>
+                            <p>Menção Honrosa na SIAC - UFRJ (2019) 
+                            A UniFavela recebeu uma menção honrosa na 10º Semana de Integração Acadêmica da UFRJ, 
+                            com um projeto de pesquisa sobre o nosso trabalho. 
+                            </p>
 
                             <div>
-                                <StaticImage src="../images/carina-almeida.png" alt="Carina Almeida" />
-                                <h3>Carina Almeida <span>aluna</span></h3>
+                                <StaticImage src="../images/4gestudar_unifavela.jpg" alt="Imagem da campanha 4G para Estudar divulgada nas redes sociais da UniFavela." />
+                                <h3>lorem ipsum <span>lorem lorem</span></h3>
+                            </div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="container">
+                            <p>Prêmio Paulo Freire - ALERJ (2019) 
+                            A UniFavela recebeu o prêmio Paulo Freire de direitos humanos, concedido pela ALERJ em 2019. 
+                            </p>
+
+                            <div>
+                                <StaticImage src="../images/premiopaulofreire_alerj_unifavela.jpg" alt="Imagem do Prêmio Paulo Freire." />
+                                <h3>lorem ipsum <span>lorem lorem</span></h3>
                             </div>
                         </div>
                     </Carousel.Item>
@@ -222,21 +251,13 @@ export default () => {
             <section id="section-transparencia">
                 <h2>Transparência</h2>
                 <div className="container">
-                    {/* @todo conteudo do paragrafo faltando. pedi pra agatha */}
                     <div className="row">
                         <div className="offset-3 col-6 mt-5 mb-0 main-card">
-                            <h3>Lorem ipsum dolor sit amet</h3>
+                            <h3>Seriedade e transparência</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                            </p>
-                            <p>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                                cupidatat non proident, sunt in culpa qui officia deserunt 
-                                mollit anim id est laborum.
+                            Prezamos muito pela seriedade em todos os processos internos da UniFavela. 
+                            A transparência com os nossos parceiros é nossa prioridade. Acessando os documentos a seguir, você pode
+                            conferir nossos certificados, certidões e estatuto. Em nosso relatório de atividades, prestamos contas das ações realizadas. 
                             </p>
                         </div>
                     </div>

@@ -9,6 +9,7 @@ import Carousel from 'react-bootstrap/Carousel';
 export default () => {
     return (
         <Layout>
+            {/* @todo aqui é para ser diferente são cinco carrosseis individuais, que inicial com um título */}
             <section id="section-hero" className="row g-0">
                 <div className="col-6 offset-1 my-auto px-4">
                     <h1>Na Mídia</h1>

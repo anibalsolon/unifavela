@@ -28,9 +28,9 @@ const IndexPage = () => {
                     <p className="text-muted">
                     Somos uma Instituição Socioeducativa localizada no Complexo de Favelas da Maré no Rio de Janeiro. 
                     Oferecemos formação educacional e desenvolvimento sociocultural a todos os moradores do território, 
-                    com foco em <strong>favelizar</strong> espaços de construção de conhecimento acadêmico e não-acadêmico, potencializando direitos sociais 
-                    e direitos humanos em território favelizado, proporcionando desenvolvimento e ascensão pessoal e profissional, 
-                    tudo isso por meio da educação como <strong>prática da liberdade</strong>.
+                    com foco da valorização e produção de conhecimento acadêmico e não-acadêmico, potencializando 
+                    direitos sociais e direitos humanos em territórios populares, proporcionando desenvolvimento e 
+                    ascensão pessoal e profissional, tudo isso por meio da educação como prática da liberdade.
                     </p>
                     <button className="btn btn-more btn-outline-primary mt-5">Mais sobre a Uni</button>
                 </div>
@@ -46,7 +46,7 @@ const IndexPage = () => {
                 <div className="grid card-grid">
                     <div className="g-col-12 g-col-lg-4">
                         <Card>
-                        Favelizar espaços de construção de conhecimento acadêmico e não acadêmico;
+                        Valorizar conhecimento acadêmico e não acadêmico para a construção de uma sociedade mais justa;
                         </Card>
                     </div>
                     <div className="g-col-12 g-col-lg-4">
@@ -56,7 +56,7 @@ const IndexPage = () => {
                     </div>
                     <div className="g-col-12 g-col-lg-4">
                         <Card>
-                        Potencializar direitos sociais e direitos humanos em território favelizado;
+                        Potencializar direitos sociais e direitos humanos em território populares;
                         </Card>
                     </div>
                     <div className="g-col-12 g-col-lg-4">
@@ -66,19 +66,12 @@ const IndexPage = () => {
                     </div>
                     <div className="g-col-12 g-col-lg-4">
                         <Card>
-                        Atuar em prol do empoderamento e afirmação da favela, das faveladas e dos favelados 
-                        por meio do ensino-aprendizagem libertário, horizontal e empático;
+                        Atuar em prol do empoderamento e do empoderamento por meio do ensino-aprendizagem libertário, horizontal e empático;
                         </Card>
                     </div>
                     <div className="g-col-12 g-col-lg-4">
                         <Card>
-                        Contribuir para a emancipação da população favelada;
-                        </Card>
-                    </div>
-                    <div className="g-col-12 g-col-lg-4">
-                        <Card>
-                        Ouvir e agir coletivamente com as/os moradores a partir de suas demandas, 
-                        sonhos e propostas para o território em que vivem.
+                        Ouvir e agir coletivamente com as/os moradores a partir de suas demandas, sonhos e propostas para o território em que vivem.
                         </Card>
                     </div>
                 </div>
@@ -146,33 +139,39 @@ const IndexPage = () => {
                                 relevantes e que a favela fala e deve falar pela favela (quem é cria fala pelos crias).</p>
                             <div>
                                 {/* @todo descobrir nome da prof */}
-                                <StaticImage src="../images/dani-prof.png" alt="Daniele" />
-                                <h3>Daniele <span>professora de História do pré-vestibular</span></h3>
+                                <StaticImage src="../images/dani-prof.png" alt="Daniele, ex-educadora de História do pré-vestibular" />
+                                <h3>Daniele<span> Ex-educadora de História do pré-vestibular</span></h3>
                             </div>
                         </div>
                     </Carousel.Item>
                     <Carousel.Item>
                         <div className="container">
-                            <p>A Unifavela mudou minha percepção sobre educação, me fez perceber a importância de projetos sociais baseados 
-                                na promoção do pensamento crítico e a cordialidade. Foi nesse espaço de construção cidadã que percebi a 
-                                grandeza e o potencial do lugar que morava, a favela. O projeto continua, ainda hoje, mas desde outra perspectiva, 
-                                me transformando, cultivando em mim gratidão e admiração por educadores e por todos aqueles que concentram seus 
-                                esforços na construção de lugares inspiradores. Graças a Uni consegui ter acesso a educação pública de qualidade e 
-                                é por meio dela que pretendo contribuir na extensão desse direito primordial.</p>
+                            <p>Desde que entrei na UniFavela na equipe Pedagógica, dando oficinas artísticas e atualmente também 
+                                como educadora no projeto Uniletrinhas venho cada vez mais aprendendo sobre o que é educar de verdade. 
+                                Dar aulas na Uni é extremamente prazeroso e renovador pois saio sempre impactada com a tamanha potência 
+                                das falas dos estudantes e das crianças. O que mais aprendo de valioso é que todos nós sabemos algo sobre 
+                                alguma coisa e isso ser valorizado, fazendo com que as vivências dos estudantes atravessem a sala de aula é 
+                                o verdadeiro sentido da educação popular. As questões que atravessam a realidade de estudantes e de um território 
+                                favelado também contribuem para repensar nossa prática, fazendo com que ela seja mais humana e plural. 
+                                Nesse sentido, a UniFavela é um espaço de potência que mais marca minha trajetória como educadora. Além disso, 
+                                é onde posso ouvir e ser ouvida, onde me identifico e aprendo os sentidos de educar.</p>
                             <div>
-                                <StaticImage src="../images/carina-almeida.png" alt="Jessika Canchón" />
-                                <h3>Jessika Canchón <span>Ex-estudante e atual professora de Espanhol do pré-vestibular</span></h3>
+                                <StaticImage src="../images/karolaraujo_uniletrinhas.jpeg" alt="Karol Araujo, Educadora da UniLetrinhas" />
+                                <h3>Karol Araujo <span>Educadora da UniLetrinhas</span></h3>
                             </div>
                         </div>
                     </Carousel.Item>
-                     {/* @todo pedi para Agatha o resto dos depoimentos - aguardando */}
                     <Carousel.Item>
                         <div className="container">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-
+                            <p>Dar aula na Uni pra mim é um dos melhores momentos da minha semana. 
+                                Ali eu aprendo sempre coisas novas com nossos alunos e posso colocar em prática o verdadeiro sentido de 
+                                uma educação libertária. A Uni pra mim é como uma metáfora de uma estrada para nossos sonhos. 
+                                Um caminho que apresenta novas perspectivas e possibilidades de mudança de vida. Depois de entrar pra Uni, 
+                                pude olhar com um carinho ainda maior pra realidade de dificuldades da favela, mas muito além disso, 
+                                pude ver de perto toda a potência que ela possui e produz.</p>
                             <div>
-                                <StaticImage src="../images/carina-almeida.png" alt="Carina Almeida" />
-                                <h3>Carina Almeida <span>aluna</span></h3>
+                                <StaticImage src="../images/vivianeoliveira_prevest.jpeg" alt="Viviane Oliveira, Educadora de História do pré-vestibular" />
+                                <h3>Viviane Oliveira <span>Educadora de História do pré-vestibular</span></h3>
                             </div>
                         </div>
                     </Carousel.Item>
@@ -181,7 +180,7 @@ const IndexPage = () => {
             <section id="section-parceiros">
                 <h2 className="text-center mb-5">Parceiros</h2>
                 <div className="container">
-                    {/* @todo essas logos devem estar linkadas para os sites dos parceiros */}
+                    {/* @todo essas logos devem estar linkadas para os sites dos parceiros. falta colocar FGV */}
                     <div className="row">
                         <div className="offset-3 col-2 text-center my-auto">
                             <img className="img-fluid" src={FreundeLogo} />
@@ -192,9 +191,18 @@ const IndexPage = () => {
                         <div className="col-2 text-center my-auto">
                             <img className="img-fluid" src={UFRJLogo} />
                         </div>
-                         {/* @todo colocar logo da Lis, ver se funcionou */}
+                    {/* @todo checar se as logos abaixo funcionaram */}
                         <div className="col-2 text-center my-auto">
                             <img className="img-fluid" src={lisLogo} />
+                        </div>
+                        <div className="col-2 text-center my-auto">
+                            <img className="img-fluid" src={logo_phi} />
+                        </div>
+                        <div className="col-2 text-center my-auto">
+                            <img className="img-fluid" src={logo_banana} />
+                        </div>
+                        <div className="col-2 text-center my-auto">
+                            <img className="img-fluid" src={logo_o3} />
                         </div>
                     </div>
                 </div>
