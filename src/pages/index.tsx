@@ -19,6 +19,12 @@ import FreundeLogo from "../images/parceiros/freunde-brasillianischer-strassenki
 import InvernoLogo from "../images/parceiros/inverno.png";
 import UFRJLogo from "../images/parceiros/ufrj.png";
 
+import LisLogo from "../images/parceiros/lis.png";
+import PhiLogo from "../images/parceiros/phi.png";
+import BananaLogo from "../images/parceiros/banana.png";
+import O3Logo from "../images/parceiros/o3.png";
+
+
 const IndexPage = () => {
     return (
         <Layout>
@@ -180,29 +186,27 @@ const IndexPage = () => {
             <section id="section-parceiros">
                 <h2 className="text-center mb-5">Parceiros</h2>
                 <div className="container">
-                    {/* @todo essas logos devem estar linkadas para os sites dos parceiros. falta colocar FGV */}
-                    <div className="row">
-                        <div className="offset-3 col-2 text-center my-auto">
-                            <img className="img-fluid" src={FreundeLogo} />
+                    <div className="row align-items-center justify-content-center">
+                        <div className="col-md-3 text-center my-auto">
+                            <a href="https://www.meninos.ch/" target="_blank"><img className="img-fluid" src={FreundeLogo} /></a>
                         </div>
-                        <div className="col-2 text-center my-auto">
-                            <img className="img-fluid" src={InvernoLogo} />
+                        <div className="col-md-3 text-center my-auto">
+                            <a href="https://www.invernoproducoes.com.br/" target="_blank"><img className="img-fluid" src={InvernoLogo} /></a>
                         </div>
-                        <div className="col-2 text-center my-auto">
-                            <img className="img-fluid" src={UFRJLogo} />
+                        <div className="col-md-3 text-center my-auto">
+                            <a href="https://ufrj.br/"><img className="img-fluid" src={UFRJLogo} /></a>
                         </div>
-                    {/* @todo checar se as logos abaixo funcionaram */}
-                        <div className="col-2 text-center my-auto">
-                            <img className="img-fluid" src={lisLogo} />
+                        <div className="col-md-3 text-center my-auto">
+                            <a href="https://lisconsulting.com.br/"><img className="img-fluid" src={LisLogo} /></a>
                         </div>
-                        <div className="col-2 text-center my-auto">
-                            <img className="img-fluid" src={logo_phi} />
+                        <div className="col-md-3 text-center my-auto">
+                            <a href="https://institutophi.org.br/"><img className="img-fluid w-50" src={PhiLogo} /></a>
                         </div>
-                        <div className="col-2 text-center my-auto">
-                            <img className="img-fluid" src={logo_banana} />
+                        <div className="col-md-3 text-center my-auto">
+                            <a href="https://bananabr.com/"><img className="img-fluid" src={BananaLogo} /></a>
                         </div>
-                        <div className="col-2 text-center my-auto">
-                            <img className="img-fluid" src={logo_o3} />
+                        <div className="col-md-3 text-center my-auto">
+                            <a href="https://o3educacao.com/"><img className="img-fluid" src={O3Logo} /></a>
                         </div>
                     </div>
                 </div>
