@@ -40,6 +40,11 @@ main[data-scope="parceiros"] {
 
       &>div:last-child {
         padding: $spacer;
+
+        h3 a {
+          color: white;
+          text-decoration: none;
+        }
       }
     }
   }
