@@ -38,6 +38,10 @@ nav {
   --bs-nav-link-color: white;
 }
 
+.navbar-toggler {
+  display: none;
+}
+
 #navbar {
   position: relative;
   padding-top: $spacer * 5;
@@ -47,16 +51,39 @@ nav {
   }
 
   .navbar-nav:nth-child(1) {
-    margin-right: $spacer * 8;
+    text-align: left;
+    margin-left: $spacer;
+    width: 50%;
+    @include media-breakpoint-up(sm) {
+      & {
+        margin-right: $spacer * 8;
+        width: auto;
+      }
+    }
   }
   .navbar-nav:nth-child(3) {
-    margin-left: $spacer * 8;
+    text-align: right;
+    margin-right: $spacer;
+    width: 50%;
+    @include media-breakpoint-up(sm) {
+      & {
+        margin-left: $spacer * 8;
+        width: auto;
+      }
+    }
   }
 
   a {
     color: white;
+    flex-grow: 1;
+    zoom: 0.6;
     &:link, &:visited, &:hover, &:active {
-        color: white;
+      color: white;
+    }
+    @include media-breakpoint-up(sm) {
+      & {
+        zoom: 1;
+      }
     }
   }
 }
@@ -130,7 +157,7 @@ footer {
             font-family: $bootstrap-icons-font;
             font-size: 3 * $spacer;
             line-height: 3 * $spacer;
-            left: calc(50% - 1em);
+            left: calc(50% - 1.5 * $spacer);
         }
     }
 

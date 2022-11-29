@@ -28,8 +28,10 @@ const IndexPage = () => {
   return (
     <Layout scope="index">
       <section className="row g-0">
-        <div className="col-6 offset-1 my-auto px-4">
-          <h1>UniFavela</h1>
+        <div className="col-12 col-md-6 offset-md-1 my-auto px-4">
+          <div className="mb-5 mt-5 mt-md-0">
+            <StaticImage src="../images/unifavela.png" alt="UniFavela" />
+          </div>
           <p className="text-muted">
             Somos uma Instituição Socioeducativa localizada no Complexo de Favelas da Maré no Rio de Janeiro.
             Oferecemos formação educacional e desenvolvimento sociocultural a todos os moradores do território,
@@ -37,13 +39,13 @@ const IndexPage = () => {
             direitos sociais e direitos humanos em territórios populares, proporcionando desenvolvimento e
             ascensão pessoal e profissional, tudo isso por meio da educação como prática da liberdade.
           </p>
-          <button className="btn btn-more btn-outline-primary mt-5">Mais sobre a Uni</button>
+          <button className="btn btn-more btn-outline-primary mt-5 mb-5 align-center">Mais sobre a Uni</button>
         </div>
-        <div className="col-5">
+        <div className="d-none d-md-block col-5">
           <StaticImage src="../images/hero.png" alt="UniFavela" />
         </div>
       </section>
-      <section className="bg-primary px-8 py-6">
+      <section className="bg-primary px-md-8 py-md-6">
         <YoutubeEmbed embedId="y4yhmymlouI" />
       </section>
       <section id="section-objetivos" className="pt-5 px-lg-8">
@@ -84,39 +86,42 @@ const IndexPage = () => {
       <section id="section-metricas">
         <div className="container">
           <div className="row">
-            <div className="offset-1 col-2">
+            <div className="offset-md-1 col-md-2 mt-5 mt-md-0">
               <HatIcon />
               <h3>+100<span> estudantes já passaram pela Uni</span></h3>
             </div>
-            <div className="col-2">
+            <div className="col-md-2 mt-5 mt-md-0">
               <CertificateIcon />
               <h3>+25<span> foram aprovados em universidades</span></h3>
             </div>
-            <div className="col-2">
+            <div className="col-md-2 mt-5 mt-md-0">
               <BookIcon />
               <h3>+700<span> crianças presenteadas com livros e brinquedos</span></h3>
             </div>
-            <div className="col-2">
+            <div className="col-md-2 mt-5 mt-md-0">
               <NarrativeIcon />
               <h3>+1<span> tonelada de alimentos doados para famílias da Maré</span></h3>
             </div>
-            {/* @todo trocar icone abaixo para pessoinhas */}
-            <div className="col-2">
+            <div className="col-md-2 mt-5 mt-md-0">
               <NarrativeIcon />
               <h3>+60<span> voluntários em nossa história</span></h3>
             </div>
           </div>
         </div>
       </section>
-      <section id="section-ods">
+      {/* <section id="section-ods">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
               <h2>ODS da ONU que contribuímos</h2>
             </div>
           </div>
-          <p></p>
-          {/* @todo falta um lugar pra colocar um paragrafo aqui antes das coisas */}
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
           <div className="row ods">
             <div className="offset-3 col-2">
               <StaticImage src="../images/ods-4.png" alt="ODS 4: Educação de qualidade" />
@@ -129,8 +134,8 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section id="section-depoimentos">
+      </section> */}
+      {/* <section id="section-depoimentos">
         <Carousel>
           <Carousel.Item>
             <div className="container">
@@ -144,7 +149,6 @@ const IndexPage = () => {
                 história sobre as favelas e os territórios favelados como um todo. Mostrar como os saberes populares são
                 relevantes e que a favela fala e deve falar pela favela (quem é cria fala pelos crias).</p>
               <div>
-                {/* @todo descobrir nome da prof */}
                 <StaticImage src="../images/dani-prof.png" alt="Daniele, ex-educadora de História do pré-vestibular" />
                 <h3>Daniele<span> Ex-educadora de História do pré-vestibular</span></h3>
               </div>
@@ -182,7 +186,7 @@ const IndexPage = () => {
             </div>
           </Carousel.Item>
         </Carousel>
-      </section>
+      </section> */}
       <section id="section-parceiros">
         <h2 className="text-center mb-5">Parceiros</h2>
         <div className="container">
@@ -216,24 +220,22 @@ const IndexPage = () => {
         <div className="container">
           {/* @todo eventualmente trocar por plugin */}
           <div className="row">
-            <div className="col-2 offset-3 my-auto">
+            <div className="col-6 col-md-3 offset-md-1 my-auto">
               <StaticImage alt="Novidades" src="https://www.instagram.com/p/CeHluXDJ7X4/media?size1" />
             </div>
-            <div className="col-2 my-auto">
+            <div className="col-6 col-md-3 my-auto">
               <StaticImage alt="Novidades" src="https://www.instagram.com/p/CePBe3UJ3Ot/media?size=l" />
             </div>
-            <div className="col-2 my-auto">
+            <div className="col-6 col-md-3 my-auto">
               <StaticImage alt="Novidades" src="https://www.instagram.com/p/Cd6VYVBJCJM/media?size=l" />
             </div>
-          </div>
-          <div className="row">
-            <div className="col-2 offset-3 my-auto">
+            <div className="col-6 col-md-3 offset-md-1 my-auto">
               <StaticImage alt="Novidades" src="https://www.instagram.com/p/CbvRSmUuanR/media?size=l" />
             </div>
-            <div className="col-2 my-auto">
+            <div className="col-6 col-md-3 my-auto">
               <StaticImage alt="Novidades" src="https://www.instagram.com/p/CeFET7vp85x/media?size=l" />
             </div>
-            <div className="col-2 my-auto">
+            <div className="col-6 col-md-3 my-auto">
               <StaticImage alt="Novidades" src="https://www.instagram.com/p/CT0Xe_uJ2-8/media?size=l" />
             </div>
           </div>
