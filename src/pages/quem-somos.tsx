@@ -176,11 +176,11 @@ export default () => {
       </section>
       <section id="section-reconhecimento">
         <h2>Reconhecimento</h2>
-        {/* @todo aqui dentro de cada parte de paragrafo tem que ter um titulo.*/}
         <Carousel>
           <Carousel.Item>
-            <div className="container">
-              <p>Prêmio Íbero-Americano em Educação e Direitos Humanos - OEI (2022)
+            <div className="container w-100 w-md-50">
+              <h3>Prêmio Íbero-Americano em Educação e Direitos Humanos - OEI (2022)</h3>
+              <p>
                 Finalistas na categoria educação não-formal no Prêmio Íbero-Americano em Educação e Direitos Humanos,
                 representando o Brasil.</p>
               <div>
@@ -190,8 +190,9 @@ export default () => {
             </div>
           </Carousel.Item>
           <Carousel.Item>
-            <div className="container">
-              <p>Prêmio Sim à Igualdade Racial - ID_BR (2022)
+            <div className="container w-100 w-md-50">
+              <h3>Prêmio Sim à Igualdade Racial - ID_BR (2022)</h3>
+              <p>
                 Vencedores da categoria Educação e Oportunidades no Prêmio Sim à Igualdade Racial do Instituto Identidades do Brasil.
               </p>
               <div>
@@ -201,8 +202,9 @@ export default () => {
             </div>
           </Carousel.Item>
           <Carousel.Item>
-            <div className="container">
-              <p>Edital 4G para Estudar - Instituto Nossas (2020)
+            <div className="container w-100 w-md-50">
+              <h3>Edital 4G para Estudar - Instituto Nossas (2020)</h3>
+              <p>
                 Em 2020, a UniFavela venceu o Edital 4G para Estudar, do Instituto Nossas.
                 Com esse incentivo, pudemos fornecer tablets e chips de internet para os nossos estudantes.
               </p>
@@ -213,10 +215,10 @@ export default () => {
               </div>
             </div>
           </Carousel.Item>
-          {/* @todo alguns não têm foto específica. preciso catar algo para substituir. */}
           <Carousel.Item>
-            <div className="container">
-              <p>Edital RUA- UFRJ (2019)
+            <div className="container w-100 w-md-50">
+              <h3>Edital RUA- UFRJ (2019)</h3>
+              <p>
                 Possibilitou que nos tornássemos um Projeto de Extensão da UFRJ.
                 Hoje, nossos voluntários estudantes da UFRJ recebem certificação e horas complementares.
               </p>
@@ -228,8 +230,9 @@ export default () => {
             </div>
           </Carousel.Item>
           <Carousel.Item>
-            <div className="container">
-              <p>Menção Honrosa na SIAC - UFRJ (2019)
+            <div className="container w-100 w-md-50">
+              <h3>Menção Honrosa na SIAC - UFRJ (2019)</h3>
+              <p>
                 A UniFavela recebeu uma menção honrosa na 10º Semana de Integração Acadêmica da UFRJ,
                 com um projeto de pesquisa sobre o nosso trabalho.
               </p>
@@ -241,8 +244,9 @@ export default () => {
             </div>
           </Carousel.Item>
           <Carousel.Item>
-            <div className="container">
-              <p>Prêmio Paulo Freire - ALERJ (2019)
+            <div className="container w-100 w-md-50">
+              <h3>Prêmio Paulo Freire - ALERJ (2019)</h3>
+              <p>
                 A UniFavela recebeu o prêmio Paulo Freire de direitos humanos, concedido pela ALERJ em 2019.
               </p>
 
