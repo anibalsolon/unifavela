@@ -40,9 +40,11 @@ $bootstrap-icons-font-src: #{url("#{$bootstrap-icons-font-file}.woff2?#{$bootstr
 @import "~bootstrap-icons/font/bootstrap-icons.scss";
 
 
-.card-grid {
-  grid-auto-rows: 1fr 1fr 1fr;
-  gap: $spacer * 4;
+@include media-breakpoint-up(md) {
+  .card-grid {
+    grid-auto-rows: 1fr 1fr 1fr;
+    gap: $spacer * 4;
+  }
 }
 
 // .card-grid > div:nth-child(3n - 1) {
@@ -81,6 +83,15 @@ $bootstrap-icons-font-src: #{url("#{$bootstrap-icons-font-file}.woff2?#{$bootstr
   font-size: 1.2 * $font-size-base;
   place-self: stretch;
   align-self: stretch;
+
+  margin-left: $spacer;
+  margin-right: $spacer;
+  @include media-breakpoint-up(md) {
+    & {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 
   &::before {
     content: "\f270";
