@@ -13,17 +13,13 @@ export default () => {
       <section id="section-hero" className="row g-0">
         <h1>Depoimentos</h1>
       </section>
-      <section className="bg-primary px-8 py-6">
+      {/* <section className="bg-primary px-8 py-6">
         <YoutubeEmbed embedId="y4yhmymlouI" />
       </section>
       <section className="bg-primary px-8 py-6">
         <YoutubeEmbed embedId="y4yhmymlouI" />
-      </section>
+      </section> */}
       <section id="section-depoimentos">
-
-        {/* @todo aqui vamos ter tres depoimentos em texto e tres em video. FALTA COLOCAR OS EM VÍDEO. 
-                Mas talvez não em carrossel e sim aparecendo um após o outro, intercalando vídeos e textos - vamos pensar juntos */}
-
         <div className="container">
           <p>A UniFavela é uma ferramenta de empoderamento e catalisadora de talentos,
             que busca estratégias e aplica o ensino à realidade do Complexo da Maré.

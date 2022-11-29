@@ -13,11 +13,11 @@ import { faBullseye, faEye, faHandsHolding } from '@fortawesome/free-solid-svg-i
 export default () => {
   return (
     <Layout scope="quem-somos">
-      <section id="section-hero" className="row g-0">
-        <div className="col-5">
+      <section id="section-hero" className="row mt-4 mt-md-0 g-0">
+        <div className="col-md-5 d-none d-md-block">
           <StaticImage src="../images/quem-somos.png" alt="UniFavela" />
         </div>
-        <div className="col-6 my-auto px-4">
+        <div className="col-md-6 my-auto px-4">
           <h1>Um pouco mais sobre a UniFavela</h1>
           <p className="text-muted">
             Somos uma instituição socioeducativa localizada no Complexo da Maré, com a missão de impulsionar jovens e adultos favelados
@@ -30,7 +30,7 @@ export default () => {
         <h2>Missão, Visão e Valores</h2>
         <div className="container">
           <div className="row">
-            <div className="offset-3 col-6 mt-5 mb-0">
+            <div className="offset-md-3 col-md-6 mt-5 mb-0">
               <h3>Por que somos?</h3>
               <p>
                 Sabemos que a realidade educacional brasileira não é favorável para população que se encontra na linha da pobreza.
@@ -41,7 +41,7 @@ export default () => {
             </div>
           </div>
           <div className="row my-5">
-            <div className="col-4 d-flex">
+            <div className="col-md-4 mt-4 mt-md-0 d-flex">
               <Card icon={faBullseye} className="align-self-stretch">
                 <h3>Missão</h3>
                 <p>
@@ -50,7 +50,7 @@ export default () => {
                 </p>
               </Card>
             </div>
-            <div className="col-4 d-flex">
+            <div className="col-md-4 mt-4 mt-md-0 d-flex">
               <Card icon={faEye} className="align-self-stretch">
                 <h3>Visão</h3>
                 <p>
@@ -60,7 +60,7 @@ export default () => {
                 </p>
               </Card>
             </div>
-            <div className="col-4 d-flex">
+            <div className="col-md-4 mt-4 mt-md-0 d-flex">
               <Card icon={faHandsHolding} className="align-self-stretch">
                 <h3>Valores</h3>
                 <p>
