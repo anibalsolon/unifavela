@@ -13,6 +13,7 @@ import LisLogo from "../images/parceiros/lis.png";
 import PhiLogo from "../images/parceiros/phi.png";
 import BananaLogo from "../images/parceiros/banana.png";
 import O3Logo from "../images/parceiros/o3.png";
+import FGVLogo from "../images/parceiros/fgv.png";
 import { Button } from "react-bootstrap";
 
 
@@ -127,7 +128,7 @@ export default () => {
         </div>
       </section>
 
-      <section id="section-parceiro" className="row g-0 mt-5">
+      {/* <section id="section-parceiro" className="row g-0 mt-5">
         <div className="offset-0 col-12 offset-md-1 col-md-5 my-auto px-4">
           <h1>Que tal também ser parceiro da UniFavela?</h1>
           <p className="text-muted">
@@ -141,7 +142,7 @@ export default () => {
         <div className="d-none d-md-block offset-md-1 col-md-5 text-right">
           <StaticImage src="../images/apoie.png" alt="UniFavela" />
         </div>
-      </section>
+      </section> */}
     </Layout>
   )
 }

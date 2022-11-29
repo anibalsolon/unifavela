@@ -3,7 +3,12 @@
 main[data-scope="quem-somos"] {
   #section-hero {
     h1 {
-      font-size: 4.5 * $font-size-base;
+      font-size: 2.5 * $font-size-base;
+      @include media-breakpoint-up(sm) {
+        & {
+          font-size: 4.5 * $font-size-base;
+        }
+      }
       color: $secondary;
       text-transform: uppercase;
       font-weight: 900;
@@ -107,6 +112,10 @@ main[data-scope="quem-somos"] {
       text-align: center;
       font-weight: 900;
       margin: 0;
+    }
+
+    .equipe {
+      cursor: pointer;
     }
 
     .carousel-indicators {
