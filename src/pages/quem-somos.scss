@@ -1,28 +1,32 @@
 @import "../header.scss";
 
-#section-hero {
+main[data-scope="quem-somos"] {
+  #section-hero {
     h1 {
-        font-size:7 * $font-size-base;
-        color: $secondary;
-        text-transform: uppercase;
-        font-weight: 900;
+      font-size: 4.5 * $font-size-base;
+      color: $secondary;
+      text-transform: uppercase;
+      font-weight: 900;
     }
-}
+    p {
+      font-size: 1.2 * $font-size-base;
+    }
+  }
 
-#section-missao {
+  #section-missao {
     h2 {
-        background: $secondary;
-        color: white;
-        padding: $spacer * 3;
-        text-align: center;
-        text-transform: none;
+      background: $secondary;
+      color: white;
+      padding: $spacer * 3;
+      text-align: center;
+      text-transform: none;
     }
 
     h3 {
-        color: $primary;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 900;
+      color: $primary;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 900;
     }
 
     .card {
@@ -38,7 +42,9 @@
       font-size: 1.2 * $font-size-base;
       place-self: center;
 
-      h3 { color: white; }
+      h3 {
+        color: white;
+      }
 
       .card-icon {
         position: absolute;
@@ -53,149 +59,175 @@
         z-index: -1;
       }
     }
-}
+  }
 
-#section-historia {
-  h2 {
+  #section-historia {
+    h2 {
       background: $primary-light;
       color: white;
       padding: 4 * $spacer;
       text-align: center;
       font-weight: 900;
       margin: 0;
-  }
-
-  .carousel-indicators {
-    position: relative;
-    background-color: $secondary-light;
-    margin: 0;
-  }
-  .carousel-indicators [data-bs-target] {
-    height: auto;
-    text-indent: 0;
-    color: #FFF;
-    width: auto;
-    border-radius: $spacer * 3;
-    padding: $spacer * 0.5 $spacer * 2;
-    font-size: $font-size-base * 1.15;
-    font-weight: 900;
-    background-color: $secondary-light;
-    opacity: 1;
-
-    &::before {
-      content: attr(aria-label);
     }
-    &.active {
-      background-color: $secondary;
+
+    .carousel-indicators {
+      position: relative;
+      background-color: $secondary-light;
+      margin: 0;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      height: auto;
+      text-indent: 0;
+      color: #FFF;
+      width: auto;
+      border-radius: $spacer * 3;
+      padding: $spacer * 0.5 $spacer * 2;
+      font-size: $font-size-base * 1.15;
+      font-weight: 900;
+      background-color: $secondary-light;
+      opacity: 1;
+
+      &::before {
+        content: attr(aria-label);
+      }
+
+      &.active {
+        background-color: $secondary;
+      }
     }
   }
-}
 
-#section-equipe {
-  h2 {
+  #section-equipe {
+    h2 {
       background: $primary-light;
       color: white;
       padding: 4 * $spacer;
       text-align: center;
       font-weight: 900;
       margin: 0;
-  }
-
-  .carousel-indicators {
-    position: relative;
-    background-color: $secondary-light;
-    margin: 0;
-  }
-  .carousel-indicators [data-bs-target] {
-    height: auto;
-    text-indent: 0;
-    color: #FFF;
-    width: auto;
-    border-radius: $spacer * 3;
-    padding: $spacer * 0.5 $spacer * 2;
-    font-size: $font-size-base * 1.15;
-    font-weight: 900;
-    background-color: $secondary-light;
-    opacity: 1;
-
-    &::before {
-      content: attr(aria-label);
     }
-    &.active {
-      background-color: $secondary;
+
+    .carousel-indicators {
+      position: relative;
+      background-color: $secondary-light;
+      margin: 0;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      height: auto;
+      text-indent: 0;
+      color: #FFF;
+      width: auto;
+      border-radius: $spacer * 3;
+      padding: $spacer * 0.5 $spacer * 2;
+      font-size: $font-size-base * 1.15;
+      font-weight: 900;
+      background-color: $secondary-light;
+      opacity: 1;
+
+      &::before {
+        content: attr(aria-label);
+      }
+
+      &.active {
+        background-color: $secondary;
+      }
     }
   }
-}
 
-#section-reconhecimento {
-  h2 {
+  #section-reconhecimento {
+    h2 {
       background: $primary-light;
       color: white;
       padding: 4 * $spacer;
       text-align: center;
       font-weight: 900;
       margin: 0;
-  }
-
-  .carousel-indicators {
-    position: relative;
-    background-color: $secondary-light;
-    margin: 0;
-  }
-  .carousel-indicators [data-bs-target] {
-    height: auto;
-    text-indent: 0;
-    color: #FFF;
-    width: auto;
-    border-radius: $spacer * 3;
-    padding: $spacer * 0.5 $spacer * 2;
-    font-size: $font-size-base * 1.15;
-    font-weight: 900;
-    background-color: $secondary-light;
-    opacity: 1;
-
-    &::before {
-      content: attr(aria-label);
     }
-    &.active {
-      background-color: $secondary;
+
+    .carousel-indicators {
+      position: relative;
+      background-color: $secondary-light;
+      margin: 0;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      height: auto;
+      text-indent: 0;
+      color: #FFF;
+      width: auto;
+      border-radius: $spacer * 3;
+      padding: $spacer * 0.5 $spacer * 2;
+      font-size: $font-size-base * 1.15;
+      font-weight: 900;
+      background-color: $secondary-light;
+      opacity: 1;
+
+      &::before {
+        content: attr(aria-label);
+      }
+
+      &.active {
+        background-color: $secondary;
+      }
+    }
+
+    .carousel-item {
+      padding: $spacer * 2;
+      width: 50%;
+      text-align: center;
     }
   }
-}
 
 
-#section-transparencia {
-  h2 {
+  #section-transparencia {
+
+    background: top no-repeat url(../images/transparencia.png);
+    background-size: 80% auto;
+
+    h2 {
       background: $secondary;
       color: white;
       padding: 4 * $spacer;
       text-align: center;
       font-weight: 900;
       margin: 0;
-  }
-
-  .carousel-indicators {
-    position: relative;
-    background-color: $secondary-light;
-    margin: 0;
-  }
-  .carousel-indicators [data-bs-target] {
-    height: auto;
-    text-indent: 0;
-    color: #FFF;
-    width: auto;
-    border-radius: $spacer * 3;
-    padding: $spacer * 0.5 $spacer * 2;
-    font-size: $font-size-base * 1.15;
-    font-weight: 900;
-    background-color: $secondary-light;
-    opacity: 1;
-
-    &::before {
-      content: attr(aria-label);
     }
-    &.active {
-      background-color: $secondary;
+
+    .main-card {
+      background: #FFFE;
+      padding: 4 * $spacer;
+      border-radius: $spacer;
+      border: $spacer solid $secondary-light;
+    }
+
+    .carousel-indicators {
+      position: relative;
+      background-color: $secondary-light;
+      margin: 0;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      height: auto;
+      text-indent: 0;
+      color: #FFF;
+      width: auto;
+      border-radius: $spacer * 3;
+      padding: $spacer * 0.5 $spacer * 2;
+      font-size: $font-size-base * 1.15;
+      font-weight: 900;
+      background-color: $secondary-light;
+      opacity: 1;
+
+      &::before {
+        content: attr(aria-label);
+      }
+
+      &.active {
+        background-color: $secondary;
+      }
     }
   }
 }

@@ -1,180 +1,49 @@
 @import "../header.scss";
 
-.btn {
-  --bs-btn-border-radius: #{$spacer * 2};
-}
 
-.btn.btn-more {
-  position: relative;
-  margin-left: 1.5 * $spacer;
+main[data-scope="depoimentos"] {
 
-  &::before {
-    content: "↓";
-    color: $secondary;
-    margin-left: -3 * $spacer;
-    display: block;
-    position: absolute;
-    top: -1.5 * $spacer;
-    font-size: 3 * $font-size-base;
-    font-weight: lighter;
-  }
-}
-
-.video-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%; 
-  position: relative;
-  height: 0;
-}
-
-.video-responsive iframe {
-  left: 10%;
-  top: 10%;
-  height: 80%;
-  width: 80%;
-  position: absolute;
-}
-
-#section-objetivos {
-  background: bottom no-repeat url(../images/objetivos.png);
-  background-size: 100% auto;
-  padding-bottom: 30vw;
-
-  .card-grid {
-    grid-auto-rows: 1fr 1fr 1fr;
-    gap: $spacer * 4;
-  }
-
-  // .card-grid > div:nth-child(3n - 1) {
-  //   grid-column: 5 / span 4
-  // }
-  // .card-grid > div:nth-child(3n + 1) {
-  //   grid-column: 1 / span 4
-  // }
-
-  .card-grid > div:last-child:nth-child(3n - 1) {
-    grid-column: 7 / span 4;
-  }
-  .card-grid > div:nth-last-child(2):nth-child(3n + 1) {
-    grid-column: 3 / span 4;
-  }
-
-  .card-grid > div:last-child:nth-child(3n - 2) {
-    grid-column: 5 / span 4;
-  }
-
-  .card-grid > div {
+  #section-hero {
+    background: url(../images/depoimentos-1.png), url(../images/depoimentos-2.png);
+    background-position: top left, top right;
+    background-size: contain, contain;
+    background-color: $secondary;
+    background-repeat: no-repeat;
+    min-height: 35vh;
     display: flex;
-    flex-direction: column;
-  }
+    align-items: center;
 
-  .card {
-    border-radius: $spacer;
-    background: $primary;
-    color: white;
-    padding: $spacer * 2 $spacer * 2;
-    text-align: center;
-    margin-top: 4 * $font-size-base;
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    font-size: 1.2 * $font-size-base;
-    place-self: center;
-
-    &::before {
-      content: "\f270";
-      font-family: $bootstrap-icons-font;
-      position: absolute;
-      top: -4 * $font-size-base;
-      left: $spacer;
-      right: $spacer;
-      background: $secondary;
-      border-radius: $spacer $spacer 0 0;
-      font-size: 3 * $font-size-base;
-      line-height: 3 * $font-size-base;
-      padding: 0.5 * $spacer 0;
-      z-index: -1;
-    }
-  }
-}
-
-#section-metricas {
-  background: $primary;
-  padding: $spacer * 8 0;
-  border-bottom: 1.5 * $spacer solid $primary-light;
-  text-align: center;
-
-  h3 {
-    color: white;
-    font-weight: 900;
-    font-size: 3 * $font-size-base;
-    padding-top: $spacer;
-
-    span {
-      display: block;
-      font-size: 1.5 * $font-size-base;
-      font-weight: 400;
-    }
-  }
-}
-
-#section-ods {
-  background: $secondary bottom no-repeat url(../images/ods.png);
-  background-size: 100% auto;
-  background-position: top center;
-  padding: $spacer * 8 0 $spacer * 8;
-  // height: 70vmin;
-
-  h2 {
-    color: white;
-    font-weight: 900;
-    font-size: 3 * $font-size-base;
-    padding-top: $spacer;
-  }
-
-  .ods {
-    margin-top: 40vmin;
-    --bs-gutter-x: #{$spacer};
-    --bs-gutter-y: #{$spacer};
-
-    &> div {
+    h1 {
+      font-size: 4 * $font-size-base;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 900;
       text-align: center;
-      background: rgba($secondary, 0.65);
-      padding-top: calc(var(--bs-gutter-y));
-      padding-bottom: calc(var(--bs-gutter-y));
-      padding-right: calc(var(--bs-gutter-x));
-      padding-left: calc(var(--bs-gutter-x));
-    }
-  }
-}
-
-#section-depoimentos {
-  background: $primary-light;
-
-  & > .carousel {
-    min-height: 50vh;
-    // display: flex;
-    // flex-direction: column;
-
-    & > .carousel-inner {
-      min-height: 50vh;
-      // flex-grow: 1;
-      // display: flex;
-      // flex-direction: column;
     }
   }
 
-  .carousel-control-prev, .carousel-control-next {
-    width: 8%;
+  .video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
   }
 
-  .carousel-item {
-    min-height: 50vh;
-    margin-top: 40px;
-    margin-bottom: 5px;
+  .video-responsive iframe {
+    left: 10%;
+    top: 10%;
+    height: 80%;
+    width: 80%;
+    position: absolute;
+  }
 
-    & > div {
+  #section-depoimentos {
+    background: $primary-light;
+    padding: $spacer * 2 0;
+
+    &>div {
       display: flex;
+      margin: $spacer * 2 auto 0;
 
       p {
         width: 70%;
@@ -197,7 +66,7 @@
         }
       }
 
-      & > div {
+      &>div {
         width: 30%;
         background: $secondary-light;
         display: flex;
@@ -234,40 +103,4 @@
       }
     }
   }
-}
-
-#section-parceiros {
-    margin: 4 * $spacer 0;
-    h2 {
-        margin-top: 4 * $spacer;
-        color: $secondary-light;
-        text-transform: none;
-
-        &::before {
-            content: " ";
-            width: 15 * $spacer;
-            border-top: 1px solid $primary;
-            display: inline-block;
-            margin-right: 2 * $spacer;
-            margin-bottom: 0.5 * $spacer;
-        }
-
-        &::after {
-            content: " ";
-            width: 15 * $spacer;
-            border-top: 1px solid $primary;
-            display: inline-block;
-            margin-left: 2 * $spacer;
-            margin-bottom: 0.5 * $spacer;
-        }
-    }
-}
-
-#section-novidades {
-    margin: 4 * $spacer 0;
-    h2 {
-        background: $primary;
-        color: white;
-        padding: 4 * $spacer;
-    }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import UnifavelaLogo from "../images/unifavela.secondary.svg";
+import UniFavelaLogo from "../images/unifavela.secondary.svg";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronUp } from '@fortawesome/free-solid-svg-icons';
@@ -29,7 +29,7 @@ export default () => {
                         </p>
                     </div>
                     <div className="offset-4 col-2">
-                        <UnifavelaLogo />
+                        <UniFavelaLogo />
                     </div>
                 </div>
             </div>

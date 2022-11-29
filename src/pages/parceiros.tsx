@@ -6,113 +6,87 @@ import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import Card from "../components/card";
 
+import FreundeLogo from "../images/parceiros/freunde-brasillianischer-strassenkinder.png";
+import InvernoLogo from "../images/parceiros/inverno.png";
+import UFRJLogo from "../images/parceiros/ufrj.png";
+import LisLogo from "../images/parceiros/lis.png";
+import PhiLogo from "../images/parceiros/phi.png";
+import BananaLogo from "../images/parceiros/banana.png";
+import O3Logo from "../images/parceiros/o3.png";
+import { Button } from "react-bootstrap";
+
+
 export default () => {
-    return (
-        <Layout>
-            <section id="section-hero" className="row g-0">
-                <div className="col-5">
-                    <StaticImage src="../images/quem-somos.png" alt="UniFavela" />
-                </div>
-                <div className="col-6 offset-1 my-auto px-4">
+  return (
+    <Layout scope="parceiros">
+      <section id="section-hero" className="row g-0">
+        <h1>Parceiros da UniFavela</h1>
+      </section>
+      <section id="section-parceiros">
+        <div className="container">
+          <div className="parceiro">
+            <div>
+              <img className="img-fluid" src={FreundeLogo} />
+            </div>
+            <div>
+              <h3>Meninos</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
 
-                    {/* @todo não é pra ser o mesmo layout dos projetos e ações não, é um tantinho diferente */}
-                    {/* @todo Meninos, Inverno, UFRJ, Lis Consulting, Banana, Instituto Phi, O3, FGV */}
-                    <h1>Projetos e Ações</h1>
-                </div>
-            </section>
-            <section id="section-missao">
-                <h2>Missão, Visão e Valores</h2>
-                <div className="container">
-                    <div className="row">
-                        <div className="offset-3 col-6 mt-5 mb-0">
-                            <h3>Lorem ipsum dolor sit amet</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                            </p>
-                            <p>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                                cupidatat non proident, sunt in culpa qui officia deserunt 
-                                mollit anim id est laborum.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="row my-5">
-                        <div className="col-4">
-                            <Card>
-                                <h3>Projeto</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                </p>
-                            </Card>
-                        </div>
-                        <div className="col-4">
-                            <Card>
-                                <h3>Projeto</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                </p>
-                            </Card>
-                        </div>
-                        <div className="col-4">
-                            <Card>
-                                <h3>Projeto</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                </p>
-                            </Card>
-                        </div>
-                        <div className="col-4">
-                            <Card>
-                                <h3>Projeto</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                </p>
-                            </Card>
-                        </div>
-                        <div className="col-4">
-                            <Card>
-                                <h3>Projeto</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                </p>
-                            </Card>
-                        </div>
-                        <div className="col-4">
-                            <Card>
-                                <h3>Projeto</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                </p>
-                            </Card>
-                        </div>
-                    </div>
-                </div>
+          <div className="parceiro">
+            <div>
+              <img className="img-fluid" src={InvernoLogo} />
+            </div>
+            <div>
+              <h3>Inverno Produções</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
 
-                {/* @todo no final desta página é para ter um parágrafo convidando as pessoas para serem parceiras PJ - aguardando conteúdo da Agatha  */}
+          <div className="parceiro">
+            <div>
+              <img className="img-fluid" src={UFRJLogo} />
+            </div>
+            <div>
+              <h3>Universidade Federal do Rio de Janeiro (UFRJ)</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
 
-            </section>
-          </Layout>
-    )
+    <section id="section-parceiro" className="row g-0 mt-5">
+      <div className="offset-0 col-12 offset-md-1 col-md-5 my-auto px-4">
+        <h1>Que tal também ser parceiro da UniFavela?</h1>
+        <p className="text-muted">
+          Somos uma instituição socioeducativa localizada no Complexo da Maré, com a missão de impulsionar jovens e adultos favelados
+          para que tenham acesso ao ensino superior. Através de uma educação libertária, oferecemos ferramentas para nossos estudantes
+          ocuparem espaços de produção de conhecimento.
+        </p>
+        <p>
+          <Button variant="secondary" size="lg">Apoiar</Button>
+        </p>
+      </div>
+      <div className="d-none d-md-block offset-md-1 col-md-5 text-right">
+        <StaticImage src="../images/apoie.png" alt="UniFavela" />
+      </div>
+    </section>
+    </Layout>
+  )
 }

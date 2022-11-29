@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 type CardProps = {
+  className?: string;
   children: React.ReactNode;
   icon?: IconDefinition;
 };
@@ -13,7 +14,7 @@ export default class Card extends React.Component<CardProps, CardState> {
   state: CardState = {};
   render() {
     return (
-      <div className="card">
+      <div className={`card ${this.props.className ?? ''}`}>
         { this.props.icon && (
             <div className="card-icon">
                 <FontAwesomeIcon icon={this.props.icon} />

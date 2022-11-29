@@ -1,203 +1,78 @@
 @import "../header.scss";
 
-#section-hero {
-    background-color: $primary;
-    border: 1px solid $secondary;
-    h1 {
-        font-size: 3 * $font-size-base;
-        color: $secondary;
-        text-transform: uppercase;
-        font-weight: 900;
-    }
-}
+main[data-scope="apoie"] {
+  #section-hero {
+    margin-top: $spacer * 2;
+    font-size: 1.2 * $font-size-base;
+  }
 
-#section-missao {
-    h2 {
-        background: $secondary;
-        color: white;
-        padding: $spacer * 3;
-        text-align: center;
-        text-transform: none;
-    }
-
+  #section-dados {
     h3 {
-        color: $primary;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 900;
+      color: $secondary;
     }
-
-    .card {
-      border-radius: $spacer;
-      background: $primary;
-      color: white;
-      padding: $spacer * 2 $spacer * 2;
-      text-align: center;
-      margin-top: 4 * $font-size-base;
-      flex-grow: 1;
+    .dados-box {
       display: flex;
-      justify-content: center;
-      font-size: 1.2 * $font-size-base;
-      place-self: center;
+      flex-direction: column;
 
-      h3 { color: white; }
+      p {
+        flex-grow: 1;
+        background: $primary-light;
+        border-radius: $spacer;
+        color: white;
+        text-align: center;
+        padding: $spacer;
+        font-size: 1.5 * $font-size-base;
 
-      .card-icon {
-        position: absolute;
-        top: -4 * $font-size-base;
-        left: $spacer;
-        right: $spacer;
-        background: $secondary;
-        border-radius: $spacer $spacer 0 0;
-        font-size: 3 * $font-size-base;
-        line-height: 3 * $font-size-base;
-        padding: 0.5 * $spacer 0;
-        z-index: -1;
+        * { color: white; }
       }
     }
-}
 
-#section-historia {
-  h2 {
-      background: $primary-light;
-      color: white;
-      padding: 4 * $spacer;
+    .quote {
       text-align: center;
-      font-weight: 900;
-      margin: 0;
-  }
 
-  .carousel-indicators {
-    position: relative;
-    background-color: $secondary-light;
-    margin: 0;
-  }
-  .carousel-indicators [data-bs-target] {
-    height: auto;
-    text-indent: 0;
-    color: #FFF;
-    width: auto;
-    border-radius: $spacer * 3;
-    padding: $spacer * 0.5 $spacer * 2;
-    font-size: $font-size-base * 1.15;
-    font-weight: 900;
-    background-color: $secondary-light;
-    opacity: 1;
 
-    &::before {
-      content: attr(aria-label);
-    }
-    &.active {
-      background-color: $secondary;
-    }
-  }
-}
+      p:first-child {
+        font-weight: lighter;
+        font-size: 1.5 * $font-size-base;
 
-#section-equipe {
-  h2 {
-      background: $primary-light;
-      color: white;
-      padding: 4 * $spacer;
-      text-align: center;
-      font-weight: 900;
-      margin: 0;
-  }
+        &::before {
+          text-align: left;
+          content: "\F6B0";
+          font-family: $bootstrap-icons-font;
+          font-size: 4 * $font-size-base;
+          color: $secondary-light;
+          display: block;
+          opacity: 0.5;
 
-  .carousel-indicators {
-    position: relative;
-    background-color: $secondary-light;
-    margin: 0;
-  }
-  .carousel-indicators [data-bs-target] {
-    height: auto;
-    text-indent: 0;
-    color: #FFF;
-    width: auto;
-    border-radius: $spacer * 3;
-    padding: $spacer * 0.5 $spacer * 2;
-    font-size: $font-size-base * 1.15;
-    font-weight: 900;
-    background-color: $secondary-light;
-    opacity: 1;
+          margin-left: -5rem;
+          margin-bottom: -3 * $spacer;
+        }
 
-    &::before {
-      content: attr(aria-label);
-    }
-    &.active {
-      background-color: $secondary;
+        &::after {
+          text-align: left;
+          content: "\f6b0";
+          font-family: bootstrap-icons;
+          font-size: 4rem;
+          color: #ffbb33;
+          display: block;
+          opacity: 0.5;
+
+          margin-right: -4rem;
+          transform: rotate(180deg);
+          margin-top: -3rem;
+        }
+      }
+      p:last-child {
+        color: $primary;
+        font-weight: bold;
+        font-size: 1.2 * $font-size-base;
+
+        span {
+          font-size: 1 * $font-size-base;
+          display: block;
+        }
+      }
     }
   }
-}
 
-#section-reconhecimento {
-  h2 {
-      background: $primary-light;
-      color: white;
-      padding: 4 * $spacer;
-      text-align: center;
-      font-weight: 900;
-      margin: 0;
-  }
-
-  .carousel-indicators {
-    position: relative;
-    background-color: $secondary-light;
-    margin: 0;
-  }
-  .carousel-indicators [data-bs-target] {
-    height: auto;
-    text-indent: 0;
-    color: #FFF;
-    width: auto;
-    border-radius: $spacer * 3;
-    padding: $spacer * 0.5 $spacer * 2;
-    font-size: $font-size-base * 1.15;
-    font-weight: 900;
-    background-color: $secondary-light;
-    opacity: 1;
-
-    &::before {
-      content: attr(aria-label);
-    }
-    &.active {
-      background-color: $secondary;
-    }
-  }
-}
-
-
-#section-transparencia {
-  h2 {
-      background: $secondary;
-      color: white;
-      padding: 4 * $spacer;
-      text-align: center;
-      font-weight: 900;
-      margin: 0;
-  }
-
-  .carousel-indicators {
-    position: relative;
-    background-color: $secondary-light;
-    margin: 0;
-  }
-  .carousel-indicators [data-bs-target] {
-    height: auto;
-    text-indent: 0;
-    color: #FFF;
-    width: auto;
-    border-radius: $spacer * 3;
-    padding: $spacer * 0.5 $spacer * 2;
-    font-size: $font-size-base * 1.15;
-    font-weight: 900;
-    background-color: $secondary-light;
-    opacity: 1;
-
-    &::before {
-      content: attr(aria-label);
-    }
-    &.active {
-      background-color: $secondary;
-    }
-  }
 }

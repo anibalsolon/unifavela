@@ -1,201 +1,44 @@
 @import "../header.scss";
 
-#section-hero {
-    h1 {
-        font-size: 6 * $font-size-base;
-        color: $secondary;
-        text-transform: uppercase;
-        font-weight: 900;
-    }
-}
 
-#section-missao {
+main[data-scope="projetos-e-acoes"] {
+  #section-hero {
+    h1 {
+      font-size: 4 * $font-size-base;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    background: url(../images/projetos-e-acoes-1.png), url(../images/projetos-e-acoes-2.png);
+    background-position: top left, top right;
+    background-size: contain, contain;
+    background-color: $secondary;
+    background-repeat: no-repeat;
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+  }
+
+  #section-projetos {
     h2 {
-        background: $secondary;
-        color: white;
-        padding: $spacer * 3;
-        text-align: center;
-        text-transform: none;
+      background: $secondary;
+      color: white;
+      padding: $spacer * 3;
+      text-align: center;
+      text-transform: none;
     }
 
     h3 {
-        color: $primary;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 900;
-    }
-
-    .card {
-      border-radius: $spacer;
-      background: $primary;
-      color: white;
-      padding: $spacer * 2 $spacer * 2;
+      color: $primary;
       text-align: center;
-      margin-top: 4 * $font-size-base;
-      flex-grow: 1;
-      display: flex;
-      justify-content: center;
-      font-size: 1.2 * $font-size-base;
-      place-self: center;
-
-      h3 { color: white; }
-
-      .card-icon {
-        position: absolute;
-        top: -4 * $font-size-base;
-        left: $spacer;
-        right: $spacer;
-        background: $secondary;
-        border-radius: $spacer $spacer 0 0;
-        font-size: 3 * $font-size-base;
-        line-height: 3 * $font-size-base;
-        padding: 0.5 * $spacer 0;
-        z-index: -1;
-      }
-    }
-}
-
-#section-historia {
-  h2 {
-      background: $primary-light;
-      color: white;
-      padding: 4 * $spacer;
-      text-align: center;
+      text-transform: uppercase;
       font-weight: 900;
-      margin: 0;
-  }
-
-  .carousel-indicators {
-    position: relative;
-    background-color: $secondary-light;
-    margin: 0;
-  }
-  .carousel-indicators [data-bs-target] {
-    height: auto;
-    text-indent: 0;
-    color: #FFF;
-    width: auto;
-    border-radius: $spacer * 3;
-    padding: $spacer * 0.5 $spacer * 2;
-    font-size: $font-size-base * 1.15;
-    font-weight: 900;
-    background-color: $secondary-light;
-    opacity: 1;
-
-    &::before {
-      content: attr(aria-label);
     }
-    &.active {
-      background-color: $secondary;
-    }
-  }
-}
 
-#section-equipe {
-  h2 {
-      background: $primary-light;
+    .card h3 {
       color: white;
-      padding: 4 * $spacer;
-      text-align: center;
-      font-weight: 900;
-      margin: 0;
-  }
-
-  .carousel-indicators {
-    position: relative;
-    background-color: $secondary-light;
-    margin: 0;
-  }
-  .carousel-indicators [data-bs-target] {
-    height: auto;
-    text-indent: 0;
-    color: #FFF;
-    width: auto;
-    border-radius: $spacer * 3;
-    padding: $spacer * 0.5 $spacer * 2;
-    font-size: $font-size-base * 1.15;
-    font-weight: 900;
-    background-color: $secondary-light;
-    opacity: 1;
-
-    &::before {
-      content: attr(aria-label);
-    }
-    &.active {
-      background-color: $secondary;
-    }
-  }
-}
-
-#section-reconhecimento {
-  h2 {
-      background: $primary-light;
-      color: white;
-      padding: 4 * $spacer;
-      text-align: center;
-      font-weight: 900;
-      margin: 0;
-  }
-
-  .carousel-indicators {
-    position: relative;
-    background-color: $secondary-light;
-    margin: 0;
-  }
-  .carousel-indicators [data-bs-target] {
-    height: auto;
-    text-indent: 0;
-    color: #FFF;
-    width: auto;
-    border-radius: $spacer * 3;
-    padding: $spacer * 0.5 $spacer * 2;
-    font-size: $font-size-base * 1.15;
-    font-weight: 900;
-    background-color: $secondary-light;
-    opacity: 1;
-
-    &::before {
-      content: attr(aria-label);
-    }
-    &.active {
-      background-color: $secondary;
-    }
-  }
-}
-
-
-#section-transparencia {
-  h2 {
-      background: $secondary;
-      color: white;
-      padding: 4 * $spacer;
-      text-align: center;
-      font-weight: 900;
-      margin: 0;
-  }
-
-  .carousel-indicators {
-    position: relative;
-    background-color: $secondary-light;
-    margin: 0;
-  }
-  .carousel-indicators [data-bs-target] {
-    height: auto;
-    text-indent: 0;
-    color: #FFF;
-    width: auto;
-    border-radius: $spacer * 3;
-    padding: $spacer * 0.5 $spacer * 2;
-    font-size: $font-size-base * 1.15;
-    font-weight: 900;
-    background-color: $secondary-light;
-    opacity: 1;
-
-    &::before {
-      content: attr(aria-label);
-    }
-    &.active {
-      background-color: $secondary;
     }
   }
 }

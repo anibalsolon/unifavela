@@ -24,7 +24,7 @@ const config: GatsbyConfig = {
       options: {
         sassOptions: {
           precision: 6
-        }
+        },
       }
     },
     {
