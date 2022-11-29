@@ -107,6 +107,25 @@ $bootstrap-icons-font-src: #{url("#{$bootstrap-icons-font-file}.woff2?#{$bootstr
     padding: 0.5 * $spacer 0;
     z-index: 1;
   }
+
+  &.custom-icon::before {
+    content: "\a0";
+  }
+
+  &.custom-icon {
+    .card-icon {
+      position: absolute;
+      top: -4.5 * $spacer;
+      left: 2 * $spacer;
+      z-index: 2;
+      img, svg {
+        width: $spacer * 5;
+        height: $spacer * 5;
+        margin-left: $spacer;
+        border: 0.25 * $spacer solid #FFAA00;
+      }
+    }
+  }
 }
 
 .carousel-indicators [data-bs-target] {

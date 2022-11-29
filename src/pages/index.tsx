@@ -22,7 +22,11 @@ import LisLogo from "../images/parceiros/lis.png";
 import PhiLogo from "../images/parceiros/phi.png";
 import BananaLogo from "../images/parceiros/banana.png";
 import O3Logo from "../images/parceiros/o3.png";
+import FGVLogo from "../images/parceiros/fgv.png";
 
+import ODS4 from "../images/ods-4.svg";
+import ODS8 from "../images/ods-8.svg";
+import ODS10 from "../images/ods-10.svg";
 
 const IndexPage = () => {
   return (
@@ -109,7 +113,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      {/* <section id="section-ods">
+      <section id="section-ods">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -117,21 +121,21 @@ const IndexPage = () => {
             </div>
           </div>
           <p>Os Objetivos de Desenvolvimento Sustentável (ODS) pensados pela ONU - Organização das Nações Unidas - são uma chamada global à ação para a concretização dos direitos humanos de todos. Esses objetivos buscam o equilíbrio entre as dimensões econômica, social e ambiental. A UniFavela compactua com a busca por esse desenvolvimento sustentável global e, por isso, está comprometida através dos nossos projetos e ações . Os principais ODSs que nos relacionamos são:</p>
-          <div className="row ods">
-            <div className="offset-3 col-2">
-              <StaticImage src="../images/ods-4.png" alt="ODS 4: Educação de qualidade" />
+          <div className="row ods justify-content-center">
+            <div className="col-3">
+              <ODS4 alt="ODS 4: Educação de qualidade" />
             </div>
-            <div className="col-2">
-              <StaticImage src="../images/ods-8.png" alt="ODS 8: Trabalho decente e crescimento econômico" />
+            <div className="col-3">
+              <ODS8 alt="ODS 8: Trabalho decente e crescimento econômico" />
             </div>
-            <div className="col-2">
-              <StaticImage src="../images/ods-10.png" alt="ODS 10: Redução das desigualdades" />
+            <div className="col-3">
+              <ODS10 alt="ODS 10: Redução das desigualdades" />
             </div>
           </div>
         </div>
-      </section> */}
-      {/* <section id="section-depoimentos">
-        <Carousel>
+      </section>
+      <section id="section-depoimentos">
+        <Carousel interval={null}>
           <Carousel.Item>
             <div className="container">
               <p>A importância da UniFavela para o território Maré(ense) é uma das possibilidades de mostrar
@@ -181,7 +185,7 @@ const IndexPage = () => {
             </div>
           </Carousel.Item>
         </Carousel>
-      </section> */}
+      </section>
       <section id="section-parceiros">
         <h2 className="text-center mb-5">Parceiros</h2>
         <div className="container">

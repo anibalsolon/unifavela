@@ -77,13 +77,10 @@ export default () => {
           </div>
         </div>
       </section>
+{/* 
       <section id="section-historia">
-
-        {/* @todo pedi para a agaha as imagens e os conteudos para termos tudo certinho */}
-        {/* @todo aqui é para ir de 2018 até 2022, ta só de 2020 pra frente */}
-
         <h2>História</h2>
-        <Carousel indicatorLabels={['2020', '2021', '2022']} interval={null}>
+        <Carousel indicatorLabels={['2018', '2019', '2020', '2021', '2022']} interval={null} prevIcon={null} nextIcon={null}>
           <Carousel.Item>
             <div className="container">
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -120,7 +117,7 @@ export default () => {
             </div>
           </Carousel.Item>
         </Carousel>
-      </section>
+      </section> */}
 
       {/* @todo essa seção tem que começar com um parágrafo e depois a imagem do organograma, 
             que vai ser clicável para abrir um modal explicando cada setor. só ajeita a imagem agora, deixa o clicável pra depois.
@@ -128,9 +125,15 @@ export default () => {
       <section id="section-equipe">
 
         <h2>Organograma</h2>
-        <p className="mt-5">
-        Para que a UniFavela consiga atuar de forma organizada e eficiente é necessário ter uma divisão de tarefas bem estruturada. Por isso, na Uni existem setores essenciais nessa construção. Os setores são:
-        </p>
+        <div className="container">
+          <div className="row">
+            <div className="offset-1 col-10">
+              <p className="mt-5">
+              Para que a UniFavela consiga atuar de forma organizada e eficiente é necessário ter uma divisão de tarefas bem estruturada. Por isso, na Uni existem setores essenciais nessa construção. Os setores são:
+              </p>
+            </div>
+          </div>
+        </div>
 
         <p className="text-center">
           <StaticImage src="../images/unifavela-organograma.png" alt="Organograma" />

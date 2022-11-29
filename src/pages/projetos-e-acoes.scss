@@ -37,8 +37,20 @@ main[data-scope="projetos-e-acoes"] {
       font-weight: 900;
     }
 
-    .card h3 {
-      color: white;
+    .card {
+      background: $primary-light;
+
+      h3 {
+        color: white;
+      }
+
+      div:last-child {
+        bottom: 0;
+        border-radius: 0 0 $spacer $spacer;
+        margin-bottom: -2 * $spacer;
+        margin-left: -2 * $spacer;
+        margin-right: -2 * $spacer;
+      }
     }
   }
 }
