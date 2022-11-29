@@ -1,11 +1,11 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
-  pathPrefix: `/unifavela`,
+  pathPrefix: `/`,
 
   siteMetadata: {
     title: `UniFavela`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://unifavela.com.br`,
     navbar: [
       { name: "Home", path: "/", side: "left" },
       { name: "Quem Somos", path: "/quem-somos", side: "left" },
