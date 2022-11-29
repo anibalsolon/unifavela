@@ -14,6 +14,7 @@ import HatIcon from "../images/icon-hat.svg";
 import BookIcon from "../images/icon-book.svg";
 import CertificateIcon from "../images/icon-certificate.svg";
 import NarrativeIcon from "../images/icon-narrative.svg";
+import PeopleIcon from "../images/icon-people.png";
 
 import FreundeLogo from "../images/parceiros/freunde-brasillianischer-strassenkinder.png";
 import InvernoLogo from "../images/parceiros/inverno.png";
@@ -107,7 +108,7 @@ const IndexPage = () => {
               <h3>+1<span> tonelada de alimentos doados para famílias da Maré</span></h3>
             </div>
             <div className="col-md-2 mt-5 mt-md-0">
-              <NarrativeIcon />
+              <img className="img-fluid px-5" src={PeopleIcon} />
               <h3>+60<span> voluntários em nossa história</span></h3>
             </div>
           </div>
@@ -217,10 +218,9 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      <section id="section-novidades">
+      {/* <section id="section-novidades">
         <h2 className="text-center mb-5">Fique por dentro das novidades</h2>
         <div className="container">
-          {/* @todo eventualmente trocar por plugin */}
           <div className="row">
             <div className="col-6 col-md-3 offset-md-1 my-auto">
               <StaticImage alt="Novidades" src="https://www.instagram.com/p/CeHluXDJ7X4/media?size1" />
@@ -242,7 +242,7 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </Layout>
   )
 }

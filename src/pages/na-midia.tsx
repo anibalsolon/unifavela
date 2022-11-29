@@ -14,7 +14,10 @@ export default () => {
       <section id="section-hero" className="row g-0">
         <h1>Na Mídia</h1>
       </section>
-      <section className="section-year">
+      <section>
+        <p className="text-center my-5" style={{fontSize: '3rem'}}> Em construção! </p>
+      </section>
+      {/* <section className="section-year">
         <h2>2022</h2>
         <Carousel>
           <Carousel.Item>
@@ -361,7 +364,7 @@ export default () => {
             </Stack>
           </Carousel.Item>
         </Carousel>
-      </section>
+      </section> */}
     </Layout>
   )
 }
