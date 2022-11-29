@@ -46,7 +46,7 @@ const IndexPage = () => {
           </p>
           <button className="btn btn-more btn-outline-primary mt-5 mb-5 align-center">Mais sobre a Uni</button>
         </div>
-        <div className="d-none d-md-block col-5">
+        <div className="d-none d-md-block col-5 text-end">
           <StaticImage src="../images/hero.png" alt="UniFavela" />
         </div>
       </section>

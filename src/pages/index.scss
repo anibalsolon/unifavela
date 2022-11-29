@@ -66,7 +66,7 @@ main[data-scope="index"] {
   #section-ods {
     background: $secondary bottom no-repeat url(../images/ods.png);
     background-size: 100% auto;
-    background-position: top center;
+    background-position: bottom center;
     padding: $spacer * 8 0 $spacer * 8;
     // height: 70vmin;
 
@@ -75,6 +75,10 @@ main[data-scope="index"] {
       font-weight: 900;
       font-size: 3 * $font-size-base;
       padding-top: $spacer;
+      text-shadow: -2px 2px 4px $primary,
+                    2px 2px 4px $primary,
+                    2px -2px 0 $primary,
+                    -2px -2px 0 $primary;
     }
 
     p {

@@ -139,7 +139,7 @@ export default () => {
             <Button variant="secondary" size="lg">Apoiar</Button>
           </p>
         </div>
-        <div className="d-none d-md-block offset-md-1 col-md-5 text-right">
+        <div className="d-none d-md-block offset-md-1 col-md-5 text-end">
           <StaticImage src="../images/apoie.png" alt="UniFavela" />
         </div>
       </section> */}
