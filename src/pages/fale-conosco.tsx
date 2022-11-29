@@ -11,16 +11,7 @@ export default () => {
         <div className="col-4 offset-2 my-auto px-4">
           <h1>Fale Conosco</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          A UniFavela não tem o prefixo Uni à toa: aqui a união faz de verdade a força! A sua ajuda pode tornar nossas ações mais potentes dentro das 16 favelas da Maré. Topa em nos ajudar de alguma forma em busca de uma sociedade mais justa? É só entrar em contato através do formulário:
           </p>
         </div>
         <div className="col-4">

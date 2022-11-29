@@ -21,8 +21,7 @@ export default () => {
       </section>
       <section id="section-depoimentos">
 
-        {/* @todo aqui vamos ter tres depoimentos em texto e tres em video. FALTA COLOCAR OS EM VÍDEO. 
-                Mas talvez não em carrossel e sim aparecendo um após o outro, intercalando vídeos e textos - vamos pensar juntos */}
+        {/* @todo falta colocar os depoimentos em vídeo. colocar depois) */}
 
         <div className="container">
           <p>A UniFavela é uma ferramenta de empoderamento e catalisadora de talentos,

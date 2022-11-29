@@ -16,6 +16,9 @@ export default () => {
         <div className="container">
           <div className="row">
             <div className="offset-3 col-6 mt-5 mb-0">
+
+              {/* @todos precisa colocar imagem do projeto e as ODS. 4 e 8 */}
+
               <h3>Pré-vestibular UniFavela</h3>
               <p>
                 O Pré-vestibular social da UniFavela tem como objetivo popularizar o ensino no Complexo da Maré,
@@ -29,6 +32,7 @@ export default () => {
           <div className="row my-5">
             <div className="col-4 d-flex">
               <Card>
+              {/* @todos precisa colocar imagem do projeto e as ODS. 4 */}
                 <h3>UniLetrinhas</h3>
                 <p>
                   Projeto que visa a construção da leitura e escrita nos anos iniciais do ensino fundamental para as
@@ -40,6 +44,7 @@ export default () => {
               </Card>
             </div>
             <div className="col-4 d-flex">
+            {/* @todos precisa colocar imagem do projeto e as ODS. 10 */}
               <Card>
                 <h3>Bolsa Carolina de Jesus</h3>
                 <p>
@@ -51,6 +56,7 @@ export default () => {
             </div>
             <div className="col-4 d-flex">
               <Card>
+              {/* @todos precisa colocar imagem do projeto e as ODS. 4 */}
                 <h3>Brinque Leitura</h3>
                 <p>
                   O projeto foca em estimular o hábito de leitura nas crianças, doando livros e brinquedos
@@ -60,6 +66,7 @@ export default () => {
               </Card>
             </div>
             <div className="col-4 d-flex">
+            {/* @todos precisa colocar imagem do projeto e as ODS. 2 e 10 */}
               <Card>
                 <h3>Maré de Natal</h3>
                 <p>
@@ -69,30 +76,16 @@ export default () => {
                 </p>
               </Card>
             </div>
-            {/* @todo esperando texto agatha  */}
             <div className="col-4 d-flex">
+            {/* @todos precisa colocar imagem do projeto e as ODS. 4 */}
               <Card>
                 <h3>Ciclo de Formação UniFavela</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                O Ciclo de Formação ocorreu no final de 2020 e teve como tema “Diálogos sobre Educação Popular”. O evento online contou com 4 palestras sobre os assuntos que perpassam a educação popular. Os convidados foram: Bruna Damiana falando sobre “Educação Popular e Tecnologias: pontos para reflexão”; Vanessa de Andrade com o tema “Educação popular e a representatividade negra nos espaços acadêmicos”; Eduardo Coelho sobre o assunto “Educação popular na cultura e arte brasileira; João Camillo com o tema “Educação popular: da conscientização à biointeração | Paulo Freire e Nêgo Bispo como pensadores da educação. 
                 </p>
               </Card>
             </div>
-            {/* @todo este aqui vai depender de ganharmos um edital. o resultado sai dia 04 de novembro.  */}
-            <div className="col-4 d-flex">
-              <Card>
-                <h3>Bolsa bell hooks</h3>{/* manter bell hooks em minúsculo */}
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </Card>
-            </div>
+           
           </div>
         </div>
       </section>
