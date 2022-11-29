@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./quem-somos.scss";
 
@@ -6,11 +6,15 @@ import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 
 import Card from "../components/card";
+import { Modal } from "react-bootstrap";
 import Carousel from 'react-bootstrap/Carousel';
 
 import { faBullseye, faEye, faHandsHolding } from '@fortawesome/free-solid-svg-icons';
 
 export default () => {
+  
+  const [modal, setModal] = useState(null);
+
   return (
     <Layout scope="quem-somos">
       <section id="section-hero" className="row mt-4 mt-md-0 g-0">
@@ -122,53 +126,197 @@ export default () => {
             que vai ser clicável para abrir um modal explicando cada setor. só ajeita a imagem agora, deixa o clicável pra depois.
         na equipe, preciso que exista como clicar e mostrar a pop-up com a bio*/}
       <section id="section-equipe">
+
+        <h2>Organograma</h2>
+        <p className="mt-5">
+        Para que a UniFavela consiga atuar de forma organizada e eficiente é necessário ter uma divisão de tarefas bem estruturada. Por isso, na Uni existem setores essenciais nessa construção. Os setores são:
+        </p>
+
+        <p className="text-center">
+          <StaticImage src="../images/unifavela-organograma.png" alt="Organograma" />
+        </p>
+
         <h2>Equipe</h2>
         <div className="container">
           <div className="row">
             <div className="offset-1 col-10">
-              <p className="mt-5">
-              Para que a UniFavela consiga atuar de forma organizada e eficiente é necessário ter uma divisão de tarefas bem estruturada. Por isso, na Uni existem setores essenciais nessa construção. Os setores são:
-              </p>
-
-              <StaticImage className="w-50" src="../images/unifavela-organograma.png" alt="Organograma UniFavela" />
-
               <div className="row">
-                <div className="col-4 offset-4 text-center pt-5">
+                <div className="col-4 offset-4 text-center pt-5 equipe" onClick={() => setModal('laerte')}>
                   <StaticImage width={227} height={227} imgClassName="rounded-5" src="../images/laerte-presidente.jpg" alt="Laerte Breno" />
                   <h3>Laerte Breno</h3>
                   <p>Fundador e Presidente</p>
+                  
+                  <Modal
+                    show={modal === 'laerte'}
+                    onHide={() => setModal(null)}
+                    size="lg"
+                    centered
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="contained-modal-title-vcenter">
+                        Laerte Breno
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                      <p>
+                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+                        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+                        consectetur ac, vestibulum at eros.
+                      </p>
+                    </Modal.Body>
+                  </Modal>
                 </div>
               </div>
               <div className="row py-5">
-                <div className="col-4 text-center">
+                <div className="col-4 text-center equipe" onClick={() => setModal('bruna')}>
                   <StaticImage width={227} height={227} imgClassName="rounded-5" src="../images/bruna-desenvolvimento.png" alt="Bruna Damiana" />
                   <h3>Bruna Heinsfeld</h3>
                   <p>Desenvolvimento Institucional</p>
+                  
+                  <Modal
+                    show={modal === 'bruna'}
+                    onHide={() => setModal(null)}
+                    size="lg"
+                    centered
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="contained-modal-title-vcenter">
+                        Bruna Heinsfeld
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                      <p>
+                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+                        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+                        consectetur ac, vestibulum at eros.
+                      </p>
+                    </Modal.Body>
+                  </Modal>
                 </div>
-                <div className="col-4 text-center">
+                <div className="col-4 text-center equipe" onClick={() => setModal('agatha')}>
                   <StaticImage width={227} height={227} imgClassName="rounded-5" src="../images/agatha-comunicacao.jpg" alt="Agatha Puche" />
                   <h3>Agatha Puche</h3>
                   <p>Comunicação Institucional</p>
+                  
+                  <Modal
+                    show={modal === 'agatha'}
+                    onHide={() => setModal(null)}
+                    size="lg"
+                    centered
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="contained-modal-title-vcenter">
+                        Agatha Puche
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                      <p>
+                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+                        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+                        consectetur ac, vestibulum at eros.
+                      </p>
+                    </Modal.Body>
+                  </Modal>
                 </div>
-                <div className="col-4 text-center">
+                <div className="col-4 text-center equipe" onClick={() => setModal('gisele')}>
                   <StaticImage width={227} height={227} imgClassName="rounded-5" src="../images/gisele-patrimonio.jpg" alt="Gisele Lima" />
                   <h3>Gisele Lima</h3>
                   <p>Gestão de Patrimônio</p>
+                  
+                  <Modal
+                    show={modal === 'gisele'}
+                    onHide={() => setModal(null)}
+                    size="lg"
+                    centered
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="contained-modal-title-vcenter">
+                        Gisele Lima
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                      <p>
+                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+                        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+                        consectetur ac, vestibulum at eros.
+                      </p>
+                    </Modal.Body>
+                  </Modal>
                 </div>
-                <div className="col-4 text-center">
+                <div className="col-4 text-center equipe" onClick={() => setModal('suelen')}>
                   <StaticImage width={227} height={227} imgClassName="rounded-5" src="../images/suelen-pedagogico.jpg" alt="Suelen Martins" />
                   <h3>Suelen Martins</h3>
                   <p>Coordenação Pedagógica</p>
+                  
+                  <Modal
+                    show={modal === 'suelen'}
+                    onHide={() => setModal(null)}
+                    size="lg"
+                    centered
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="contained-modal-title-vcenter">
+                        Suelen Martins
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                      <p>
+                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+                        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+                        consectetur ac, vestibulum at eros.
+                      </p>
+                    </Modal.Body>
+                  </Modal>
                 </div>
-                <div className="col-4 text-center">
+                <div className="col-4 text-center equipe" onClick={() => setModal('leonardo')}>
                   <StaticImage width={227} height={227} imgClassName="rounded-5" src="../images/leonardo-financeiro.jpg" alt="Leonardo Gomes" />
                   <h3>Leonardo Gomes</h3>
                   <p>Gestão Financeira</p>
+                  
+                  <Modal
+                    show={modal === 'leonardo'}
+                    onHide={() => setModal(null)}
+                    size="lg"
+                    centered
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="contained-modal-title-vcenter">
+                        Leonardo Gomes
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                      <p>
+                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+                        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+                        consectetur ac, vestibulum at eros.
+                      </p>
+                    </Modal.Body>
+                  </Modal>
                 </div>
-                <div className="col-4 text-center">
+                <div className="col-4 text-center equipe" onClick={() => setModal('adrielle')}>
                   <StaticImage width={227} height={227} imgClassName="rounded-5" src="../images/adrielle-juridico.jpg" alt="Adrielle Carvalho" />
                   <h3>Adrielle Carvalho</h3>
                   <p>Jurídico</p>
+                  
+                  <Modal
+                    show={modal === 'adrielle'}
+                    onHide={() => setModal(null)}
+                    size="lg"
+                    centered
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title id="contained-modal-title-vcenter">
+                        Adrielle Carvalho
+                      </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                      <p>
+                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+                        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+                        consectetur ac, vestibulum at eros.
+                      </p>
+                    </Modal.Body>
+                  </Modal>
                 </div>
               </div>
             </div>
