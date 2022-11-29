@@ -148,7 +148,7 @@ const IndexPage = () => {
                 história sobre as favelas e os territórios favelados como um todo. Mostrar como os saberes populares são
                 relevantes e que a favela fala e deve falar pela favela (quem é cria fala pelos crias).</p>
               <div>
-                <StaticImage src="../images/dani-prof.png" alt="Daniele, ex-educadora de História do pré-vestibular" />
+                <StaticImage src="../images/dani-prof.jpg" alt="Daniele, ex-educadora de História do pré-vestibular" />
                 <h3>Daniele Figueiredo<span> Ex-educadora de História do pré-vestibular</span></h3>
               </div>
             </div>
