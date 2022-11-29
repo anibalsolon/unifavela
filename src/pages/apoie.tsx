@@ -11,10 +11,7 @@ export default () => {
       <section id="section-hero" className="row">
         <div className="col-6 offset-3 my-5">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          A UniFavela acredita no poder da formação educacional e desenvolvimento sociocultural. Para isso, precisamos da sua ajuda! O seu apoio é fundamental para que haja perspectiva de futuro nos territórios periféricos. 
           </p>
         </div>
       </section>
@@ -24,17 +21,17 @@ export default () => {
             <div className="offset-2 col-4 dados-box">
               <h3>Dados Bancários</h3>
               <p>
-                Banco<br />
-                Agência 0000<br />
-                Conta 00000<br />
-                CNPJ 00000
+                Banco Bradesco (237)<br />
+                Agência 1240<br />
+                Conta 53807-8<br />
+                CNPJ 42.129.436/0001-25
               </p>
             </div>
             <div className="col-4 dados-box">
               <h3>PIX</h3>
               <p>
-                Chave do PIX<br />
-                <strong>000000000000000000</strong>
+                Chave do PIX (CNPJ)<br />
+                <strong>42.129.436/0001-25</strong>
               </p>
             </div>
           </div>

@@ -10,7 +10,7 @@ import { Button, Card, Stack } from "react-bootstrap";
 export default () => {
   return (
     <Layout scope="na-midia">
-      {/* @todo aqui é para ser diferente são cinco carrosseis individuais, que inicial com um título */}
+      {/* @todo aqui é para ser diferente são cinco carrosseis individuais, que inicial com um título, mostrando apenas thumbnail linkados para cada uma das matérias. esconder por agora e colocar em construção. */}
       <section id="section-hero" className="row g-0">
         <h1>Na Mídia</h1>
       </section>
@@ -131,7 +131,7 @@ export default () => {
         </Carousel>
       </section>
       <section className="section-year">
-        <h2>2020</h2>
+        <h2>2021</h2>
         <Carousel>
           <Carousel.Item>
             <Stack
@@ -247,7 +247,7 @@ export default () => {
         </Carousel>
       </section>
       <section className="section-year">
-      <h2>2021</h2>
+      <h2>2020</h2>
         <Carousel>
           <Carousel.Item>
             <Stack

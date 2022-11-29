@@ -116,12 +116,7 @@ const IndexPage = () => {
               <h2>ODS da ONU que contribuímos</h2>
             </div>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
+          <p>Os Objetivos de Desenvolvimento Sustentável (ODS) pensados pela ONU - Organização das Nações Unidas - são uma chamada global à ação para a concretização dos direitos humanos de todos. Esses objetivos buscam o equilíbrio entre as dimensões econômica, social e ambiental. A UniFavela compactua com a busca por esse desenvolvimento sustentável global e, por isso, está comprometida através dos nossos projetos e ações . Os principais ODSs que nos relacionamos são:</p>
           <div className="row ods">
             <div className="offset-3 col-2">
               <StaticImage src="../images/ods-4.png" alt="ODS 4: Educação de qualidade" />
@@ -150,7 +145,7 @@ const IndexPage = () => {
                 relevantes e que a favela fala e deve falar pela favela (quem é cria fala pelos crias).</p>
               <div>
                 <StaticImage src="../images/dani-prof.png" alt="Daniele, ex-educadora de História do pré-vestibular" />
-                <h3>Daniele<span> Ex-educadora de História do pré-vestibular</span></h3>
+                <h3>Daniele Figueiredo<span> Ex-educadora de História do pré-vestibular</span></h3>
               </div>
             </div>
           </Carousel.Item>
@@ -211,6 +206,9 @@ const IndexPage = () => {
             </div>
             <div className="col-md-3 text-center my-auto">
               <a href="https://o3educacao.com/"><img className="img-fluid" src={O3Logo} /></a>
+            </div>
+            <div className="col-md-3 text-center my-auto">
+              <a href="https://direitorio.fgv.br/clinicas"><img className="img-fluid" src={FGVLogo} /></a>
             </div>
           </div>
         </div>

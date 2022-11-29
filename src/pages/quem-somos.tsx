@@ -119,18 +119,19 @@ export default () => {
       </section>
 
       {/* @todo essa seção tem que começar com um parágrafo e depois a imagem do organograma, 
-            que vai ser clicável para abrir um modal explicando cada setor */}
+            que vai ser clicável para abrir um modal explicando cada setor. só ajeita a imagem agora, deixa o clicável pra depois.
+        na equipe, preciso que exista como clicar e mostrar a pop-up com a bio*/}
       <section id="section-equipe">
         <h2>Equipe</h2>
         <div className="container">
           <div className="row">
             <div className="offset-1 col-10">
               <p className="mt-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Para que a UniFavela consiga atuar de forma organizada e eficiente é necessário ter uma divisão de tarefas bem estruturada. Por isso, na Uni existem setores essenciais nessa construção. Os setores são:
               </p>
+
+              <StaticImage className="w-50" src="../images/unifavela-organograma.png" alt="Organograma UniFavela" />
+
               <div className="row">
                 <div className="col-4 offset-4 text-center pt-5">
                   <StaticImage width={227} height={227} imgClassName="rounded-5" src="../images/laerte-presidente.jpg" alt="Laerte Breno" />
@@ -275,11 +276,13 @@ export default () => {
           <div className="row my-5">
             <div className="d-flex col-4">
               <Card className="align-self-stretch">
+                {/* @todos acertar os links dos pdfs */}
+
                 <h3>Estatuto Social</h3>
                 <p>
                   Deveres e direitos dos membros da UniFavela, além de regras para a gestão da instituição.
                 </p>
-                <a href="https://www.google.com.br" className="btn btn-secondary">Acessar</a>
+                <a href="/src/pdfs/UniFavela_Estatuto_2023.pdf" className="btn btn-secondary">Acessar</a>
               </Card>
             </div>
             <div className="d-flex col-8">
@@ -288,13 +291,14 @@ export default () => {
                   <div className="col-6">
                     <h3>Certidões</h3>
                     <p>
-                      Operações da UniFavela desde o primeiro ano de funcionamento.
+                      Confira aqui nossas certidões.
                     </p>
                   </div>
                   <div className="col-6">
-                    <a href="https://www.google.com.br" className="btn btn-secondary d-block mb-2">Certidão de Regularidade do FGTS</a>
-                    <a href="https://www.google.com.br" className="btn btn-secondary d-block mb-2">Certidão Negativa de Débitos Trabalhistas</a>
-                    <a href="https://www.google.com.br" className="btn btn-secondary d-block mb-2">Certidão Negativa de Débitos Federais</a>
+                    <a href="/src/pdfs/UniFavela_Certidao_FGTS.pdf" className="btn btn-secondary d-block mb-2">Certidão de Regularidade do FGTS</a>
+                    <a href="/src/pdfs/UniFavela_CNDT.pdf" className="btn btn-secondary d-block mb-2">Certidão Negativa de Débitos Trabalhistas</a>
+                    <a href="/src/pdfs/UniFavela_CND_Uniao.pdf" className="btn btn-secondary d-block mb-2">Certidão Negativa de Débitos Federais</a>
+                    <a href="/src/pdfs/UniFavela_CND_RJ.pdf" className="btn btn-secondary d-block mb-2">Certidão Negativa de Débitos Estaduais</a>
                   </div>
                 </div>
               </Card>
@@ -305,7 +309,7 @@ export default () => {
                 <p>
                   Veja o que temos feitos no último ano.
                 </p>
-                <a href="https://www.google.com.br" className="btn btn-secondary">Acessar</a>
+                <a href="/src/pdfs/UniFavela_BoletimExterno_Jun-Out.pdf" className="btn btn-secondary">Acessar</a>
               </Card>
             </div>
             <div className="d-flex col-8 mt-4">
@@ -314,13 +318,13 @@ export default () => {
                   <div className="col-6">
                     <h3>Auditorias</h3>
                     <p>
-                      Operações da UniFavela desde o primeiro ano de funcionamento.
+                      Balencetes e operações da UniFavela desde o primeiro ano de funcionamento enquanto ONG.
                     </p>
                   </div>
                   <div className="col-6">
-                    <a href="https://www.google.com.br" className="btn btn-secondary d-block mb-2">2020</a>
-                    <a href="https://www.google.com.br" className="btn btn-secondary d-block mb-2">2021</a>
-                    <a href="https://www.google.com.br" className="btn btn-secondary d-block mb-2">2022</a>
+                    <a href="/src/pdfs/UniFavela_Balancete_2021.pdf" className="btn btn-secondary d-block mb-2">Balancete 2021</a>
+                    <a href="/src/pdfs/UniFavela_Auditoria_2021.pdf" className="btn btn-secondary d-block mb-2">Auditoria 2021</a>
+                    <a href="/src/pdfs/DRE_Uni_JanOut_2022.pdf" className="btn btn-secondary d-block mb-2">DRE 2022 (Jan-Out)</a>
                   </div>
                 </div>
               </Card>
