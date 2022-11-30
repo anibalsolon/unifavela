@@ -309,7 +309,7 @@ export default () => {
       </section>
       <section id="section-reconhecimento">
         <h2>Reconhecimento</h2>
-        <Carousel>
+        <Carousel indicators={false}>
           <Carousel.Item>
             <div className="container w-100 w-md-50">
               <h3>Prêmio Íbero-Americano em Educação e Direitos Humanos - OEI (2022)</h3>
