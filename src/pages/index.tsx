@@ -44,6 +44,7 @@ const IndexPage = () => {
             direitos sociais e direitos humanos em territórios populares, proporcionando desenvolvimento e
             ascensão pessoal e profissional, tudo isso por meio da educação como prática da liberdade.
           </p>
+          {/* este botão não está linkando para lugar nenhum */}
           <button className="btn btn-more btn-outline-primary mt-5 mb-5 align-center">Mais sobre a Uni</button>
         </div>
         <div className="d-none d-md-block col-5 text-end">
@@ -136,6 +137,7 @@ const IndexPage = () => {
         </div>
       </section>
       <section id="section-depoimentos">
+        {/* Tem como padronizar os tamanhos das caixas e fotos? */}
         <Carousel interval={null}>
           <Carousel.Item>
             <div className="container">

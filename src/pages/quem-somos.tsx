@@ -118,10 +118,7 @@ export default () => {
         </Carousel>
       </section> */}
 
-      {/* @todo essa seção tem que começar com um parágrafo e depois a imagem do organograma, 
-            que vai ser clicável para abrir um modal explicando cada setor. só ajeita a imagem agora, deixa o clicável pra depois.
-        na equipe, preciso que exista como clicar e mostrar a pop-up com a bio*/}
-      <section id="section-equipe">
+       <section id="section-equipe">
 
         <h2>Organograma</h2>
         <div className="container">
@@ -161,9 +158,7 @@ export default () => {
                   </Modal.Header>
                   <Modal.Body>
                     <p>
-                      Laerte mattis consectetur purus sit amet fermentum. Cras justo odio,
-                      dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                      consectetur ac, vestibulum at eros.
+                    Laerte Breno, 27 anos, cria do Complexo de Favelas da Maré. Graduando em Letras com Literaturas Brasileira, tem uma paixão por pesquisar educação e segurança pública. Seu trabalho de conclusão de curso tem como foco analisar a violência armada dentro da Maré. Na Uni, é fundador e Diretor Executivo da instituição. Sua função é administrar a organização no dia a dia da Uni, elaborar e implementar processos, planejar e conduzir projetos à sua finalização, e assegurar que as operações estejam em andamento de forma adequada.
                     </p>
                   </Modal.Body>
                 </Modal>
@@ -187,9 +182,7 @@ export default () => {
                   </Modal.Header>
                   <Modal.Body>
                     <p>
-                      Laerte mattis consectetur purus sit amet fermentum. Cras justo odio,
-                      dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                      consectetur ac, vestibulum at eros.
+                    Bruna Damiana Heinsfeld é a responsável pelo Desenvolvimento Institucional na UniFavela. Ou seja, ela é a responsável por criar estratégias de captação de recursos, fechar parcerias, apoios, inscrever a Uni em editais e leis de incentivo, desenvolver ações para aumentar a visibilidade institucional, entre outras atividades. Ufa! Doutoranda em Ensino e Aprendizagem Interdisciplinar nos Estados Unidos (UTSA), ela também é mestre em Educação (PUC-Rio), especialista em Planejamento, Implementação e Gestão da EaD (UFF) e graduada em Letras (UERJ). Somados, Bruna tem mais de quarenta publicações e participações em eventos acadêmicos nacionais e internacionais, além de ser coautora de dois livros: “Tecnologias, pensamento sistêmico e os fundamentos da inovação pedagógica” e "Práticas pedagógicas, inovação e tecnologias: breves indagações”. Ah! E além da veia acadêmica, ela tem mais de dez anos de experiência na área de desenvolvimento de cursos e materiais didáticos, tendo feito carreira como designer instrucional e gestora de projetos educacionais nacionais e internacionais. Ela também é certificada profissionalmente em Gestão de Projetos pela Google e pela Ohio University! 
                     </p>
                   </Modal.Body>
                 </Modal>
@@ -212,9 +205,7 @@ export default () => {
                   </Modal.Header>
                   <Modal.Body>
                     <p>
-                      Laerte mattis consectetur purus sit amet fermentum. Cras justo odio,
-                      dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                      consectetur ac, vestibulum at eros.
+                    Agatha é a responsável pelo setor de Comunicação Institucional da UniFavela. Ela está no meio da graduação de Publicidade e Propaganda pela UFRJ e possui um Técnico em Comunicação Visual pela ETEC Polivalente de Americana. Atualmente, ela trabalha em uma agência de publicidade no Rio de Janeiro. Possui um projeto de pesquisa que tem como tema “Comunicação no Terceiro Setor: Um estudo sobre a ONG socioeducativa UniFavela- Semeando Ensino Popular”, no qual estuda o impacto da comunicação voltada para o terceiro setor através das experiências adquiridas na associação. Com o apoio de uma equipe, é responsável pelo desenvolvimento estratégico de campanhas nas redes sociais, além da comunicação interna e com a imprensa. 
                     </p>
                   </Modal.Body>
                 </Modal>
@@ -237,9 +228,7 @@ export default () => {
                   </Modal.Header>
                   <Modal.Body>
                     <p>
-                      Laerte mattis consectetur purus sit amet fermentum. Cras justo odio,
-                      dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                      consectetur ac, vestibulum at eros.
+                    Bibliotecária, positiva e operante! Gisele Lima é bacharel em Biblioteconomia e Gestão em Unidades de Informação pela Universidade Federal do Rio de Janeiro (UFRJ) e técnica profissional em Geração Multimídia pelo Colégio Estadual José Leite Lopes/Núcleo Avançado em Educação (CEJLL/NAVE). É grande entusiasta da ciência, da educação e da democratização do conhecimento. Também se joga no universo das pesquisas eventualmente, tendo interesse em estudos voltados para temas como Competência em Informação, Interseccionalidade, Educação, Ação cultural e Literatura.
                     </p>
                   </Modal.Body>
                 </Modal>
@@ -262,9 +251,7 @@ export default () => {
                   </Modal.Header>
                   <Modal.Body>
                     <p>
-                      Laerte mattis consectetur purus sit amet fermentum. Cras justo odio,
-                      dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                      consectetur ac, vestibulum at eros.
+                    Suelen Martins, 35 anos, graduada em Letras - Português e alemão pela UERJ, com extensão da licenciatura em Pedagogia, pela Uninter. Trabalha há 8 anos como educadora na Escola Alemã Corcovado. Além disso, atua como pesquisadora independente na área das Relações Étnico-raciais em contexto da infância e o papel da Educação Popular no sistema de ensino público e privado. Amante das artes manuais, bordadeira e idealizadora do projeto Sagarana, utiliza arte para registrar processos e aspectos socioculturais brasileiros.
                     </p>
                   </Modal.Body>
                 </Modal>
@@ -287,9 +274,7 @@ export default () => {
                   </Modal.Header>
                   <Modal.Body>
                     <p>
-                      Laerte mattis consectetur purus sit amet fermentum. Cras justo odio,
-                      dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                      consectetur ac, vestibulum at eros.
+                    Leonardo da Silva Gomes, 25 anos, carioca que gosta de frio, nascido e criado na favela da Vila do João no Complexo da Maré, graduando em Tecnologia da Logística pela UNESA e Tecnólogo em Redes de Computadores pelo SENAC. Trabalha há 6 anos como colaborador na Fundação Getúlio Vargas no setor administrativo de Operações e Serviços e trabalhando como colaborador voluntário da UniFavela há pouco menos de 1 mês a convite do CEO da mesma Laerte Breno. Tem o objetivo pessoal de potencializar ainda mais a favela em que nasceu e conseguir fazer mais pessoas mudarem sua própria história tal qual seu pai também conseguiu além dele próprio através dos estudos.
                     </p>
                   </Modal.Body>
                 </Modal>
@@ -312,9 +297,7 @@ export default () => {
                   </Modal.Header>
                   <Modal.Body>
                     <p>
-                      Laerte mattis consectetur purus sit amet fermentum. Cras justo odio,
-                      dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                      consectetur ac, vestibulum at eros.
+                    Adrielle Carvalho é advogada, formada em Direito pela Universidade do Estado do Rio de Janeiro (UERJ) e Pós-Graduanda em Direito Civil Constitucional, também pela UERJ. Cria do complexo de favelas da Maré, é a responsável pelas demandas jurídicas da UniFavela. Por meio de sua atuação, presta consultoria jurídica para as  coordenações internas e auxilia na análise dos contratos celebrados, bem como dos termos de serviços e de imagem. Além de atuar no Terceiro Setor, Adrielle exerce advocacia privada e tem experiência em Direito Civil estratégico, especialmente contratos e responsabilidade civil.
                     </p>
                   </Modal.Body>
                 </Modal>
@@ -335,8 +318,7 @@ export default () => {
                 representando o Brasil.</p>
               <div>
                 <StaticImage className="w-50" src="../images/premioibero_unifavela.jpg" alt="Laerte Breno, presidente da instituição, apresentando o trabalho da UniFavela para o comitê do Prêmio Ibero-Americano em Educação e Direitos Humanos, no Chile, em 2022." />
-                <h3 className="text-center">Laerte Breno, Presidente da UniFavela</h3>
-              </div>
+                </div>
             </div>
           </Carousel.Item>
           <Carousel.Item>
@@ -347,8 +329,7 @@ export default () => {
               </p>
               <div>
                 <StaticImage className="w-50" src="../images/premioidbr2022_unifavela.jpg" alt="Laerte Breno, presidente da instituição, recebendo o prêmio Sim à Igualdade Racial pelo Institutio Identidades do Brasil, em 2022." />
-                <h3 className="text-center">Laerte Breno, Presidente da UniFavela</h3>
-              </div>
+                </div>
             </div>
           </Carousel.Item>
           <Carousel.Item>
@@ -361,24 +342,23 @@ export default () => {
 
               <div>
                 <StaticImage className="w-50" src="../images/4gestudar_unifavela.jpg" alt="Imagem da campanha 4G para Estudar divulgada nas redes sociais da UniFavela." />
-                <h3 className="text-center">lorem ipsum</h3>
-              </div>
+               </div>
             </div>
           </Carousel.Item>
           <Carousel.Item>
             <div className="container w-100 w-md-50">
-              <h3>Edital RUA- UFRJ (2019)</h3>
+              <h3>Edital RUA - UFRJ (2019)</h3>
               <p>
                 Possibilitou que nos tornássemos um Projeto de Extensão da UFRJ.
                 Hoje, nossos voluntários estudantes da UFRJ recebem certificação e horas complementares.
               </p>
 
               <div>
-                <StaticImage className="w-50" src="../images/4gestudar_unifavela.jpg" alt="Imagem da campanha 4G para Estudar divulgada nas redes sociais da UniFavela." />
-                <h3 className="text-center">lorem ipsum</h3>
-              </div>
+                <StaticImage className="w-50" src="../images/editalrua_unifavela.jpg" alt="Imagem da campanha 4G para Estudar divulgada nas redes sociais da UniFavela." />
+               </div>
             </div>
           </Carousel.Item>
+          {/*
           <Carousel.Item>
             <div className="container w-100 w-md-50">
               <h3>Menção Honrosa na SIAC - UFRJ (2019)</h3>
@@ -389,10 +369,9 @@ export default () => {
 
               <div>
                 <StaticImage className="w-50" src="../images/4gestudar_unifavela.jpg" alt="Imagem da campanha 4G para Estudar divulgada nas redes sociais da UniFavela." />
-                <h3 className="text-center">lorem ipsum</h3>
-              </div>
+               </div>
             </div>
-          </Carousel.Item>
+          </Carousel.Item> */}
           <Carousel.Item>
             <div className="container w-100 w-md-50">
               <h3>Prêmio Paulo Freire - ALERJ (2019)</h3>
@@ -402,8 +381,7 @@ export default () => {
 
               <div>
                 <StaticImage className="w-50" src="../images/premiopaulofreire_alerj_unifavela.jpg" alt="Imagem do Prêmio Paulo Freire." />
-                <h3 className="text-center">lorem ipsum</h3>
-              </div>
+               </div>
             </div>
           </Carousel.Item>
         </Carousel>

@@ -13,8 +13,8 @@ export default () => {
           <div className="col-md-3 mt-5 mt-md-0 text-center text-md-start fs-5">
             <h2 className="h5">Comunicação</h2>
             <ul className="d-flex">
-              <li className="me-3"><a href="https://www.instagram.com/unifavela/"><FontAwesomeIcon icon={faFacebook} /></a></li>
-              <li className="me-3"><a href="https://www.facebook.com/unifavela"><FontAwesomeIcon icon={faInstagram} /></a></li>
+              <li className="me-3"><a href="https://www.facebook.com/unifavela"><FontAwesomeIcon icon={faFacebook} /></a></li>
+              <li className="me-3"><a href="https://www.instagram.com/unifavela/"><FontAwesomeIcon icon={faInstagram} /></a></li>
               <li className="me-3"><a href="https://twitter.com/unifavela"><FontAwesomeIcon icon={faTwitter} /></a></li>
             </ul>
           </div>
