@@ -251,7 +251,7 @@ export default () => {
                   </Modal.Header>
                   <Modal.Body>
                     <p>
-                    Suelen Martins, 35 anos, graduada em Letras - Português e alemão pela UERJ, com extensão da licenciatura em Pedagogia, pela Uninter. Trabalha há 8 anos como educadora na Escola Alemã Corcovado. Além disso, atua como pesquisadora independente na área das Relações Étnico-raciais em contexto da infância e o papel da Educação Popular no sistema de ensino público e privado. Amante das artes manuais, bordadeira e idealizadora do projeto Sagarana, utiliza arte para registrar processos e aspectos socioculturais brasileiros.
+                    Suelen Martins, graduada em Letras - Português e alemão pela UERJ, com extensão da licenciatura em Pedagogia, pela Uninter, e pós-graduanda em Educação Inclusiva: aspectos Psicosociais pela PUC-Rio. Pesquisa de forma independente as Relações Étnico-raciais em contexto da infância e o papel da Educação Popular no sistema de ensino público e privado. Amante das artes manuais, bordadeira e idealizadora do projeto Sagarana, utiliza arte para registrar processos e aspectos socioculturais brasileiros.
                     </p>
                   </Modal.Body>
                 </Modal>
@@ -309,7 +309,7 @@ export default () => {
       </section>
       <section id="section-reconhecimento">
         <h2>Reconhecimento</h2>
-        <Carousel indicators={false}>
+        <Carousel>
           <Carousel.Item>
             <div className="container w-100 w-md-50">
               <h3>Prêmio Íbero-Americano em Educação e Direitos Humanos - OEI (2022)</h3>
