@@ -13,12 +13,15 @@ export default () => {
       <section id="section-hero" className="row g-0">
         <h1>Depoimentos</h1>
       </section>
-      {/* <section className="bg-primary px-8 py-6">
+      {/* @TODO colocar videos de depoimento
+      <section className="bg-primary px-8 py-6">
         <YoutubeEmbed embedId="y4yhmymlouI" />
       </section>
       <section className="bg-primary px-8 py-6">
         <YoutubeEmbed embedId="y4yhmymlouI" />
       </section> */}
+
+      {/* @TODO ajeitar tamanho da primeira caixa, espaco na caixa branca sobrando */}
       <section id="section-depoimentos">
         <div className="container">
           <p>A UniFavela é uma ferramenta de empoderamento e catalisadora de talentos,

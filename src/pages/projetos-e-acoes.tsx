@@ -17,6 +17,10 @@ export default () => {
       <section id="section-hero" className="row g-0">
         <h1>Projetos e Ações</h1>
       </section>
+      {/* 
+        @TODO mover o prevestibular para junto das outras ações, sendo o prevest na primeira coluna
+        @TODO padronizar tamanho das imagens
+      */}
       <section id="section-projetos">
         <div className="container">
           <div className="row">

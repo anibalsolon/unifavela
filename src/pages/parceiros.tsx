@@ -24,6 +24,7 @@ export default () => {
         <h1>Parceiros da UniFavela</h1>
       </section>
       <section id="section-parceiros">
+        {/* @TODO colocar link na logo tambem */}
         <div className="container">
           <div className="parceiro">
             <div>

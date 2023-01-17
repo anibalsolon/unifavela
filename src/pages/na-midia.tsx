@@ -10,7 +10,9 @@ import { Button, Card, Stack } from "react-bootstrap";
 export default () => {
   return (
     <Layout scope="na-midia">
-      {/* @todo aqui é para ser diferente são cinco carrosseis individuais, que inicial com um título, mostrando apenas thumbnail linkados para cada uma das matérias. esconder por agora e colocar em construção. */}
+      {/*
+      @TODO aqui é para ser diferente são cinco carrosseis individuais, por ano, 
+      inicia com um título, mostrando apenas thumbnail linkados para cada uma das matérias */}
       <section id="section-hero" className="row g-0">
         <h1>Na Mídia</h1>
       </section>

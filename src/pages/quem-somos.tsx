@@ -309,6 +309,7 @@ export default () => {
       </section>
       <section id="section-reconhecimento">
         <h2>Reconhecimento</h2>
+        {/*  @TODO em vez de mostrar Slide 1, Slide 2, etc. Deixar bolinhas vazias para o usuario clicar */}
         <Carousel>
           <Carousel.Item>
             <div className="container w-100 w-md-50">
