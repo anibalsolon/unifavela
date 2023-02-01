@@ -1,6 +1,6 @@
-@import "../header.scss";
+@import '../header.scss';
 
-main[data-scope="parceiros"] {
+main[data-scope='parceiros'] {
   #section-hero {
     h1 {
       font-size: 3 * $font-size-base;
@@ -9,10 +9,18 @@ main[data-scope="parceiros"] {
       text-align: center;
       margin-top: $spacer * 6;
       margin-bottom: $spacer;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: $spacer * 4;
+      }
     }
   }
 
   #section-parceiros {
+    .container {
+      padding-left: $spacer;
+      padding-right: $spacer;
+    }
 
     .parceiro {
       margin: $spacer;
@@ -23,7 +31,16 @@ main[data-scope="parceiros"] {
       padding: $spacer * 0.5;
       border-radius: $spacer;
 
-      &>div:first-child {
+      @include media-breakpoint-down(md) {
+        & {
+          flex-direction: column;
+          margin: 0px;
+          margin-top: $spacer;
+          padding: $spacer * 1.5;
+        }
+      }
+
+      & > div:first-child {
         background: white;
         border-radius: $spacer;
         min-width: 200px;
@@ -34,11 +51,11 @@ main[data-scope="parceiros"] {
 
         img {
           max-width: 180px;
-          max-height: 180px; 
+          max-height: 180px;
         }
       }
 
-      &>div:last-child {
+      & > div:last-child {
         padding: $spacer;
 
         h3 a {
@@ -51,13 +68,16 @@ main[data-scope="parceiros"] {
 
   #section-parceiro {
     h1 {
-      font-size: 3.5 * $font-size-base;
+      font-size: 3.2 * $font-size-base;
       color: $secondary;
       text-transform: uppercase;
       font-weight: 900;
     }
     p {
       font-size: 1.2 * $font-size-base;
+      @include media-breakpoint-down(md) {
+        font-size: $font-size-base;
+      }
     }
     button {
       background: $secondary;
@@ -66,6 +86,41 @@ main[data-scope="parceiros"] {
       padding: $spacer $spacer * 3;
       font-size: 1.5 * $font-size-base;
       font-weight: 900;
+      @include media-breakpoint-down(md) {
+        padding: $spacer $spacer * 1.5;
+        font-size: $font-size-base * 1.2;
+      }
+    }
+
+    .parceiro-conteudo {
+      margin-left: auto;
+      margin-right: auto;
+      @include media-breakpoint-down(xl) {
+        & {
+          padding-left: 2rem;
+          padding-right: 2rem;
+          margin-top: 1rem;
+          width: 80%;
+        }
+
+        h1 {
+          font-size: 2 * $font-size-base;
+        }
+      }
+      @include media-breakpoint-down(sm) {
+        & {
+          width: 100%;
+        }
+      }
+    }
+
+    .parceiro-imagem {
+      margin-left: 0;
+      @include media-breakpoint-down(xl) {
+        & {
+          display: none !important;
+        }
+      }
     }
   }
 }

@@ -1,9 +1,18 @@
-@import "../header.scss";
+@import '../header.scss';
 
-main[data-scope="fale-conosco"] {
+main[data-scope='fale-conosco'] {
   #section-hero {
+    display: flex;
     margin-top: $spacer * 6;
     margin-bottom: $spacer * 3;
+    align-items: center;
+    padding: 0 $spacer * 2;
+    justify-content: center;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+
     h1 {
       font-size: 2 * $font-size-base;
       color: $secondary;
@@ -14,6 +23,11 @@ main[data-scope="fale-conosco"] {
     label {
       font-weight: bold;
       color: $primary;
+    }
+
+    .container-conteudo,
+    .container-formulario {
+      max-width: 600px;
     }
   }
 }

@@ -16,7 +16,7 @@ export default () => {
 
   return (
     <Layout scope="quem-somos">
-      <section id="section-hero" className="row mt-4 mt-md-0 g-0">
+      <section id="section-hero" className="row mt-5 mt-md-0 g-0">
         <div className="col-md-5 d-none d-md-block">
           <StaticImage src="../images/quem-somos.png" alt="UniFavela" />
         </div>
@@ -313,49 +313,55 @@ export default () => {
         <Carousel>
           <Carousel.Item>
             <div className="container w-100 w-md-50">
+              <div>
               <h3>Prêmio Íbero-Americano em Educação e Direitos Humanos - OEI (2022)</h3>
               <p>
                 Finalistas na categoria educação não-formal no Prêmio Íbero-Americano em Educação e Direitos Humanos,
-                representando o Brasil.</p>
+                  representando o Brasil.</p>
+                </div>
               <div>
-                <StaticImage className="w-50" src="../images/premioibero_unifavela.jpg" alt="Laerte Breno, presidente da instituição, apresentando o trabalho da UniFavela para o comitê do Prêmio Ibero-Americano em Educação e Direitos Humanos, no Chile, em 2022." />
+                <StaticImage src="../images/premioibero_unifavela.jpg" alt="Laerte Breno, presidente da instituição, apresentando o trabalho da UniFavela para o comitê do Prêmio Ibero-Americano em Educação e Direitos Humanos, no Chile, em 2022." />
                 </div>
             </div>
           </Carousel.Item>
           <Carousel.Item>
             <div className="container w-100 w-md-50">
+              <div>
               <h3>Prêmio Sim à Igualdade Racial - ID_BR (2022)</h3>
               <p>
                 Vencedores da categoria Educação e Oportunidades no Prêmio Sim à Igualdade Racial do Instituto Identidades do Brasil.
-              </p>
+                </p>
+              </div>
               <div>
-                <StaticImage className="w-50" src="../images/premioidbr2022_unifavela.jpg" alt="Laerte Breno, presidente da instituição, recebendo o prêmio Sim à Igualdade Racial pelo Institutio Identidades do Brasil, em 2022." />
+                <StaticImage  src="../images/premioidbr2022_unifavela.jpg" alt="Laerte Breno, presidente da instituição, recebendo o prêmio Sim à Igualdade Racial pelo Institutio Identidades do Brasil, em 2022." />
                 </div>
             </div>
           </Carousel.Item>
           <Carousel.Item>
             <div className="container w-100 w-md-50">
-              <h3>Edital 4G para Estudar - Instituto Nossas (2020)</h3>
-              <p>
-                Em 2020, a UniFavela venceu o Edital 4G para Estudar, do Instituto Nossas.
-                Com esse incentivo, pudemos fornecer tablets e chips de internet para os nossos estudantes.
-              </p>
-
               <div>
-                <StaticImage className="w-50" src="../images/4gestudar_unifavela.jpg" alt="Imagem da campanha 4G para Estudar divulgada nas redes sociais da UniFavela." />
+                <h3>Edital 4G para Estudar - Instituto Nossas (2020)</h3>
+                <p>
+                  Em 2020, a UniFavela venceu o Edital 4G para Estudar, do Instituto Nossas.
+                  Com esse incentivo, pudemos fornecer tablets e chips de internet para os nossos estudantes.
+                </p>
+              </div>
+              <div>
+                <StaticImage src="../images/4gestudar_unifavela.jpg" alt="Imagem da campanha 4G para Estudar divulgada nas redes sociais da UniFavela." />
                </div>
             </div>
           </Carousel.Item>
           <Carousel.Item>
             <div className="container w-100 w-md-50">
-              <h3>Edital RUA - UFRJ (2019)</h3>
-              <p>
-                Possibilitou que nos tornássemos um Projeto de Extensão da UFRJ.
-                Hoje, nossos voluntários estudantes da UFRJ recebem certificação e horas complementares.
-              </p>
-
               <div>
-                <StaticImage className="w-50" src="../images/editalrua_unifavela.jpg" alt="Imagem da campanha 4G para Estudar divulgada nas redes sociais da UniFavela." />
+                <h3>Edital RUA - UFRJ (2019)</h3>
+                <p>
+                  Possibilitou que nos tornássemos um Projeto de Extensão da UFRJ.
+                  Hoje, nossos voluntários estudantes da UFRJ recebem certificação e horas complementares.
+                </p>
+              </div>
+              <div>
+                <StaticImage src="../images/editalrua_unifavela.jpg" alt="Imagem da campanha 4G para Estudar divulgada nas redes sociais da UniFavela." />
                </div>
             </div>
           </Carousel.Item>
@@ -375,13 +381,14 @@ export default () => {
           </Carousel.Item> */}
           <Carousel.Item>
             <div className="container w-100 w-md-50">
-              <h3>Prêmio Paulo Freire - ALERJ (2019)</h3>
-              <p>
-                A UniFavela recebeu o prêmio Paulo Freire de direitos humanos, concedido pela ALERJ em 2019.
-              </p>
-
               <div>
-                <StaticImage className="w-50" src="../images/premiopaulofreire_alerj_unifavela.jpg" alt="Imagem do Prêmio Paulo Freire." />
+                <h3>Prêmio Paulo Freire - ALERJ (2019)</h3>
+                <p>
+                  A UniFavela recebeu o prêmio Paulo Freire de direitos humanos, concedido pela ALERJ em 2019.
+                </p>
+              </div>
+              <div>
+                <StaticImage src="../images/premiopaulofreire_alerj_unifavela.jpg" alt="Imagem do Prêmio Paulo Freire." />
                </div>
             </div>
           </Carousel.Item>
@@ -390,8 +397,8 @@ export default () => {
       <section id="section-transparencia">
         <h2>Transparência</h2>
         <div className="container">
-          <div className="row">
-            <div className="offset-3 col-6 mt-5 mb-0 main-card">
+          <div className="main-container row">
+            <div className="main-card">
               <h3>Seriedade e transparência</h3>
               <p>
                 Prezamos muito pela seriedade em todos os processos internos da UniFavela.
@@ -401,8 +408,8 @@ export default () => {
             </div>
           </div>
 
-          <div className="row my-5">
-            <div className="d-flex col-4">
+          <div className="card-container">
+            <div className="">
               <Card className="align-self-stretch">
                 <h3>Estatuto Social</h3>
                 <p>
@@ -411,7 +418,7 @@ export default () => {
                 <a href="./pdfs/UniFavela_Estatuto_2023.pdf" className="btn btn-secondary">Acessar</a>
               </Card>
             </div>
-            <div className="d-flex col-8">
+            <div className="">
               <Card className="align-self-stretch">
                 <div className="row no-gutters">
                   <div className="col-6">
@@ -429,7 +436,7 @@ export default () => {
                 </div>
               </Card>
             </div>
-            <div className="d-flex col-4 mt-4">
+            <div className="">
               <Card className="align-self-stretch">
                 <h3>Relatório de Atividades</h3>
                 <p>
@@ -438,7 +445,7 @@ export default () => {
                 <a href="./pdfs/UniFavela_BoletimExterno_Jun-Out.pdf" className="btn btn-secondary">Acessar</a>
               </Card>
             </div>
-            <div className="d-flex col-8 mt-4">
+            <div className="">
               <Card className="align-self-stretch">
                 <div className="row no-gutters">
                   <div className="col-6">
