@@ -986,14 +986,14 @@
   dependencies:
     prop-types "^15.8.1"
 
-"@gatsbyjs/parcel-namer-relative-to-cwd@1.9.0":
-  version "1.9.0"
-  resolved "https://registry.npmjs.org/@gatsbyjs/parcel-namer-relative-to-cwd/-/parcel-namer-relative-to-cwd-1.9.0.tgz"
+"@gatsbyjs/parcel-namer-relative-to-cwd@^1.10.0":
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/@gatsbyjs/parcel-namer-relative-to-cwd/-/parcel-namer-relative-to-cwd-1.10.0.tgz#4768957e2bd343ade1c8dfeb27bff2849ab46564"
   dependencies:
     "@babel/runtime" "^7.18.0"
     "@parcel/namer-default" "2.6.2"
     "@parcel/plugin" "2.6.2"
-    gatsby-core-utils "^3.24.0"
+    gatsby-core-utils "^3.25.0"
 
 "@gatsbyjs/potrace@^2.3.0":
   version "2.3.0"
@@ -1716,6 +1716,10 @@
     escape-string-regexp "^2.0.0"
     lodash.deburr "^4.1.0"
 
+"@socket.io/component-emitter@~3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@socket.io/component-emitter/-/component-emitter-3.1.0.tgz#96116f2a912e0c02817345b3c10751069920d553"
+
 "@swc/helpers@^0.4.2":
   version "0.4.14"
   resolved "https://registry.npmjs.org/@swc/helpers/-/helpers-0.4.14.tgz"
@@ -1771,21 +1775,19 @@
   version "1.8.1"
   resolved "https://registry.npmjs.org/@types/common-tags/-/common-tags-1.8.1.tgz"
 
-"@types/component-emitter@^1.2.10":
-  version "1.2.11"
-  resolved "https://registry.npmjs.org/@types/component-emitter/-/component-emitter-1.2.11.tgz"
-
 "@types/configstore@^2.1.1":
   version "2.1.1"
   resolved "https://registry.npmjs.org/@types/configstore/-/configstore-2.1.1.tgz"
 
-"@types/cookie@^0.4.0":
+"@types/cookie@^0.4.1":
   version "0.4.1"
-  resolved "https://registry.npmjs.org/@types/cookie/-/cookie-0.4.1.tgz"
+  resolved "https://registry.yarnpkg.com/@types/cookie/-/cookie-0.4.1.tgz#bfd02c1f2224567676c1545199f87c3a861d878d"
 
-"@types/cors@^2.8.8":
-  version "2.8.12"
-  resolved "https://registry.npmjs.org/@types/cors/-/cors-2.8.12.tgz"
+"@types/cors@^2.8.12":
+  version "2.8.13"
+  resolved "https://registry.yarnpkg.com/@types/cors/-/cors-2.8.13.tgz#b8ade22ba455a1b8cb3b5d3f35910fd204f84f94"
+  dependencies:
+    "@types/node" "*"
 
 "@types/debug@^0.0.30":
   version "0.0.30"
@@ -2528,13 +2530,13 @@ babel-plugin-polyfill-regenerator@^0.4.1:
   dependencies:
     "@babel/helper-define-polyfill-provider" "^0.3.3"
 
-babel-plugin-remove-graphql-queries@^4.24.0:
-  version "4.24.0"
-  resolved "https://registry.npmjs.org/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-4.24.0.tgz"
+babel-plugin-remove-graphql-queries@^4.24.0, babel-plugin-remove-graphql-queries@^4.25.0:
+  version "4.25.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-4.25.0.tgz#ebfc91d8dbe567035b8ce4c3df0a068b745571df"
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@babel/types" "^7.15.4"
-    gatsby-core-utils "^3.24.0"
+    gatsby-core-utils "^3.25.0"
 
 babel-plugin-syntax-trailing-function-commas@^7.0.0-beta.0:
   version "7.0.0-beta.0"
@@ -2576,9 +2578,9 @@ babel-preset-fbjs@^3.4.0:
     "@babel/plugin-transform-template-literals" "^7.0.0"
     babel-plugin-syntax-trailing-function-commas "^7.0.0-beta.0"
 
-babel-preset-gatsby@^2.24.0:
-  version "2.24.0"
-  resolved "https://registry.npmjs.org/babel-preset-gatsby/-/babel-preset-gatsby-2.24.0.tgz"
+babel-preset-gatsby@^2.25.0:
+  version "2.25.0"
+  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-2.25.0.tgz#13c7bccbbf91792d6bd7a95a6531560df8c306f8"
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.14.0"
     "@babel/plugin-proposal-nullish-coalescing-operator" "^7.14.5"
@@ -2593,12 +2595,8 @@ babel-preset-gatsby@^2.24.0:
     babel-plugin-dynamic-import-node "^2.3.3"
     babel-plugin-macros "^3.1.0"
     babel-plugin-transform-react-remove-prop-types "^0.4.24"
-    gatsby-core-utils "^3.24.0"
-    gatsby-legacy-polyfills "^2.24.0"
-
-backo2@~1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/backo2/-/backo2-1.0.2.tgz"
+    gatsby-core-utils "^3.25.0"
+    gatsby-legacy-polyfills "^2.25.0"
 
 bail@^2.0.0:
   version "2.0.2"
@@ -2613,10 +2611,6 @@ base-x@^3.0.8:
   resolved "https://registry.npmjs.org/base-x/-/base-x-3.0.9.tgz"
   dependencies:
     safe-buffer "^5.0.1"
-
-base64-arraybuffer@0.1.4:
-  version "0.1.4"
-  resolved "https://registry.npmjs.org/base64-arraybuffer/-/base64-arraybuffer-0.1.4.tgz"
 
 base64-js@^1.3.1:
   version "1.5.1"
@@ -3083,10 +3077,6 @@ commondir@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/commondir/-/commondir-1.0.1.tgz"
 
-component-emitter@~1.3.0:
-  version "1.3.0"
-  resolved "https://registry.npmjs.org/component-emitter/-/component-emitter-1.3.0.tgz"
-
 compose-function@3.0.3:
   version "3.0.3"
   resolved "https://registry.npmjs.org/compose-function/-/compose-function-3.0.3.tgz"
@@ -3239,9 +3229,9 @@ cosmiconfig@^7.0.0:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
-create-gatsby@^2.24.0:
-  version "2.24.0"
-  resolved "https://registry.npmjs.org/create-gatsby/-/create-gatsby-2.24.0.tgz"
+create-gatsby@^2.25.0:
+  version "2.25.0"
+  resolved "https://registry.yarnpkg.com/create-gatsby/-/create-gatsby-2.25.0.tgz#9878d20b0bf3316565339f54a193856163d6f7da"
   dependencies:
     "@babel/runtime" "^7.15.4"
 
@@ -3427,7 +3417,7 @@ debug@2, debug@2.6.9, debug@^2.6.0, debug@^2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@4, debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.4, debug@~4.3.1:
+debug@4, debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.4, debug@~4.3.1, debug@~4.3.2:
   version "4.3.4"
   resolved "https://registry.npmjs.org/debug/-/debug-4.3.4.tgz"
   dependencies:
@@ -3702,38 +3692,34 @@ end-of-stream@^1.1.0, end-of-stream@^1.4.1:
   dependencies:
     once "^1.4.0"
 
-engine.io-client@~4.1.0:
-  version "4.1.4"
-  resolved "https://registry.npmjs.org/engine.io-client/-/engine.io-client-4.1.4.tgz"
+engine.io-client@~6.2.3:
+  version "6.2.3"
+  resolved "https://registry.yarnpkg.com/engine.io-client/-/engine.io-client-6.2.3.tgz#a8cbdab003162529db85e9de31575097f6d29458"
   dependencies:
-    base64-arraybuffer "0.1.4"
-    component-emitter "~1.3.0"
+    "@socket.io/component-emitter" "~3.1.0"
     debug "~4.3.1"
-    engine.io-parser "~4.0.1"
-    has-cors "1.1.0"
-    parseqs "0.0.6"
-    parseuri "0.0.6"
-    ws "~7.4.2"
-    xmlhttprequest-ssl "~1.6.2"
-    yeast "0.1.2"
+    engine.io-parser "~5.0.3"
+    ws "~8.2.3"
+    xmlhttprequest-ssl "~2.0.0"
 
-engine.io-parser@~4.0.0, engine.io-parser@~4.0.1:
-  version "4.0.3"
-  resolved "https://registry.npmjs.org/engine.io-parser/-/engine.io-parser-4.0.3.tgz"
-  dependencies:
-    base64-arraybuffer "0.1.4"
+engine.io-parser@~5.0.3:
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/engine.io-parser/-/engine.io-parser-5.0.6.tgz#7811244af173e157295dec9b2718dfe42a64ef45"
 
-engine.io@~4.1.0:
-  version "4.1.2"
-  resolved "https://registry.npmjs.org/engine.io/-/engine.io-4.1.2.tgz"
+engine.io@~6.2.1:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/engine.io/-/engine.io-6.2.1.tgz#e3f7826ebc4140db9bbaa9021ad6b1efb175878f"
   dependencies:
+    "@types/cookie" "^0.4.1"
+    "@types/cors" "^2.8.12"
+    "@types/node" ">=10.0.0"
     accepts "~1.3.4"
     base64id "2.0.0"
     cookie "~0.4.1"
     cors "~2.8.5"
     debug "~4.3.1"
-    engine.io-parser "~4.0.0"
-    ws "~7.4.2"
+    engine.io-parser "~5.0.3"
+    ws "~8.2.3"
 
 enhanced-resolve@^5.10.0, enhanced-resolve@^5.8.3:
   version "5.12.0"
@@ -4509,9 +4495,9 @@ functions-have-names@^1.2.2:
   version "1.2.3"
   resolved "https://registry.npmjs.org/functions-have-names/-/functions-have-names-1.2.3.tgz"
 
-gatsby-cli@^4.24.0:
-  version "4.24.0"
-  resolved "https://registry.npmjs.org/gatsby-cli/-/gatsby-cli-4.24.0.tgz"
+gatsby-cli@^4.25.0:
+  version "4.25.0"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-4.25.0.tgz#da76a6a61a97948c6ce07984b33c911554982f51"
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/core" "^7.15.5"
@@ -4529,13 +4515,13 @@ gatsby-cli@^4.24.0:
     clipboardy "^2.3.0"
     common-tags "^1.8.2"
     convert-hrtime "^3.0.0"
-    create-gatsby "^2.24.0"
+    create-gatsby "^2.25.0"
     envinfo "^7.8.1"
     execa "^5.1.1"
     fs-exists-cached "^1.0.0"
     fs-extra "^10.1.0"
-    gatsby-core-utils "^3.24.0"
-    gatsby-telemetry "^3.24.0"
+    gatsby-core-utils "^3.25.0"
+    gatsby-telemetry "^3.25.0"
     hosted-git-info "^3.0.8"
     is-valid-path "^0.1.1"
     joi "^17.4.2"
@@ -4556,9 +4542,9 @@ gatsby-cli@^4.24.0:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^3.24.0:
-  version "3.24.0"
-  resolved "https://registry.npmjs.org/gatsby-core-utils/-/gatsby-core-utils-3.24.0.tgz"
+gatsby-core-utils@^3.24.0, gatsby-core-utils@^3.25.0:
+  version "3.25.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.25.0.tgz#6ebfd2b8c95f3bbc3b52a9619a1ff26c68109c25"
   dependencies:
     "@babel/runtime" "^7.15.4"
     ci-info "2.0.0"
@@ -4576,45 +4562,45 @@ gatsby-core-utils@^3.24.0:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
-gatsby-graphiql-explorer@^2.24.0:
-  version "2.24.0"
-  resolved "https://registry.npmjs.org/gatsby-graphiql-explorer/-/gatsby-graphiql-explorer-2.24.0.tgz"
+gatsby-graphiql-explorer@^2.25.0:
+  version "2.25.0"
+  resolved "https://registry.yarnpkg.com/gatsby-graphiql-explorer/-/gatsby-graphiql-explorer-2.25.0.tgz#78fe692009739cbd330b6c10a1cfebcff8301ab8"
   dependencies:
     "@babel/runtime" "^7.15.4"
 
-gatsby-legacy-polyfills@^2.24.0:
-  version "2.24.0"
-  resolved "https://registry.npmjs.org/gatsby-legacy-polyfills/-/gatsby-legacy-polyfills-2.24.0.tgz"
+gatsby-legacy-polyfills@^2.25.0:
+  version "2.25.0"
+  resolved "https://registry.yarnpkg.com/gatsby-legacy-polyfills/-/gatsby-legacy-polyfills-2.25.0.tgz#1a8633df7fff795a70cdf4d43a8d0251674940ab"
   dependencies:
     "@babel/runtime" "^7.15.4"
     core-js-compat "3.9.0"
 
-gatsby-link@^4.24.1:
-  version "4.24.1"
-  resolved "https://registry.npmjs.org/gatsby-link/-/gatsby-link-4.24.1.tgz"
+gatsby-link@^4.25.0:
+  version "4.25.0"
+  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-4.25.0.tgz#f7bd0b1e8c74be14e67cd649de1c4aa25f145237"
   dependencies:
     "@types/reach__router" "^1.3.10"
-    gatsby-page-utils "^2.24.1"
+    gatsby-page-utils "^2.25.0"
     prop-types "^15.8.1"
 
-gatsby-page-utils@^2.24.1:
-  version "2.24.1"
-  resolved "https://registry.npmjs.org/gatsby-page-utils/-/gatsby-page-utils-2.24.1.tgz"
+gatsby-page-utils@^2.25.0:
+  version "2.25.0"
+  resolved "https://registry.yarnpkg.com/gatsby-page-utils/-/gatsby-page-utils-2.25.0.tgz#1bd878b1a1a8b51822437bf8cbe2d5b38bfcee3e"
   dependencies:
     "@babel/runtime" "^7.15.4"
     bluebird "^3.7.2"
     chokidar "^3.5.3"
     fs-exists-cached "^1.0.0"
-    gatsby-core-utils "^3.24.0"
+    gatsby-core-utils "^3.25.0"
     glob "^7.2.3"
     lodash "^4.17.21"
     micromatch "^4.0.5"
 
-gatsby-parcel-config@0.15.1:
-  version "0.15.1"
-  resolved "https://registry.npmjs.org/gatsby-parcel-config/-/gatsby-parcel-config-0.15.1.tgz"
+gatsby-parcel-config@0.16.0:
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/gatsby-parcel-config/-/gatsby-parcel-config-0.16.0.tgz#a71a55f9cd912b1e84a723089a16c5ef90520e31"
   dependencies:
-    "@gatsbyjs/parcel-namer-relative-to-cwd" "1.9.0"
+    "@gatsbyjs/parcel-namer-relative-to-cwd" "^1.10.0"
     "@parcel/bundler-default" "2.6.2"
     "@parcel/compressor-raw" "2.6.2"
     "@parcel/namer-default" "2.6.2"
@@ -4681,9 +4667,9 @@ gatsby-plugin-mdx@^4.1.0:
     unist-util-visit "^4.1.0"
     vfile "^5.3.2"
 
-gatsby-plugin-page-creator@^4.24.1:
-  version "4.24.1"
-  resolved "https://registry.npmjs.org/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-4.24.1.tgz"
+gatsby-plugin-page-creator@^4.25.0:
+  version "4.25.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-4.25.0.tgz#6f47f1a49e18af9ef42207c22b20f5d78ccc02fb"
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@babel/traverse" "^7.15.4"
@@ -4691,10 +4677,10 @@ gatsby-plugin-page-creator@^4.24.1:
     chokidar "^3.5.3"
     fs-exists-cached "^1.0.0"
     fs-extra "^10.1.0"
-    gatsby-core-utils "^3.24.0"
-    gatsby-page-utils "^2.24.1"
-    gatsby-plugin-utils "^3.18.0"
-    gatsby-telemetry "^3.24.0"
+    gatsby-core-utils "^3.25.0"
+    gatsby-page-utils "^2.25.0"
+    gatsby-plugin-utils "^3.19.0"
+    gatsby-telemetry "^3.25.0"
     globby "^11.1.0"
     lodash "^4.17.21"
 
@@ -4741,9 +4727,9 @@ gatsby-plugin-sitemap@^5.22.0:
     minimatch "^3.1.2"
     sitemap "^7.0.0"
 
-gatsby-plugin-typescript@^4.24.0:
-  version "4.24.0"
-  resolved "https://registry.npmjs.org/gatsby-plugin-typescript/-/gatsby-plugin-typescript-4.24.0.tgz"
+gatsby-plugin-typescript@^4.25.0:
+  version "4.25.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-4.25.0.tgz#e498d00a4e811157fae0214bee9bfae13c569ef6"
   dependencies:
     "@babel/core" "^7.15.5"
     "@babel/plugin-proposal-nullish-coalescing-operator" "^7.14.5"
@@ -4751,39 +4737,36 @@ gatsby-plugin-typescript@^4.24.0:
     "@babel/plugin-proposal-optional-chaining" "^7.14.5"
     "@babel/preset-typescript" "^7.15.0"
     "@babel/runtime" "^7.15.4"
-    babel-plugin-remove-graphql-queries "^4.24.0"
+    babel-plugin-remove-graphql-queries "^4.25.0"
 
-gatsby-plugin-utils@^3.18.0:
-  version "3.18.0"
-  resolved "https://registry.npmjs.org/gatsby-plugin-utils/-/gatsby-plugin-utils-3.18.0.tgz"
+gatsby-plugin-utils@^3.18.0, gatsby-plugin-utils@^3.19.0:
+  version "3.19.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-3.19.0.tgz#f464b02cc51dcdc0c0e094b7352ee4bf660126ea"
   dependencies:
     "@babel/runtime" "^7.15.4"
-    "@gatsbyjs/potrace" "^2.3.0"
     fastq "^1.13.0"
     fs-extra "^10.1.0"
-    gatsby-core-utils "^3.24.0"
-    gatsby-sharp "^0.18.0"
+    gatsby-core-utils "^3.25.0"
+    gatsby-sharp "^0.19.0"
     graphql-compose "^9.0.7"
     import-from "^4.0.0"
     joi "^17.4.2"
     mime "^3.0.0"
-    mini-svg-data-uri "^1.4.4"
-    svgo "^2.8.0"
 
-gatsby-react-router-scroll@^5.24.0:
-  version "5.24.0"
-  resolved "https://registry.npmjs.org/gatsby-react-router-scroll/-/gatsby-react-router-scroll-5.24.0.tgz"
+gatsby-react-router-scroll@^5.25.0:
+  version "5.25.0"
+  resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-5.25.0.tgz#86cec0acc0594db01e7f3c37cf5034e034f2b635"
   dependencies:
     "@babel/runtime" "^7.15.4"
     prop-types "^15.8.1"
 
-gatsby-script@^1.9.0:
-  version "1.9.0"
-  resolved "https://registry.npmjs.org/gatsby-script/-/gatsby-script-1.9.0.tgz"
+gatsby-script@^1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-script/-/gatsby-script-1.10.0.tgz#0096ceaee2f251528c02bed5e7e058314d359127"
 
-gatsby-sharp@^0.18.0:
-  version "0.18.0"
-  resolved "https://registry.npmjs.org/gatsby-sharp/-/gatsby-sharp-0.18.0.tgz"
+gatsby-sharp@^0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/gatsby-sharp/-/gatsby-sharp-0.19.0.tgz#c2c35d885103ebf9d2733737db798312897a716c"
   dependencies:
     "@types/sharp" "^0.30.5"
     sharp "^0.30.7"
@@ -4803,9 +4786,9 @@ gatsby-source-filesystem@^4.22.0:
     valid-url "^1.0.9"
     xstate "4.32.1"
 
-gatsby-telemetry@^3.24.0:
-  version "3.24.0"
-  resolved "https://registry.npmjs.org/gatsby-telemetry/-/gatsby-telemetry-3.24.0.tgz"
+gatsby-telemetry@^3.25.0:
+  version "3.25.0"
+  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-3.25.0.tgz#1e5b109927fd465daa097fd3946ab2a9eb39b25a"
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/runtime" "^7.15.4"
@@ -4814,7 +4797,7 @@ gatsby-telemetry@^3.24.0:
     boxen "^4.2.0"
     configstore "^5.0.1"
     fs-extra "^10.1.0"
-    gatsby-core-utils "^3.24.0"
+    gatsby-core-utils "^3.25.0"
     git-up "^7.0.0"
     is-docker "^2.2.1"
     lodash "^4.17.21"
@@ -4834,16 +4817,16 @@ gatsby-transformer-sharp@^4.22.0:
     semver "^7.3.7"
     sharp "^0.30.7"
 
-gatsby-worker@^1.24.0:
-  version "1.24.0"
-  resolved "https://registry.npmjs.org/gatsby-worker/-/gatsby-worker-1.24.0.tgz"
+gatsby-worker@^1.25.0:
+  version "1.25.0"
+  resolved "https://registry.yarnpkg.com/gatsby-worker/-/gatsby-worker-1.25.0.tgz#0bbed669f3b21345a350743b9826cbfd007fa3a9"
   dependencies:
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-gatsby@^4.22.0:
-  version "4.24.8"
-  resolved "https://registry.npmjs.org/gatsby/-/gatsby-4.24.8.tgz"
+gatsby@^4.25.4:
+  version "4.25.4"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-4.25.4.tgz#fbbea13b36e0c0a76a72121b9eecc754c8b8b67a"
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/core" "^7.15.5"
@@ -4882,8 +4865,8 @@ gatsby@^4.22.0:
     babel-plugin-add-module-exports "^1.0.4"
     babel-plugin-dynamic-import-node "^2.3.3"
     babel-plugin-lodash "^3.3.4"
-    babel-plugin-remove-graphql-queries "^4.24.0"
-    babel-preset-gatsby "^2.24.0"
+    babel-plugin-remove-graphql-queries "^4.25.0"
+    babel-preset-gatsby "^2.25.0"
     better-opn "^2.1.1"
     bluebird "^3.7.2"
     browserslist "^4.17.5"
@@ -4925,20 +4908,20 @@ gatsby@^4.22.0:
     find-cache-dir "^3.3.2"
     fs-exists-cached "1.0.0"
     fs-extra "^10.1.0"
-    gatsby-cli "^4.24.0"
-    gatsby-core-utils "^3.24.0"
-    gatsby-graphiql-explorer "^2.24.0"
-    gatsby-legacy-polyfills "^2.24.0"
-    gatsby-link "^4.24.1"
-    gatsby-page-utils "^2.24.1"
-    gatsby-parcel-config "0.15.1"
-    gatsby-plugin-page-creator "^4.24.1"
-    gatsby-plugin-typescript "^4.24.0"
-    gatsby-plugin-utils "^3.18.0"
-    gatsby-react-router-scroll "^5.24.0"
-    gatsby-script "^1.9.0"
-    gatsby-telemetry "^3.24.0"
-    gatsby-worker "^1.24.0"
+    gatsby-cli "^4.25.0"
+    gatsby-core-utils "^3.25.0"
+    gatsby-graphiql-explorer "^2.25.0"
+    gatsby-legacy-polyfills "^2.25.0"
+    gatsby-link "^4.25.0"
+    gatsby-page-utils "^2.25.0"
+    gatsby-parcel-config "0.16.0"
+    gatsby-plugin-page-creator "^4.25.0"
+    gatsby-plugin-typescript "^4.25.0"
+    gatsby-plugin-utils "^3.19.0"
+    gatsby-react-router-scroll "^5.25.0"
+    gatsby-script "^1.10.0"
+    gatsby-telemetry "^3.25.0"
+    gatsby-worker "^1.25.0"
     glob "^7.2.3"
     globby "^11.1.0"
     got "^11.8.5"
@@ -4990,8 +4973,8 @@ gatsby@^4.22.0:
     shallow-compare "^1.2.2"
     signal-exit "^3.0.5"
     slugify "^1.6.1"
-    socket.io "3.1.2"
-    socket.io-client "3.1.3"
+    socket.io "4.5.4"
+    socket.io-client "4.5.4"
     st "^2.0.0"
     stack-trace "^0.0.10"
     string-similarity "^1.2.2"
@@ -5009,9 +4992,9 @@ gatsby@^4.22.0:
     webpack-stats-plugin "^1.0.3"
     webpack-virtual-modules "^0.3.2"
     xstate "4.32.1"
-    yaml-loader "^0.6.0"
+    yaml-loader "^0.8.0"
   optionalDependencies:
-    gatsby-sharp "^0.18.0"
+    gatsby-sharp "^0.19.0"
 
 gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"
@@ -5219,10 +5202,6 @@ gzip-size@^6.0.0:
 has-bigints@^1.0.1, has-bigints@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/has-bigints/-/has-bigints-1.0.2.tgz"
-
-has-cors@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/has-cors/-/has-cors-1.1.0.tgz"
 
 has-flag@^3.0.0:
   version "3.0.0"
@@ -5821,6 +5800,10 @@ isobject@^3.0.1:
   version "3.0.1"
   resolved "https://registry.npmjs.org/isobject/-/isobject-3.0.1.tgz"
 
+javascript-stringify@^2.0.1:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/javascript-stringify/-/javascript-stringify-2.1.0.tgz#27c76539be14d8bd128219a2d731b09337904e79"
+
 jest-worker@^26.3.0:
   version "26.6.2"
   resolved "https://registry.npmjs.org/jest-worker/-/jest-worker-26.6.2.tgz"
@@ -6042,14 +6025,6 @@ loader-utils@1.2.3:
   dependencies:
     big.js "^5.2.2"
     emojis-list "^2.0.0"
-    json5 "^1.0.1"
-
-loader-utils@^1.4.0:
-  version "1.4.2"
-  resolved "https://registry.npmjs.org/loader-utils/-/loader-utils-1.4.2.tgz"
-  dependencies:
-    big.js "^5.2.2"
-    emojis-list "^3.0.0"
     json5 "^1.0.1"
 
 loader-utils@^2.0.0, loader-utils@^2.0.4:
@@ -7194,14 +7169,6 @@ parse-url@^8.1.0:
   resolved "https://registry.npmjs.org/parse-url/-/parse-url-8.1.0.tgz"
   dependencies:
     parse-path "^7.0.0"
-
-parseqs@0.0.6:
-  version "0.0.6"
-  resolved "https://registry.npmjs.org/parseqs/-/parseqs-0.0.6.tgz"
-
-parseuri@0.0.6:
-  version "0.0.6"
-  resolved "https://registry.npmjs.org/parseuri/-/parseuri-0.0.6.tgz"
 
 parseurl@^1.3.3, parseurl@~1.3.3:
   version "1.3.3"
@@ -8425,43 +8392,36 @@ snake-case@^3.0.4:
     dot-case "^3.0.4"
     tslib "^2.0.3"
 
-socket.io-adapter@~2.1.0:
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/socket.io-adapter/-/socket.io-adapter-2.1.0.tgz"
+socket.io-adapter@~2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/socket.io-adapter/-/socket.io-adapter-2.4.0.tgz#b50a4a9ecdd00c34d4c8c808224daa1a786152a6"
 
-socket.io-client@3.1.3:
-  version "3.1.3"
-  resolved "https://registry.npmjs.org/socket.io-client/-/socket.io-client-3.1.3.tgz"
+socket.io-client@4.5.4:
+  version "4.5.4"
+  resolved "https://registry.yarnpkg.com/socket.io-client/-/socket.io-client-4.5.4.tgz#d3cde8a06a6250041ba7390f08d2468ccebc5ac9"
   dependencies:
-    "@types/component-emitter" "^1.2.10"
-    backo2 "~1.0.2"
-    component-emitter "~1.3.0"
-    debug "~4.3.1"
-    engine.io-client "~4.1.0"
-    parseuri "0.0.6"
-    socket.io-parser "~4.0.4"
+    "@socket.io/component-emitter" "~3.1.0"
+    debug "~4.3.2"
+    engine.io-client "~6.2.3"
+    socket.io-parser "~4.2.1"
 
-socket.io-parser@~4.0.3, socket.io-parser@~4.0.4:
-  version "4.0.5"
-  resolved "https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-4.0.5.tgz"
+socket.io-parser@~4.2.1:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/socket.io-parser/-/socket.io-parser-4.2.2.tgz#1dd384019e25b7a3d374877f492ab34f2ad0d206"
   dependencies:
-    "@types/component-emitter" "^1.2.10"
-    component-emitter "~1.3.0"
+    "@socket.io/component-emitter" "~3.1.0"
     debug "~4.3.1"
 
-socket.io@3.1.2:
-  version "3.1.2"
-  resolved "https://registry.npmjs.org/socket.io/-/socket.io-3.1.2.tgz"
+socket.io@4.5.4:
+  version "4.5.4"
+  resolved "https://registry.yarnpkg.com/socket.io/-/socket.io-4.5.4.tgz#a4513f06e87451c17013b8d13fdfaf8da5a86a90"
   dependencies:
-    "@types/cookie" "^0.4.0"
-    "@types/cors" "^2.8.8"
-    "@types/node" ">=10.0.0"
     accepts "~1.3.4"
     base64id "~2.0.0"
-    debug "~4.3.1"
-    engine.io "~4.1.0"
-    socket.io-adapter "~2.1.0"
-    socket.io-parser "~4.0.3"
+    debug "~4.3.2"
+    engine.io "~6.2.1"
+    socket.io-adapter "~2.4.0"
+    socket.io-parser "~4.2.1"
 
 source-list-map@^2.0.0:
   version "2.0.1"
@@ -9475,9 +9435,9 @@ write-file-atomic@^3.0.0:
     signal-exit "^3.0.2"
     typedarray-to-buffer "^3.1.5"
 
-ws@~7.4.2:
-  version "7.4.6"
-  resolved "https://registry.npmjs.org/ws/-/ws-7.4.6.tgz"
+ws@~8.2.3:
+  version "8.2.3"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.2.3.tgz#63a56456db1b04367d0b721a0b80cae6d8becbba"
 
 xdg-basedir@^4.0.0:
   version "4.0.0"
@@ -9496,9 +9456,9 @@ xmlbuilder@^4.1.0:
   dependencies:
     lodash "^4.0.0"
 
-xmlhttprequest-ssl@~1.6.2:
-  version "1.6.3"
-  resolved "https://registry.npmjs.org/xmlhttprequest-ssl/-/xmlhttprequest-ssl-1.6.3.tgz"
+xmlhttprequest-ssl@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/xmlhttprequest-ssl/-/xmlhttprequest-ssl-2.0.0.tgz#91360c86b914e67f44dce769180027c0da618c67"
 
 xss@^1.0.6:
   version "1.0.14"
@@ -9535,16 +9495,21 @@ yallist@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/yallist/-/yallist-4.0.0.tgz"
 
-yaml-loader@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.npmjs.org/yaml-loader/-/yaml-loader-0.6.0.tgz"
+yaml-loader@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/yaml-loader/-/yaml-loader-0.8.0.tgz#c839325e3fdee082b3768b2a21fe34fde5d96f61"
   dependencies:
-    loader-utils "^1.4.0"
-    yaml "^1.8.3"
+    javascript-stringify "^2.0.1"
+    loader-utils "^2.0.0"
+    yaml "^2.0.0"
 
-yaml@^1.10.0, yaml@^1.10.2, yaml@^1.7.2, yaml@^1.8.3:
+yaml@^1.10.0, yaml@^1.10.2, yaml@^1.7.2:
   version "1.10.2"
   resolved "https://registry.npmjs.org/yaml/-/yaml-1.10.2.tgz"
+
+yaml@^2.0.0:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.2.1.tgz#3014bf0482dcd15147aa8e56109ce8632cd60ce4"
 
 yargs-parser@^18.1.2:
   version "18.1.3"
@@ -9568,10 +9533,6 @@ yargs@^15.3.1, yargs@^15.4.1:
     which-module "^2.0.0"
     y18n "^4.0.0"
     yargs-parser "^18.1.2"
-
-yeast@0.1.2:
-  version "0.1.2"
-  resolved "https://registry.npmjs.org/yeast/-/yeast-0.1.2.tgz"
 
 yocto-queue@^0.1.0:
   version "0.1.0"
