@@ -1,12 +1,15 @@
-@import "../header.scss";
+@import '../header.scss';
 
-main[data-scope="quem-somos"] {
+main[data-scope='quem-somos'] {
   #section-hero {
+    @include media-breakpoint-up(md) {
+      margin-top: 3rem !important;
+    }
     h1 {
       font-size: 2.5 * $font-size-base;
       @include media-breakpoint-up(sm) {
         & {
-          font-size: 4.5 * $font-size-base;
+          font-size: 3.5 * $font-size-base;
         }
       }
       color: $secondary;
@@ -85,7 +88,7 @@ main[data-scope="quem-somos"] {
     .carousel-indicators [data-bs-target] {
       height: auto;
       text-indent: 0;
-      color: #FFF;
+      color: #fff;
       width: auto;
       border-radius: $spacer * 3;
       padding: $spacer * 0.5 $spacer * 2;
@@ -127,7 +130,7 @@ main[data-scope="quem-somos"] {
     .carousel-indicators [data-bs-target] {
       height: auto;
       text-indent: 0;
-      color: #FFF;
+      color: #fff;
       width: auto;
       border-radius: $spacer * 3;
       padding: $spacer * 0.5 $spacer * 2;
@@ -147,6 +150,11 @@ main[data-scope="quem-somos"] {
   }
 
   #section-reconhecimento {
+    .carousel-inner {
+      display: flex;
+      background-color: #2a93fc;
+    }
+
     h2 {
       background: $primary-light;
       color: white;
@@ -157,26 +165,29 @@ main[data-scope="quem-somos"] {
     }
 
     .carousel-indicators {
-      position: relative;
-      background-color: $secondary-light;
-      margin: 0;
+      right: 37%;
+      gap: $spacer * 1.9;
+      margin-right: 25%;
+
+      @include media-breakpoint-down(lg) {
+        & {
+          right: 0;
+          margin: 0 auto;
+        }
+      }
     }
 
     .carousel-indicators [data-bs-target] {
-      height: auto;
+      height: 12px;
       text-indent: 0;
-      color: #FFF;
-      width: auto;
-      border-radius: $spacer * 3;
-      padding: $spacer * 0.5 $spacer * 2;
+      color: #fff;
+      width: 12px;
+      border-radius: 50%;
       font-size: $font-size-base * 1.15;
       font-weight: 900;
-      background-color: $secondary-light;
+      background-color: #fff9ef;
       opacity: 1;
-
-      &::before {
-        content: attr(aria-label);
-      }
+      overflow: hidden;
 
       &.active {
         background-color: $secondary;
@@ -184,14 +195,51 @@ main[data-scope="quem-somos"] {
     }
 
     .carousel-item {
-      padding: $spacer * 2;
+      max-width: 100%;
       text-align: center;
+      & {
+        .container {
+          display: flex;
+          gap: $spacer * 3;
+
+          @include media-breakpoint-down(lg) {
+            & {
+              flex-direction: column;
+              padding: $spacer * 3 $spacer * 2;
+              gap: $spacer * 2;
+            }
+          }
+
+          div:first-child {
+            max-width: 500px;
+            align-self: center;
+
+            h3 {
+              color: #ffbb33;
+            }
+
+            p {
+              color: white;
+            }
+          }
+
+          div:last-child {
+            max-width: 600px;
+            height: 500px;
+          }
+        }
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      .carousel-control-prev,
+      .carousel-control-next {
+        display: none;
+      }
     }
   }
 
-
   #section-transparencia {
-
     background: top no-repeat url(../images/transparencia.png);
     background-size: 80% auto;
 
@@ -204,8 +252,13 @@ main[data-scope="quem-somos"] {
       margin: 0;
     }
 
+    .main-container {
+      padding-top: $spacer * 2;
+      padding-bottom: $spacer * 2;
+    }
+
     .main-card {
-      background: #FFFE;
+      background: #fffe;
       padding: 4 * $spacer;
       border-radius: $spacer;
       border: $spacer solid $secondary-light;
@@ -220,7 +273,7 @@ main[data-scope="quem-somos"] {
     .carousel-indicators [data-bs-target] {
       height: auto;
       text-indent: 0;
-      color: #FFF;
+      color: #fff;
       width: auto;
       border-radius: $spacer * 3;
       padding: $spacer * 0.5 $spacer * 2;
@@ -235,6 +288,17 @@ main[data-scope="quem-somos"] {
 
       &.active {
         background-color: $secondary;
+      }
+    }
+    .card-container {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr 1fr;
+      padding-top: $spacer;
+      padding-bottom: $spacer * 3;
+
+      @include media-breakpoint-down(sm) {
+        grid-template-columns: 1fr;
       }
     }
   }

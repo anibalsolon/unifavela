@@ -13,14 +13,9 @@ export default () => {
       <section id="section-hero" className="row g-0">
         <h1>Depoimentos</h1>
       </section>
-      {/* @TODO colocar videos de depoimento
       <section className="bg-primary px-8 py-6">
         <YoutubeEmbed embedId="y4yhmymlouI" />
       </section>
-      <section className="bg-primary px-8 py-6">
-        <YoutubeEmbed embedId="y4yhmymlouI" />
-      </section> */}
-
       {/* @TODO ajeitar tamanho da primeira caixa, espaco na caixa branca sobrando */}
       <section id="section-depoimentos">
         <div className="container">

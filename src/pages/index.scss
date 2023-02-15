@@ -1,6 +1,14 @@
-@import "../header.scss";
+@import '../header.scss';
 
-main[data-scope="index"] {
+main[data-scope='index'] {
+  .container-principal {
+    @include media-breakpoint-down(xl) {
+      padding-top: $spacer * 4;
+    }
+    @include media-breakpoint-down(sm) {
+      padding-top: $spacer * 2;
+    }
+  }
 
   .btn {
     --bs-btn-border-radius: #{$spacer * 2};
@@ -11,7 +19,7 @@ main[data-scope="index"] {
     margin-left: 1.5 * $spacer;
 
     &::before {
-      content: "↓";
+      content: '↓';
       color: $secondary;
       margin-left: -3 * $spacer;
       display: block;
@@ -46,8 +54,16 @@ main[data-scope="index"] {
   #section-metricas {
     background: $primary;
     padding: $spacer * 6 0;
-    border-bottom: 1.5 * $spacer solid $primary-light;
     text-align: center;
+
+    @include media-breakpoint-down(lg) {
+      & {
+        padding: $spacer * 2 0;
+        .img-fluid {
+          max-width: 70%;
+        }
+      }
+    }
 
     h3 {
       color: white;
@@ -75,10 +91,8 @@ main[data-scope="index"] {
       font-weight: 900;
       font-size: 3 * $font-size-base;
       padding-top: $spacer;
-      text-shadow: -2px 2px 4px $primary,
-                    2px 2px 4px $primary,
-                    2px -2px 0 $primary,
-                    -2px -2px 0 $primary;
+      text-shadow: -2px 2px 4px $primary, 2px 2px 4px $primary,
+        2px -2px 0 $primary, -2px -2px 0 $primary;
     }
 
     p {
@@ -91,7 +105,13 @@ main[data-scope="index"] {
       --bs-gutter-x: #{$spacer};
       --bs-gutter-y: #{$spacer};
 
-      &>div {
+      @include media-breakpoint-down(sm) {
+        & {
+          margin-top: 15vmin;
+        }
+      }
+
+      & > div {
         text-align: center;
         background: rgba($secondary, 0.65);
         padding-top: calc(var(--bs-gutter-y));
@@ -100,17 +120,27 @@ main[data-scope="index"] {
         padding-left: calc(var(--bs-gutter-x));
       }
     }
+
+    @include media-breakpoint-down(sm) {
+      & {
+        padding: $spacer * 2 0;
+        h2 {
+          font-size: $font-size-base * 2;
+          text-align: center;
+        }
+      }
+    }
   }
 
   #section-depoimentos {
     background: $primary-light;
 
-    &>.carousel {
+    & > .carousel {
       min-height: 50vh;
       // display: flex;
       // flex-direction: column;
 
-      &>.carousel-inner {
+      & > .carousel-inner {
         min-height: 50vh;
         display: flex;
         align-items: center;
@@ -122,27 +152,44 @@ main[data-scope="index"] {
 
     .carousel-control-prev,
     .carousel-control-next {
-      width: 8%;
+      width: 4%;
     }
 
     .carousel-item {
       margin-top: 40px;
       margin-bottom: 5px;
 
-      &>div {
+      & > div {
         display: flex;
+        margin-bottom: $spacer * 6;
+        margin-top: $spacer * 4;
+
+        @include media-breakpoint-down(md) {
+          & {
+            flex-direction: column;
+            align-items: center;
+          }
+        }
 
         p {
           width: 70%;
           background: white;
           padding: $spacer * 2;
           padding-top: $spacer * 2;
-          border-radius: $spacer * 2;
+          border-radius: $spacer * 2 0 0 $spacer * 2;
           margin: 0;
           z-index: 2;
 
+          @include media-breakpoint-down(md) {
+            & {
+              width: 90%;
+              order: 2;
+              border-radius: 0 0 $spacer * 2 $spacer * 2;
+            }
+          }
+
           &::before {
-            content: "\F6B0";
+            content: '\F6B0';
             font-family: $bootstrap-icons-font;
             font-size: 6 * $font-size-base;
             line-height: 6 * $font-size-base;
@@ -153,7 +200,7 @@ main[data-scope="index"] {
           }
         }
 
-        &>div {
+        & > div {
           width: 30%;
           background: $secondary-light;
           display: flex;
@@ -161,11 +208,19 @@ main[data-scope="index"] {
 
           align-items: center;
           justify-content: center;
-          border-radius: 0 $spacer $spacer 0;
-          padding: 0.5 * $spacer 0.5 * $spacer 0.5 * $spacer 2.5 * $spacer;
-          margin: 2 * $spacer 0 2 * $spacer -2 * $spacer;
+          border-radius: 0 2 * $spacer 2 * $spacer 0;
+          padding: 1 * $spacer 1.5 * $spacer 0.5 * $spacer 2.5 * $spacer;
+          margin-left: -1 * $spacer;
 
           z-index: 1;
+
+          @include media-breakpoint-down(md) {
+            & {
+              width: 90%;
+              border-radius: $spacer * 2 $spacer * 2 0 0;
+              margin-left: 0;
+            }
+          }
 
           h3 {
             color: white;
@@ -195,13 +250,21 @@ main[data-scope="index"] {
   #section-parceiros {
     margin: 4 * $spacer 0;
 
+    @include media-breakpoint-down(sm) {
+      .container-parceiros {
+        max-width: 250px;
+        margin: 0 auto;
+        gap: 2rem;
+      }
+    }
+
     h2 {
       margin-top: 4 * $spacer;
       color: $secondary-light;
       text-transform: none;
 
       &::before {
-        content: " ";
+        content: ' ';
         width: 15 * $spacer;
         border-top: 1px solid $primary;
         display: inline-block;
@@ -210,7 +273,7 @@ main[data-scope="index"] {
       }
 
       &::after {
-        content: " ";
+        content: ' ';
         width: 15 * $spacer;
         border-top: 1px solid $primary;
         display: inline-block;
