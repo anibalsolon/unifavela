@@ -241,4 +241,16 @@ footer {
     max-width: 300px;
     padding-top: $spacer * 2;
   }
+
+  .creditos {
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    max-width: max-content;
+    a {
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
 }

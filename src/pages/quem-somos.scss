@@ -169,7 +169,7 @@ main[data-scope='quem-somos'] {
       gap: $spacer * 1.9;
       margin-right: 25%;
 
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         & {
           right: 0;
           margin: 0 auto;
@@ -195,15 +195,14 @@ main[data-scope='quem-somos'] {
     }
 
     .carousel-item {
-      margin: 0 auto;
-      max-width: 1200px;
+      max-width: 100%;
       text-align: center;
       & {
         .container {
           display: flex;
           gap: $spacer * 3;
 
-          @include media-breakpoint-down(md) {
+          @include media-breakpoint-down(lg) {
             & {
               flex-direction: column;
               padding: $spacer * 3 $spacer * 2;

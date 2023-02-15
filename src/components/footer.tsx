@@ -53,6 +53,21 @@ export default () => {
           </div>
         </div>
       </div>
+      <p className="creditos">
+        Desenvolvido por{' '}
+        <a href="https://github.com/Luanleandro" target="_blank">
+          Luan Cruz
+        </a>
+        ,
+        <a href="https://laurellie.com.br" target="_blank">
+          {' '}
+          Laurellie Pacussich
+        </a>
+        ,{' '}
+        <a href="https://lisconsulting.com.br" target="_blank">
+          Lis Consulting
+        </a>
+      </p>
     </footer>
   );
 };
