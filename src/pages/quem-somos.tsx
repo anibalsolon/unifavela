@@ -415,7 +415,7 @@ export default () => {
                 <p>
                   Deveres e direitos dos membros da UniFavela, além de regras para a gestão da instituição.
                 </p>
-                <a href="./pdfs/UniFavela_Estatuto_2023.pdf" className="btn btn-secondary">Acessar</a>
+                <a href="/pdfs/UniFavela_Estatuto_2023.pdf" className="btn btn-secondary">Acessar</a>
               </Card>
             </div>
             <div className="">
@@ -428,10 +428,10 @@ export default () => {
                     </p>
                   </div>
                   <div className="col-6">
-                    <a href="./pdfs/UniFavela_Certidao_FGTS.pdf" className="btn btn-secondary d-block mb-2">Certidão de Regularidade do FGTS</a>
-                    <a href="./pdfs/UniFavela_CNDT.pdf" className="btn btn-secondary d-block mb-2">Certidão Negativa de Débitos Trabalhistas</a>
-                    <a href="./pdfs/UniFavela_CND_Uniao.pdf" className="btn btn-secondary d-block mb-2">Certidão Negativa de Débitos Federais</a>
-                    <a href="./pdfs/UniFavela_CND_RJ.pdf" className="btn btn-secondary d-block mb-2">Certidão Negativa de Débitos Estaduais</a>
+                    <a href="/pdfs/UniFavela_Certidao_FGTS.pdf" className="btn btn-secondary d-block mb-2">Certidão de Regularidade do FGTS</a>
+                    <a href="/pdfs/UniFavela_CNDT.pdf" className="btn btn-secondary d-block mb-2">Certidão Negativa de Débitos Trabalhistas</a>
+                    <a href="/pdfs/UniFavela_CND_Uniao.pdf" className="btn btn-secondary d-block mb-2">Certidão Negativa de Débitos Federais</a>
+                    <a href="/pdfs/UniFavela_CND_RJ.pdf" className="btn btn-secondary d-block mb-2">Certidão Negativa de Débitos Estaduais</a>
                   </div>
                 </div>
               </Card>
@@ -442,7 +442,7 @@ export default () => {
                 <p>
                   Veja o que temos feitos no último ano.
                 </p>
-                <a href="./pdfs/UniFavela_BoletimExterno_Jun-Out.pdf" className="btn btn-secondary">Acessar</a>
+                <a href="/pdfs/UniFavela_BoletimExterno_Jun-Out.pdf" className="btn btn-secondary">Acessar</a>
               </Card>
             </div>
             <div className="">
@@ -455,10 +455,10 @@ export default () => {
                     </p>
                   </div>
                   <div className="col-6">
-                    <a href="./pdfs/UniFavela_Balancete_2022.pdf" className="btn btn-secondary d-block mb-2">Balancete 2022</a>
-                    <a href="./pdfs/UniFavela_Balancete_2021.pdf" className="btn btn-secondary d-block mb-2">Balancete 2021</a>
-                    <a href="./pdfs/UniFavela_Auditoria_2021.pdf" className="btn btn-secondary d-block mb-2">Auditoria 2021</a>
-                    <a href="./pdfs/Unifavela_DRE_2022.pdf" className="btn btn-secondary d-block mb-2">DRE 2022</a>
+                    <a href="/pdfs/UniFavela_Balancete_2022.pdf" className="btn btn-secondary d-block mb-2">Balancete 2022</a>
+                    <a href="/pdfs/UniFavela_Balancete_2021.pdf" className="btn btn-secondary d-block mb-2">Balancete 2021</a>
+                    <a href="/pdfs/UniFavela_Auditoria_2021.pdf" className="btn btn-secondary d-block mb-2">Auditoria 2021</a>
+                    <a href="/pdfs/Unifavela_DRE_2022.pdf" className="btn btn-secondary d-block mb-2">DRE 2022</a>
                   </div>
                 </div>
               </Card>
