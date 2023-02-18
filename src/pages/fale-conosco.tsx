@@ -34,7 +34,7 @@ export default () => {
                 <textarea className="form-control" id="form-message" rows={3}></textarea>
               </div>
               <div className="mb-3 col-12 text-end">
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <button type="submit" className="btn btn-primary">Enviar</button>
               </div>
             </fieldset>
           </form>
