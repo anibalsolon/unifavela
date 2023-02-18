@@ -32,7 +32,7 @@ import ODS10 from "../images/ods-10.svg";
 const IndexPage = () => {
   return (
     <Layout scope="index">
-      <section className="row g-0">
+      <section className="container-principal row g-0">
         <div className="col-12 col-md-6 offset-md-1 my-auto px-4">
           <div className="mb-5 mt-5 mt-md-0">
             <StaticImage src="../images/unifavela.png" alt="UniFavela" />
@@ -192,7 +192,7 @@ const IndexPage = () => {
       <section id="section-parceiros">
         <h2 className="text-center mb-5">Parceiros</h2>
         <div className="container">
-          <div className="row align-items-center justify-content-center">
+          <div className="container-parceiros row align-items-center justify-content-center">
             <div className="col-md-3 text-center my-auto">
               <a href="https://www.meninos.ch/" target="_blank"><img className="img-fluid" src={FreundeLogo} /></a>
             </div>

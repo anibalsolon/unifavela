@@ -1,10 +1,9 @@
-@import "../header.scss";
+@import '../header.scss';
 
-
-main[data-scope="depoimentos"] {
-
+main[data-scope='depoimentos'] {
   #section-hero {
-    background: url(../images/depoimentos-1.png), url(../images/depoimentos-2.png);
+    background: url(../images/depoimentos-1.png),
+      url(../images/depoimentos-2.png);
     background-position: top left, top right;
     background-size: contain, contain;
     background-color: $secondary;
@@ -41,7 +40,7 @@ main[data-scope="depoimentos"] {
     background: $primary-light;
     padding: $spacer * 2 0;
 
-    &>div {
+    & > div {
       display: flex;
       margin: $spacer * 2 auto 0;
 
@@ -50,12 +49,12 @@ main[data-scope="depoimentos"] {
         background: white;
         padding: $spacer * 2;
         padding-top: $spacer * 2;
-        border-radius: $spacer * 2;
+        border-radius: $spacer * 2 0 0 $spacer * 2;
         margin: 0;
         z-index: 2;
 
         &::before {
-          content: "\F6B0";
+          content: '\F6B0';
           font-family: $bootstrap-icons-font;
           font-size: 6 * $font-size-base;
           line-height: 6 * $font-size-base;
@@ -63,10 +62,16 @@ main[data-scope="depoimentos"] {
           color: $primary;
           display: block;
           text-indent: -1rem;
+
+          @include media-breakpoint-down(md) {
+            &::before {
+              display: none;
+            }
+          }
         }
       }
 
-      &>div {
+      & > div {
         width: 30%;
         background: $secondary-light;
         display: flex;
@@ -74,9 +79,9 @@ main[data-scope="depoimentos"] {
 
         align-items: center;
         justify-content: center;
-        border-radius: 0 $spacer $spacer 0;
-        padding: 0.5 * $spacer 0.5 * $spacer 0.5 * $spacer 2.5 * $spacer;
-        margin: 2 * $spacer 0 2 * $spacer -2 * $spacer;
+        border-radius: 0 2 * $spacer 2 * $spacer 0;
+        padding: 1 * $spacer 1.5 * $spacer 0.5 * $spacer 2.5 * $spacer;
+        margin-left: -1 * $spacer;
 
         z-index: 1;
 
@@ -99,6 +104,55 @@ main[data-scope="depoimentos"] {
 
         img {
           width: 100%;
+          border-radius: $spacer;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    section:nth-child(2) {
+      display: flex;
+      justify-content: center;
+    }
+
+    #section-hero > h1 {
+      font-size: 2 * $spacer;
+    }
+
+    .video-responsive {
+      padding: 8 * $spacer 11.5 * $spacer;
+    }
+
+    .video-responsive iframe {
+      width: 100%;
+      left: 0;
+      top: 10%;
+    }
+
+    #section-depoimentos {
+      & > div {
+        flex-direction: column;
+        p {
+          order: 2;
+          width: 100%;
+          border-radius: 0 0 2 * $spacer 2 * $spacer;
+        }
+
+        @include media-breakpoint-up(sm) {
+          p::before {
+            display: none;
+          }
+        }
+
+        & > div {
+          width: 100%;
+          border-radius: $spacer $spacer 0 0;
+          margin: 0;
+
+          & > div {
+            max-width: 300px;
+          }
         }
       }
     }

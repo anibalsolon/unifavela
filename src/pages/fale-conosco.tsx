@@ -7,14 +7,14 @@ import Layout from "../components/layout";
 export default () => {
   return (
     <Layout scope="fale-conosco">
-      <section id="section-hero" className="row g-0">
-        <div className="col-4 offset-2 my-auto px-4">
+      <section id="section-hero">
+        <div className="container-conteudo">
           <h1>Fale Conosco</h1>
           <p>
           A UniFavela não tem o prefixo Uni à toa: aqui a união faz de verdade a força! A sua ajuda pode tornar nossas ações mais potentes dentro das 16 favelas da Maré. Topa em nos ajudar de alguma forma em busca de uma sociedade mais justa? É só entrar em contato através do formulário:
           </p>
         </div>
-        <div className="col-4">
+        <div className="container-formulario">
           <form>
             <fieldset className="row mx-3">
               <div className="mb-3 col-12">
