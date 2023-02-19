@@ -4,7 +4,7 @@ import './parceiros.scss';
 
 import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/layout';
-import Card from '../components/card';
+export { Head } from '../components/layout';
 
 import FreundeLogo from '../images/parceiros/freunde-brasillianischer-strassenkinder.png';
 import InvernoLogo from '../images/parceiros/inverno.png';
