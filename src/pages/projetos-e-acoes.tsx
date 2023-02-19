@@ -6,11 +6,10 @@ import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 export { Head } from "../components/layout";
 
-import ODS2 from '../images/ods-2.svg';
-import ODS4 from '../images/ods-4.svg';
-import ODS8 from '../images/ods-8.svg';
-import ODS10 from '../images/ods-10.svg';
-import { StaticImage } from 'gatsby-plugin-image';
+import ODS2 from "../images/ods-2.svg";
+import ODS4 from "../images/ods-4.svg";
+import ODS8 from "../images/ods-8.svg";
+import ODS10 from "../images/ods-10.svg";
 
 export default () => {
   return (
@@ -18,20 +17,20 @@ export default () => {
       <section id="section-hero" className="row g-0">
         <h1>Projetos e Ações</h1>
       </section>
-      {/* 
-        @TODO mover o prevestibular para junto das outras ações, sendo o prevest na primeira coluna
-        @TODO padronizar tamanho das imagens
-      */}
       <section id="section-projetos">
         <div className="container">
-          <div className="">
-            <div className="projeto">
-              <div className="">
+          <div className="row no-gutters">
+            <div className="col-12 col-sm-6">
+              <div className="projeto">
                 <StaticImage
                   src="../images/projetos/unifavela_prevestibular.jpg"
                   alt="Pré-vestibular UniFavela"
                 />
-                <h3>Pré-vestibular UniFavela</h3>
+                <h3>
+                  <ODS8 />
+                  <ODS10 />
+                  Pré-vestibular UniFavela
+                </h3>
                 <p>
                   O Pré-vestibular social da UniFavela tem como objetivo
                   popularizar o ensino no Complexo da Maré, impulsionando jovens
@@ -46,13 +45,16 @@ export default () => {
                 </p>
               </div>
             </div>
-            <div className="projeto">
-              <div className="">
+            <div className="col-12 col-sm-6">
+              <div className="projeto">
                 <StaticImage
                   src="../images/projetos/unifavela_uniletrinhas.jpg"
                   alt="UniLetrinhas"
                 />
-                <h3>UniLetrinhas</h3>
+                <h3>
+                  <ODS8 />
+                  UniLetrinhas
+                </h3>
                 <p>
                   Projeto que visa a construção da leitura e escrita nos anos
                   iniciais do ensino fundamental para as crianças da favela da
@@ -66,13 +68,16 @@ export default () => {
                 </p>
               </div>
             </div>
-            <div className="projeto">
-              <div className="">
+            <div className="col-12 col-sm-6">
+              <div className="projeto">
                 <StaticImage
                   src="../images/projetos/unifavela_bolsacarolina.jpg"
                   alt="Bolsa Carolina de Jesus"
                 />
-                <h3>Bolsa Carolina de Jesus</h3>
+                <h3>
+                  <ODS10 />
+                  Bolsa Carolina de Jesus
+                </h3>
                 <p>
                   A Bolsa Carolina de Jesus tem como objetivo oferecer condições
                   necessárias para que nossos estudantes possam dar continuidade
@@ -82,13 +87,16 @@ export default () => {
                 </p>
               </div>
             </div>
-            <div className="projeto">
-              <div className="">
+            <div className="col-12 col-sm-6">
+              <div className="projeto">
                 <StaticImage
                   src="../images/projetos/unifavela_brinqueleitura.jpg"
                   alt="Brinque Leitura"
                 />
-                <h3>Brinque Leitura</h3>
+                <h3>
+                  <ODS4 />
+                  Brinque Leitura
+                </h3>
                 <p>
                   O projeto foca em estimular o hábito de leitura nas crianças,
                   doando livros e brinquedos que coloquem o negro como
@@ -97,13 +105,17 @@ export default () => {
                 </p>
               </div>
             </div>
-            <div className="projeto">
-              <div className="">
+            <div className="col-12 col-sm-6">
+              <div className="projeto">
                 <StaticImage
                   src="../images/projetos/unifavela_maredenatal.jpg"
                   alt="Maré de Natal"
                 />
-                <h3>Maré de Natal</h3>
+                <h3>
+                  <ODS2 />
+                  <ODS10 />
+                  Maré de Natal
+                </h3>
                 <p>
                   O projeto visa doar cestas básicas para as famílias que se
                   encontram abaixo da linha da pobreza no território da Maré. A
@@ -113,13 +125,16 @@ export default () => {
                 </p>
               </div>
             </div>
-            <div className="projeto">
-              <div className="">
+            <div className="col-12 col-sm-6">
+              <div className="projeto">
                 <StaticImage
                   src="../images/projetos/unifavela_cicloformacao.jpg"
                   alt="Ciclo de Formação UniFavela"
                 />
-                <h3>Ciclo de Formação UniFavela</h3>
+                <h3>
+                  <ODS4 />
+                  Ciclo de Formação UniFavela
+                </h3>
                 <p>
                   O Ciclo de Formação ocorreu no final de 2020 e teve como tema
                   “Diálogos sobre Educação Popular”. O evento online contou com

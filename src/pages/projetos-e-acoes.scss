@@ -68,44 +68,44 @@ main[data-scope='projetos-e-acoes'] {
     }
   }
   #section-projetos {
-    .container {
-      & > div {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: $spacer * 2.5;
-        margin-top: $spacer * 3.75;
-        margin-bottom: $spacer * 3.75;
+    .projeto {
+      display: flex;
+      flex-direction: column;
+      background-color: #426dfa;
+      border-radius: $spacer * 2;
+      padding: 0;
+      margin: $spacer 0;
 
-        @include media-breakpoint-down(sm) {
-          grid-template-columns: 1fr;
-          margin-top: 0;
+      h3 {
+        color: white;
+        background-color: #ffaa00;
+        padding: $spacer * 0.8;
+        position: relative;
+
+        svg {
+          width: $spacer * 6;
+          height: $spacer * 6;
+          position: absolute;
+          top: -$spacer * 6;
+          left: 0;
+
+          @for $i from 1 through 10 {
+            &:nth-child(#{$i}) {
+              left: calc((#{$i} - 1) * $spacer * 6);
+            }
+          }
         }
       }
-    }
 
-    .projeto {
-      & > div {
-        display: flex;
-        flex-direction: column;
-        background-color: #426dfa;
-        border-radius: $spacer * 2;
+      p {
+        color: white;
+        padding: 0 $spacer * 2;
+        font-size: $font-size-base * 1.1;
+        text-align: center;
+      }
 
-        h3 {
-          color: white;
-          background-color: #ffaa00;
-          padding: $spacer * 0.8 0;
-        }
-
-        p {
-          color: white;
-          padding: 0 $spacer * 2;
-          font-size: $font-size-base * 1.1;
-          text-align: center;
-        }
-
-        img {
-          border-radius: $spacer * 2 $spacer * 2 0 0;
-        }
+      img {
+        border-radius: $spacer * 2 $spacer * 2 0 0;
       }
     }
   }
