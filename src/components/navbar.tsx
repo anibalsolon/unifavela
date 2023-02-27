@@ -38,25 +38,45 @@ export default class WebsiteNavbar extends React.Component<NavbarProps, NavbarSt
           },
         }) => (
           <React.Fragment>
-            <Navbar expand="lg">
-              <Container>
-                <Navbar.Toggle aria-controls={navbarId}>
-                  <FontAwesomeIcon icon={faBars} />
-                </Navbar.Toggle>
-                <Navbar.Collapse id={navbarId}>
-                  <Nav className="ml-lg-auto">
-                    {navbar
-                      .filter((l) => l.side === 'left')
-                      .map((l) => (
-                        <Nav.Link as={Link} key={l.path} to={l.path}>{l.name}</Nav.Link>
+            <nav className="navbar navbar-expand-lg">
+              <button
+                className="navbar-button"
+                type="button"
+                data-toggle="collapse"
+                data-target={`#${navbarId}`}
+                aria-controls={navbarId}
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span className="navbar-button-icon"></span>
+              </button>
+              <div
+                className="collapse navbar-collapse d-flex justify-content-center"
+                id={navbarId}
+              >
+                <ul className="navbar-nav ml-md-auto">
+                  {navbar
+                    .filter((l) => l.side === 'left')
+                    .map((l) => (
+                      <li key={l.path} className="nav-item">
+                        <Link className="nav-link" to={l.path}>
+                          {l.name}
+                        </Link>
+                      </li>
                     ))}
-                  </Nav>
-                  <Navbar.Brand id="logo"><Logo /></Navbar.Brand>
-                  <Nav className="mr-lg-auto">
-                    {navbar
-                      .filter((l) => l.side === 'right')
-                      .map((l) => (
-                        <Nav.Link as={Link} key={l.path} to={l.path}>{l.name}</Nav.Link>
+                </ul>
+                <a className="navbar-brand" id="logo">
+                  <Logo />
+                </a>
+                <ul className="navbar-nav mr-md-auto">
+                  {navbar
+                    .filter((l) => l.side === 'right')
+                    .map((l) => (
+                      <li key={l.path} className="nav-item">
+                        <Link className="nav-link" to={l.path}>
+                          {l.name}
+                        </Link>
+                      </li>
                     ))}
                   </Nav>
                 </Navbar.Collapse>
