@@ -1,15 +1,44 @@
-@import "../header.scss";
+@import '../header.scss';
 
-main[data-scope="apoie"] {
+main[data-scope='apoie'] {
   #section-hero {
-    margin-top: $spacer * 2;
+    margin-top: $spacer * 4;
     font-size: 1.2 * $font-size-base;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: $spacer * 6;
+    }
+
+    p {
+      max-width: 60ch;
+      margin: 0 auto;
+      text-align: center;
+    }
   }
 
   #section-dados {
+    padding: 0px 1.5rem;
+
     h3 {
       color: $secondary;
     }
+
+    .container-box {
+      display: grid;
+      grid-template-columns: 350px 350px;
+      margin: 0 auto;
+      justify-content: center;
+      padding-top: 2rem;
+      gap: 80px;
+
+      @include media-breakpoint-down(lg) {
+        & {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+      }
+    }
+
     .dados-box {
       display: flex;
       flex-direction: column;
@@ -23,13 +52,34 @@ main[data-scope="apoie"] {
         padding: $spacer;
         font-size: 1.5 * $font-size-base;
 
-        * { color: white; }
+        * {
+          color: white;
+        }
+      }
+
+      @include media-breakpoint-down(lg) {
+        .row {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          margin: 0px !important;
+        }
       }
     }
 
     .quote {
       text-align: center;
 
+      @include media-breakpoint-down(lg) {
+        p:first-child {
+          &::before {
+            margin-left: -2.3rem !important;
+          }
+
+          &::after {
+            margin-right: -1rem !important;
+          }
+        }
+      }
 
       p:first-child {
         font-weight: lighter;
@@ -37,7 +87,7 @@ main[data-scope="apoie"] {
 
         &::before {
           text-align: left;
-          content: "\F6B0";
+          content: '\F6B0';
           font-family: $bootstrap-icons-font;
           font-size: 4 * $font-size-base;
           color: $secondary-light;
@@ -50,7 +100,7 @@ main[data-scope="apoie"] {
 
         &::after {
           text-align: left;
-          content: "\f6b0";
+          content: '\f6b0';
           font-family: bootstrap-icons;
           font-size: 4rem;
           color: #ffbb33;
@@ -74,5 +124,4 @@ main[data-scope="apoie"] {
       }
     }
   }
-
 }

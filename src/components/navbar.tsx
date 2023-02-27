@@ -47,6 +47,7 @@ export default class Navbar extends React.Component<NavbarProps, NavbarState> {
                 className="collapse navbar-collapse d-flex justify-content-center"
                 id={navbarId}
               >
+                {/* @TODO: Adicionar com o evento de click a class='ativo' no ul*/}
                 <ul className="navbar-nav ml-md-auto">
                   {navbar
                     .filter((l) => l.side === 'left')
@@ -61,6 +62,8 @@ export default class Navbar extends React.Component<NavbarProps, NavbarState> {
                 <a className="navbar-brand" id="logo">
                   <Logo />
                 </a>
+
+                {/* @TODO: Adicionar com o evento de click a class='ativo' no ul*/}
                 <ul className="navbar-nav mr-md-auto">
                   {navbar
                     .filter((l) => l.side === 'right')
