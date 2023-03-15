@@ -455,10 +455,11 @@ export default () => {
                     </p>
                   </div>
                   <div className="col-6">
+                    <a href="/pdfs/UniFavela_Auditoria_2022.pdf" className="btn btn-secondary d-block mb-2">Auditoria 2022</a>
                     <a href="/pdfs/UniFavela_Balancete_2022.pdf" className="btn btn-secondary d-block mb-2">Balancete 2022</a>
-                    <a href="/pdfs/UniFavela_Balancete_2021.pdf" className="btn btn-secondary d-block mb-2">Balancete 2021</a>
-                    <a href="/pdfs/UniFavela_Auditoria_2021.pdf" className="btn btn-secondary d-block mb-2">Auditoria 2021</a>
                     <a href="/pdfs/Unifavela_DRE_2022.pdf" className="btn btn-secondary d-block mb-2">DRE 2022</a>
+                    <a href="/pdfs/UniFavela_Auditoria_2021.pdf" className="btn btn-secondary d-block mb-2">Auditoria 2021</a>
+                    <a href="/pdfs/UniFavela_Balancete_2021.pdf" className="btn btn-secondary d-block mb-2">Balancete 2021</a>
                   </div>
                 </div>
               </Card>
