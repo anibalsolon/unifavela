@@ -440,9 +440,9 @@ export default () => {
               <Card className="align-self-stretch">
                 <h3>Relatório de Atividades</h3>
                 <p>
-                  Veja o que temos feitos no último ano.
+                  Veja o que temos feito nos últimos anos.
                 </p>
-                <a href="/pdfs/UniFavela_BoletimExterno_Jun-Out.pdf" className="btn btn-secondary">Acessar</a>
+                <a href="/pdfs/UniFavela_RelatorioAnual_2022.pdf" className="btn btn-secondary">2022</a>
               </Card>
             </div>
             <div className="">
