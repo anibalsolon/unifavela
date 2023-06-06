@@ -1,15 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
-import "./quem-somos.scss";
+import './quem-somos.scss';
 
-import { StaticImage } from "gatsby-plugin-image";
-import Layout from "../components/layout";
+import { StaticImage } from 'gatsby-plugin-image';
+import Layout from '../components/layout';
 
-import Card from "../components/card";
-import { Modal } from "react-bootstrap";
+import Card from '../components/card';
+import { Modal } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 
-import { faBullseye, faEye, faHandsHolding } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBullseye,
+  faEye,
+  faHandsHolding,
+} from '@fortawesome/free-solid-svg-icons';
 
 export default () => {
   let [modal, setModal] = useState<string | null>(null);
@@ -23,9 +27,11 @@ export default () => {
         <div className="col-md-6 my-auto px-4">
           <h1>Um pouco mais sobre a UniFavela</h1>
           <p className="text-muted">
-            Somos uma instituição socioeducativa localizada no Complexo da Maré, com a missão de impulsionar jovens e adultos favelados
-            para que tenham acesso ao ensino superior. Através de uma educação libertária, oferecemos ferramentas para nossos estudantes
-            ocuparem espaços de produção de conhecimento.
+            Somos uma instituição socioeducativa localizada no Complexo da Maré,
+            com a missão de impulsionar jovens e adultos favelados para que
+            tenham acesso ao ensino superior. Através de uma educação
+            libertária, oferecemos ferramentas para nossos estudantes ocuparem
+            espaços de produção de conhecimento.
           </p>
         </div>
       </section>
@@ -36,10 +42,13 @@ export default () => {
             <div className="offset-md-3 col-md-6 mt-5 mb-0">
               <h3>Por que somos?</h3>
               <p>
-                Sabemos que a realidade educacional brasileira não é favorável para população que se encontra na linha da pobreza.
-                Por isso, iniciativas como a nossa precisam existir! Acreditamos que, para haja a aprendizagem significativa, a educação
-                precisa ser crítica e oferecer novos caminhos entre inúmeras culturas, etnias e lugares sociais.
-                Por isso, estes são os pilares nos quais acreditamos e que aplicamos em nossa prática:
+                Sabemos que a realidade educacional brasileira não é favorável
+                para população que se encontra na linha da pobreza. Por isso,
+                iniciativas como a nossa precisam existir! Acreditamos que, para
+                haja a aprendizagem significativa, a educação precisa ser
+                crítica e oferecer novos caminhos entre inúmeras culturas,
+                etnias e lugares sociais. Por isso, estes são os pilares nos
+                quais acreditamos e que aplicamos em nossa prática:
               </p>
             </div>
           </div>
@@ -48,8 +57,9 @@ export default () => {
               <Card icon={faBullseye} className="align-self-stretch">
                 <h3>Missão</h3>
                 <p>
-                  Oportunizar a educação como prática de liberdade e resistência,
-                  buscando a ação emancipatória e democrática dentro dos territórios favelados.
+                  Oportunizar a educação como prática de liberdade e
+                  resistência, buscando a ação emancipatória e democrática
+                  dentro dos territórios favelados.
                 </p>
               </Card>
             </div>
@@ -57,9 +67,11 @@ export default () => {
               <Card icon={faEye} className="align-self-stretch">
                 <h3>Visão</h3>
                 <p>
-                  Promover a transformação social por meio da educação popular libertária, mediante o exercício
-                  do pensamento crítico, da autonomia, da solidariedade e da cidadania em prol do empoderamento e
-                  da afirmação de comunidades faveladas e marginalizadas.
+                  Promover a transformação social por meio da educação popular
+                  libertária, mediante o exercício do pensamento crítico, da
+                  autonomia, da solidariedade e da cidadania em prol do
+                  empoderamento e da afirmação de comunidades faveladas e
+                  marginalizadas.
                 </p>
               </Card>
             </div>
@@ -67,9 +79,11 @@ export default () => {
               <Card icon={faHandsHolding} className="align-self-stretch">
                 <h3>Valores</h3>
                 <p>
-                  Acreditamos na educação como um direito humano essencial para o exercício da cidadania, atuando
-                  diretamente na transformação social. Nos pautamos no princípio político pedagógico antirracista,
-                  valorizando epistemologias colocadas à margem e saberes ancestrais.
+                  Acreditamos na educação como um direito humano essencial para
+                  o exercício da cidadania, atuando diretamente na transformação
+                  social. Nos pautamos no princípio político pedagógico
+                  antirracista, valorizando epistemologias colocadas à margem e
+                  saberes ancestrais.
                 </p>
               </Card>
             </div>
@@ -118,24 +132,29 @@ export default () => {
         </Carousel>
       </section> */}
 
-       <section id="section-equipe">
-
+      <section id="section-equipe">
         <h2>Organograma</h2>
         <div className="container">
           <div className="row">
             <div className="offset-1 col-10">
               <p className="mt-5">
-                Para que a UniFavela consiga atuar de forma organizada e eficiente é necessário ter uma divisão de tarefas bem estruturada. Por isso, na Uni existem setores essenciais nessa construção. Os setores são:
+                Para que a UniFavela consiga atuar de forma organizada e
+                eficiente é necessário ter uma divisão de tarefas bem
+                estruturada. Por isso, na Uni existem setores essenciais nessa
+                construção. Os setores são:
               </p>
             </div>
           </div>
         </div>
 
         <p className="text-center">
-          <StaticImage src="../images/unifavela-organograma.png" alt="Organograma" />
+          <StaticImage
+            src="../images/Organograma_UniFavela.png"
+            alt="Organograma"
+          />
         </p>
 
-        <h2>Equipe</h2>
+        {/* <h2>Equipe</h2>
         <div className="container">
           <div className="row">
             <div className="offset-1 col-10">
@@ -305,7 +324,7 @@ export default () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
       <section id="section-reconhecimento">
         <h2>Reconhecimento</h2>
@@ -314,27 +333,39 @@ export default () => {
           <Carousel.Item>
             <div className="container w-100 w-md-50">
               <div>
-              <h3>Prêmio Íbero-Americano em Educação e Direitos Humanos - OEI (2022)</h3>
-              <p>
-                Finalistas na categoria educação não-formal no Prêmio Íbero-Americano em Educação e Direitos Humanos,
-                  representando o Brasil.</p>
-                </div>
+                <h3>
+                  Prêmio Íbero-Americano em Educação e Direitos Humanos - OEI
+                  (2022)
+                </h3>
+                <p>
+                  Finalistas na categoria educação não-formal no Prêmio
+                  Íbero-Americano em Educação e Direitos Humanos, representando
+                  o Brasil.
+                </p>
+              </div>
               <div>
-                <StaticImage src="../images/premioibero_unifavela.jpg" alt="Laerte Breno, presidente da instituição, apresentando o trabalho da UniFavela para o comitê do Prêmio Ibero-Americano em Educação e Direitos Humanos, no Chile, em 2022." />
-                </div>
+                <StaticImage
+                  src="../images/premioibero_unifavela.jpg"
+                  alt="Laerte Breno, presidente da instituição, apresentando o trabalho da UniFavela para o comitê do Prêmio Ibero-Americano em Educação e Direitos Humanos, no Chile, em 2022."
+                />
+              </div>
             </div>
           </Carousel.Item>
           <Carousel.Item>
             <div className="container w-100 w-md-50">
               <div>
-              <h3>Prêmio Sim à Igualdade Racial - ID_BR (2022)</h3>
-              <p>
-                Vencedores da categoria Educação e Oportunidades no Prêmio Sim à Igualdade Racial do Instituto Identidades do Brasil.
+                <h3>Prêmio Sim à Igualdade Racial - ID_BR (2022)</h3>
+                <p>
+                  Vencedores da categoria Educação e Oportunidades no Prêmio Sim
+                  à Igualdade Racial do Instituto Identidades do Brasil.
                 </p>
               </div>
               <div>
-                <StaticImage  src="../images/premioidbr2022_unifavela.jpg" alt="Laerte Breno, presidente da instituição, recebendo o prêmio Sim à Igualdade Racial pelo Institutio Identidades do Brasil, em 2022." />
-                </div>
+                <StaticImage
+                  src="../images/premioidbr2022_unifavela.jpg"
+                  alt="Laerte Breno, presidente da instituição, recebendo o prêmio Sim à Igualdade Racial pelo Institutio Identidades do Brasil, em 2022."
+                />
+              </div>
             </div>
           </Carousel.Item>
           <Carousel.Item>
@@ -342,13 +373,17 @@ export default () => {
               <div>
                 <h3>Edital 4G para Estudar - Instituto Nossas (2020)</h3>
                 <p>
-                  Em 2020, a UniFavela venceu o Edital 4G para Estudar, do Instituto Nossas.
-                  Com esse incentivo, pudemos fornecer tablets e chips de internet para os nossos estudantes.
+                  Em 2020, a UniFavela venceu o Edital 4G para Estudar, do
+                  Instituto Nossas. Com esse incentivo, pudemos fornecer tablets
+                  e chips de internet para os nossos estudantes.
                 </p>
               </div>
               <div>
-                <StaticImage src="../images/4gestudar_unifavela.jpg" alt="Imagem da campanha 4G para Estudar divulgada nas redes sociais da UniFavela." />
-               </div>
+                <StaticImage
+                  src="../images/4gestudar_unifavela.jpg"
+                  alt="Imagem da campanha 4G para Estudar divulgada nas redes sociais da UniFavela."
+                />
+              </div>
             </div>
           </Carousel.Item>
           <Carousel.Item>
@@ -356,13 +391,17 @@ export default () => {
               <div>
                 <h3>Edital RUA - UFRJ (2019)</h3>
                 <p>
-                  Possibilitou que nos tornássemos um Projeto de Extensão da UFRJ.
-                  Hoje, nossos voluntários estudantes da UFRJ recebem certificação e horas complementares.
+                  Possibilitou que nos tornássemos um Projeto de Extensão da
+                  UFRJ. Hoje, nossos voluntários estudantes da UFRJ recebem
+                  certificação e horas complementares.
                 </p>
               </div>
               <div>
-                <StaticImage src="../images/editalrua_unifavela.jpg" alt="Imagem da campanha 4G para Estudar divulgada nas redes sociais da UniFavela." />
-               </div>
+                <StaticImage
+                  src="../images/editalrua_unifavela.jpg"
+                  alt="Imagem da campanha 4G para Estudar divulgada nas redes sociais da UniFavela."
+                />
+              </div>
             </div>
           </Carousel.Item>
           {/*
@@ -384,12 +423,16 @@ export default () => {
               <div>
                 <h3>Prêmio Paulo Freire - ALERJ (2019)</h3>
                 <p>
-                  A UniFavela recebeu o prêmio Paulo Freire de direitos humanos, concedido pela ALERJ em 2019.
+                  A UniFavela recebeu o prêmio Paulo Freire de direitos humanos,
+                  concedido pela ALERJ em 2019.
                 </p>
               </div>
               <div>
-                <StaticImage src="../images/premiopaulofreire_alerj_unifavela.jpg" alt="Imagem do Prêmio Paulo Freire." />
-               </div>
+                <StaticImage
+                  src="../images/premiopaulofreire_alerj_unifavela.jpg"
+                  alt="Imagem do Prêmio Paulo Freire."
+                />
+              </div>
             </div>
           </Carousel.Item>
         </Carousel>
@@ -401,9 +444,11 @@ export default () => {
             <div className="main-card">
               <h3>Seriedade e transparência</h3>
               <p>
-                Prezamos muito pela seriedade em todos os processos internos da UniFavela.
-                A transparência com os nossos parceiros é nossa prioridade. Acessando os documentos a seguir, você pode
-                conferir nossos certificados, certidões e estatuto. Em nosso relatório de atividades, prestamos contas das ações realizadas.
+                Prezamos muito pela seriedade em todos os processos internos da
+                UniFavela. A transparência com os nossos parceiros é nossa
+                prioridade. Acessando os documentos a seguir, você pode conferir
+                nossos certificados, certidões e estatuto. Em nosso relatório de
+                atividades, prestamos contas das ações realizadas.
               </p>
             </div>
           </div>
@@ -413,9 +458,15 @@ export default () => {
               <Card className="align-self-stretch">
                 <h3>Estatuto Social</h3>
                 <p>
-                  Deveres e direitos dos membros da UniFavela, além de regras para a gestão da instituição.
+                  Deveres e direitos dos membros da UniFavela, além de regras
+                  para a gestão da instituição.
                 </p>
-                <a href="/pdfs/UniFavela_Estatuto_2023.pdf" className="btn btn-secondary">Acessar</a>
+                <a
+                  href="./pdfs/UniFavela_Estatuto_2023.pdf"
+                  className="btn btn-secondary"
+                >
+                  Acessar
+                </a>
               </Card>
             </div>
             <div className="">
@@ -423,15 +474,33 @@ export default () => {
                 <div className="row no-gutters">
                   <div className="col-6">
                     <h3>Certidões</h3>
-                    <p>
-                      Confira aqui nossas certidões.
-                    </p>
+                    <p>Confira aqui nossas certidões.</p>
                   </div>
                   <div className="col-6">
-                    <a href="/pdfs/UniFavela_Certidao_FGTS.pdf" className="btn btn-secondary d-block mb-2">Certidão de Regularidade do FGTS</a>
-                    <a href="/pdfs/UniFavela_CNDT.pdf" className="btn btn-secondary d-block mb-2">Certidão Negativa de Débitos Trabalhistas</a>
-                    <a href="/pdfs/UniFavela_CND_Uniao.pdf" className="btn btn-secondary d-block mb-2">Certidão Negativa de Débitos Federais</a>
-                    <a href="/pdfs/UniFavela_CND_RJ.pdf" className="btn btn-secondary d-block mb-2">Certidão Negativa de Débitos Estaduais</a>
+                    <a
+                      href="./pdfs/UniFavela_Certidao_FGTS.pdf"
+                      className="btn btn-secondary d-block mb-2"
+                    >
+                      Certidão de Regularidade do FGTS
+                    </a>
+                    <a
+                      href="./pdfs/UniFavela_CNDT.pdf"
+                      className="btn btn-secondary d-block mb-2"
+                    >
+                      Certidão Negativa de Débitos Trabalhistas
+                    </a>
+                    <a
+                      href="./pdfs/UniFavela_CND_Uniao.pdf"
+                      className="btn btn-secondary d-block mb-2"
+                    >
+                      Certidão Negativa de Débitos Federais
+                    </a>
+                    <a
+                      href="./pdfs/UniFavela_CND_RJ.pdf"
+                      className="btn btn-secondary d-block mb-2"
+                    >
+                      Certidão Negativa de Débitos Estaduais
+                    </a>
                   </div>
                 </div>
               </Card>
@@ -440,9 +509,9 @@ export default () => {
               <Card className="align-self-stretch">
                 <h3>Relatório de Atividades</h3>
                 <p>
-                  Veja o que temos feito nos últimos anos.
+                  Veja o que temos feitos no último ano.
                 </p>
-                <a href="/pdfs/UniFavela_RelatorioAnual_2022.pdf" className="btn btn-secondary">2022</a>
+                <a href="/pdfs/UniFavela_BoletimExterno_Jun-Out.pdf" className="btn btn-secondary">Acessar</a>
               </Card>
             </div>
             <div className="">
@@ -451,15 +520,15 @@ export default () => {
                   <div className="col-6">
                     <h3>Auditorias</h3>
                     <p>
-                      Balencetes e operações da UniFavela desde o primeiro ano de funcionamento enquanto ONG.
+                      Balencetes e operações da UniFavela desde o primeiro ano
+                      de funcionamento enquanto ONG.
                     </p>
                   </div>
                   <div className="col-6">
-                    <a href="/pdfs/UniFavela_Auditoria_2022.pdf" className="btn btn-secondary d-block mb-2">Auditoria 2022</a>
                     <a href="/pdfs/UniFavela_Balancete_2022.pdf" className="btn btn-secondary d-block mb-2">Balancete 2022</a>
-                    <a href="/pdfs/Unifavela_DRE_2022.pdf" className="btn btn-secondary d-block mb-2">DRE 2022</a>
-                    <a href="/pdfs/UniFavela_Auditoria_2021.pdf" className="btn btn-secondary d-block mb-2">Auditoria 2021</a>
                     <a href="/pdfs/UniFavela_Balancete_2021.pdf" className="btn btn-secondary d-block mb-2">Balancete 2021</a>
+                    <a href="/pdfs/UniFavela_Auditoria_2021.pdf" className="btn btn-secondary d-block mb-2">Auditoria 2021</a>
+                    <a href="/pdfs/Unifavela_DRE_2022.pdf" className="btn btn-secondary d-block mb-2">DRE 2022</a>
                   </div>
                 </div>
               </Card>
@@ -468,5 +537,5 @@ export default () => {
         </div>
       </section>
     </Layout>
-  )
-}
+  );
+};
