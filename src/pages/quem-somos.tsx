@@ -508,10 +508,13 @@ export default () => {
             <div className="">
               <Card className="align-self-stretch">
                 <h3>Relatório de Atividades</h3>
-                <p>
-                  Veja o que temos feitos no último ano.
-                </p>
-                <a href="/pdfs/UniFavela_BoletimExterno_Jun-Out.pdf" className="btn btn-secondary">Acessar</a>
+                <p>Veja o que temos feitos no último ano.</p>
+                <a
+                  href="./pdfs/UniFavela_BoletimExterno_Jun-Out.pdf"
+                  className="btn btn-secondary"
+                >
+                  Acessar
+                </a>
               </Card>
             </div>
             <div className="">
@@ -525,10 +528,24 @@ export default () => {
                     </p>
                   </div>
                   <div className="col-6">
-                    <a href="/pdfs/UniFavela_Balancete_2022.pdf" className="btn btn-secondary d-block mb-2">Balancete 2022</a>
-                    <a href="/pdfs/UniFavela_Balancete_2021.pdf" className="btn btn-secondary d-block mb-2">Balancete 2021</a>
-                    <a href="/pdfs/UniFavela_Auditoria_2021.pdf" className="btn btn-secondary d-block mb-2">Auditoria 2021</a>
-                    <a href="/pdfs/Unifavela_DRE_2022.pdf" className="btn btn-secondary d-block mb-2">DRE 2022</a>
+                    <a
+                      href="./pdfs/UniFavela_Balancete_2021.pdf"
+                      className="btn btn-secondary d-block mb-2"
+                    >
+                      Balancete 2021
+                    </a>
+                    <a
+                      href="./pdfs/UniFavela_Auditoria_2021.pdf"
+                      className="btn btn-secondary d-block mb-2"
+                    >
+                      Auditoria 2021
+                    </a>
+                    <a
+                      href="./pdfs/DRE_Uni_JanOut_2022.pdf"
+                      className="btn btn-secondary d-block mb-2"
+                    >
+                      DRE 2022 (Jan-Out)
+                    </a>
                   </div>
                 </div>
               </Card>

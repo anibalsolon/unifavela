@@ -117,6 +117,29 @@ nav {
     animation: show-up 0.3s forwards;
   }
 
+  .navbar-nav:first-child.ativo {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 80vw;
+    background-color: var(--uni-blue-light);
+    margin-left: 0px !important;
+    padding: 20px 30px;
+    animation: show-up 0.3s forwards;
+  }
+
+  .navbar-nav:last-child.ativo {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    background-color: var(--uni-blue-light);
+    margin-right: 0px !important;
+    padding: 20px 30px;
+    animation: show-up 0.3s forwards;
+  }
+
   .navbar-nav:nth-child(1) {
     text-align: left;
     margin-left: $spacer;
@@ -137,6 +160,17 @@ nav {
         margin-left: $spacer * 8;
         width: auto;
       }
+    }
+  }
+
+  @keyframes show-up {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -30px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
     }
   }
 
