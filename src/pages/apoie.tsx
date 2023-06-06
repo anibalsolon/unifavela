@@ -4,13 +4,12 @@ import "./apoie.scss";
 
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
-export { Head } from "../components/layout";
 
 export default () => {
   return (
     <Layout scope="apoie">
-      <section id="section-hero" className="row">
-        <div className="col-6 offset-3 my-5">
+      <section id="section-hero" className="">
+        <div className="container">
           <p>
           A UniFavela acredita no poder da formação educacional e desenvolvimento sociocultural. Para isso, precisamos da sua ajuda! O seu apoio é fundamental para que haja perspectiva de futuro nos territórios periféricos. 
           </p>
@@ -18,8 +17,8 @@ export default () => {
       </section>
       <section id="section-dados">
         <div className="container">
-          <div className="row my-3">
-            <div className="offset-2 col-4 dados-box">
+          <div className="container-box">
+            <div className="dados-box">
               <h3>Dados Bancários</h3>
               <p>
                 Banco Bradesco (237)<br />
@@ -28,7 +27,7 @@ export default () => {
                 CNPJ 42.129.436/0001-25
               </p>
             </div>
-            <div className="col-4 dados-box">
+            <div className="dados-box">
               <h3>PIX</h3>
               <p>
                 Chave do PIX (CNPJ)<br />
@@ -43,7 +42,7 @@ export default () => {
             </div>
           </div>
           <div className="row">
-            <div className="offset-2 col-8 my-4 quote">
+            <div className="quote">
               <p>
                 A primeira parcela foi um complemento de renda. A segunda parcela, a única
                 fonte de renda, e foi com ela que eu me alimentei e paguei a entrada da casa que
