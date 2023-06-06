@@ -1,0 +1,141 @@
+$primary:       #1047F9;
+$primary-light: lighten($primary, 10%);
+$secondary:     #FFAA00;
+$secondary-light: lighten($secondary, 10%);
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+) !default;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 6.75,
+  8: $spacer * 10.125,
+);
+
+$enable-cssgrid: true;
+
+$font-size-base: 1.1rem;
+$input-btn-font-size: $font-size-base * 0.875;
+$input-btn-padding-y: $spacer * 0.7;
+$input-btn-padding-x: $spacer * 0.875;
+
+$bootstrap-icons-font: bootstrap-icons !default;
+$bootstrap-icons-font-dir: "~bootstrap-icons/font/fonts" !default;
+$bootstrap-icons-font-file: "#{$bootstrap-icons-font-dir}/#{$bootstrap-icons-font}" !default;
+$bootstrap-icons-font-hash: "8d200481aa7f02a2d63a331fc782cfaf" !default;
+$bootstrap-icons-font-src: #{url("#{$bootstrap-icons-font-file}.woff2?#{$bootstrap-icons-font-hash}") format("woff2"), url("#{$bootstrap-icons-font-file}.woff?#{$bootstrap-icons-font-hash}") format("woff")} !default; 
+  
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,700;0,900;1,400&display=swap');
+
+// @import "~bootstrap";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.scss";
+
+
+@include media-breakpoint-up(md) {
+  .card-grid {
+    grid-auto-rows: 1fr 1fr 1fr;
+    gap: $spacer * 4;
+  }
+}
+
+// .card-grid > div:nth-child(3n - 1) {
+//   grid-column: 5 / span 4
+// }
+// .card-grid > div:nth-child(3n + 1) {
+//   grid-column: 1 / span 4
+// }
+
+.card-grid > div:last-child:nth-child(3n - 1) {
+  grid-column: 7 / span 4;
+}
+.card-grid > div:nth-last-child(2):nth-child(3n + 1) {
+  grid-column: 3 / span 4;
+}
+
+.card-grid > div:last-child:nth-child(3n - 2) {
+  grid-column: 5 / span 4;
+}
+
+.card-grid > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  border-radius: $spacer;
+  background: $primary;
+  color: white;
+  padding: $spacer * 2 $spacer * 2;
+  text-align: center;
+  margin-top: 5 * $font-size-base;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2 * $font-size-base;
+  place-self: stretch;
+  align-self: stretch;
+
+  margin-left: $spacer;
+  margin-right: $spacer;
+  @include media-breakpoint-up(md) {
+    & {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &::before {
+    content: "\f270";
+    font-family: $bootstrap-icons-font;
+    position: absolute;
+    top: -4 * $font-size-base;
+    left: $spacer;
+    right: $spacer;
+    background: $secondary;
+    border-radius: $spacer $spacer 0 0;
+    font-size: 3 * $font-size-base;
+    line-height: 3 * $font-size-base;
+    padding: 0.5 * $spacer 0;
+    z-index: 1;
+  }
+
+  &.custom-icon::before {
+    content: "\a0";
+  }
+
+  &.custom-icon {
+    .card-icon {
+      position: absolute;
+      top: -4.5 * $spacer;
+      left: 2 * $spacer;
+      z-index: 2;
+      img, svg {
+        width: $spacer * 5;
+        height: $spacer * 5;
+        margin-left: $spacer;
+        border: 0.25 * $spacer solid #FFAA00;
+      }
+    }
+  }
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: $secondary;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFAA00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFAA00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}

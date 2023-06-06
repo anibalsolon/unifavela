@@ -1,0 +1,305 @@
+@import '../header.scss';
+
+main[data-scope='quem-somos'] {
+  #section-hero {
+    @include media-breakpoint-up(md) {
+      margin-top: 3rem !important;
+    }
+    h1 {
+      font-size: 2.5 * $font-size-base;
+      @include media-breakpoint-up(sm) {
+        & {
+          font-size: 3.5 * $font-size-base;
+        }
+      }
+      color: $secondary;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+    p {
+      font-size: 1.2 * $font-size-base;
+    }
+  }
+
+  #section-missao {
+    h2 {
+      background: $secondary;
+      color: white;
+      padding: $spacer * 3;
+      text-align: center;
+      text-transform: none;
+    }
+
+    h3 {
+      color: $primary;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    .card {
+      border-radius: $spacer;
+      background: $primary;
+      color: white;
+      padding: $spacer * 2 $spacer * 2;
+      text-align: center;
+      margin-top: 4 * $font-size-base;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      font-size: 1.2 * $font-size-base;
+      place-self: center;
+
+      h3 {
+        color: white;
+      }
+
+      .card-icon {
+        position: absolute;
+        top: -4 * $font-size-base;
+        left: $spacer;
+        right: $spacer;
+        background: $secondary;
+        border-radius: $spacer $spacer 0 0;
+        font-size: 3 * $font-size-base;
+        line-height: 3 * $font-size-base;
+        padding: 0.5 * $spacer 0;
+        z-index: -1;
+      }
+    }
+  }
+
+  #section-historia {
+    h2 {
+      background: $primary-light;
+      color: white;
+      padding: 4 * $spacer;
+      text-align: center;
+      font-weight: 900;
+      margin: 0;
+    }
+
+    .carousel-indicators {
+      position: relative;
+      background-color: $secondary-light;
+      margin: 0;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      height: auto;
+      text-indent: 0;
+      color: #fff;
+      width: auto;
+      border-radius: $spacer * 3;
+      padding: $spacer * 0.5 $spacer * 2;
+      font-size: $font-size-base * 1.15;
+      font-weight: 900;
+      background-color: $secondary-light;
+      opacity: 1;
+
+      &::before {
+        content: attr(aria-label);
+      }
+
+      &.active {
+        background-color: $secondary;
+      }
+    }
+  }
+
+  #section-equipe {
+    h2 {
+      background: $primary-light;
+      color: white;
+      padding: 4 * $spacer;
+      text-align: center;
+      font-weight: 900;
+      margin: 0;
+    }
+
+    .equipe {
+      cursor: pointer;
+    }
+
+    .carousel-indicators {
+      position: relative;
+      background-color: $secondary-light;
+      margin: 0;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      height: auto;
+      text-indent: 0;
+      color: #fff;
+      width: auto;
+      border-radius: $spacer * 3;
+      padding: $spacer * 0.5 $spacer * 2;
+      font-size: $font-size-base * 1.15;
+      font-weight: 900;
+      background-color: $secondary-light;
+      opacity: 1;
+
+      &::before {
+        content: attr(aria-label);
+      }
+
+      &.active {
+        background-color: $secondary;
+      }
+    }
+  }
+
+  #section-reconhecimento {
+    .carousel-inner {
+      display: flex;
+      background-color: #2a93fc;
+    }
+
+    h2 {
+      background: $primary-light;
+      color: white;
+      padding: 4 * $spacer;
+      text-align: center;
+      font-weight: 900;
+      margin: 0;
+    }
+
+    .carousel-indicators {
+      right: 37%;
+      gap: $spacer * 1.9;
+      margin-right: 25%;
+
+      @include media-breakpoint-down(lg) {
+        & {
+          right: 0;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .carousel-indicators [data-bs-target] {
+      height: 12px;
+      text-indent: 0;
+      color: #fff;
+      width: 12px;
+      border-radius: 50%;
+      font-size: $font-size-base * 1.15;
+      font-weight: 900;
+      background-color: #fff9ef;
+      opacity: 1;
+      overflow: hidden;
+
+      &.active {
+        background-color: $secondary;
+      }
+    }
+
+    .carousel-item {
+      max-width: 100%;
+      text-align: center;
+      & {
+        .container {
+          display: flex;
+          gap: $spacer * 3;
+
+          @include media-breakpoint-down(lg) {
+            & {
+              flex-direction: column;
+              padding: $spacer * 3 $spacer * 2;
+              gap: $spacer * 2;
+            }
+          }
+
+          div:first-child {
+            max-width: 500px;
+            align-self: center;
+
+            h3 {
+              color: #ffbb33;
+            }
+
+            p {
+              color: white;
+            }
+          }
+
+          div:last-child {
+            max-width: 600px;
+            height: 500px;
+          }
+        }
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      .carousel-control-prev,
+      .carousel-control-next {
+        display: none;
+      }
+    }
+  }
+
+  #section-transparencia {
+    background: top no-repeat url(../images/transparencia.png);
+    background-size: 80% auto;
+
+    h2 {
+      background: $secondary;
+      color: white;
+      padding: 4 * $spacer;
+      text-align: center;
+      font-weight: 900;
+      margin: 0;
+    }
+
+    .main-container {
+      padding-top: $spacer * 2;
+      padding-bottom: $spacer * 2;
+    }
+
+    .main-card {
+      background: #fffe;
+      padding: 4 * $spacer;
+      border-radius: $spacer;
+      border: $spacer solid $secondary-light;
+    }
+
+    .carousel-indicators {
+      position: relative;
+      background-color: $secondary-light;
+      margin: 0;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      height: auto;
+      text-indent: 0;
+      color: #fff;
+      width: auto;
+      border-radius: $spacer * 3;
+      padding: $spacer * 0.5 $spacer * 2;
+      font-size: $font-size-base * 1.15;
+      font-weight: 900;
+      background-color: $secondary-light;
+      opacity: 1;
+
+      &::before {
+        content: attr(aria-label);
+      }
+
+      &.active {
+        background-color: $secondary;
+      }
+    }
+    .card-container {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr 1fr;
+      padding-top: $spacer;
+      padding-bottom: $spacer * 3;
+
+      @include media-breakpoint-down(sm) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

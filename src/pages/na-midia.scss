@@ -1,0 +1,71 @@
+@import '../header.scss';
+
+main[data-scope='na-midia'] {
+  #section-hero {
+    h1 {
+      font-size: $font-size-base * 4;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 900;
+      text-align: center;
+      margin-top: -20%;
+      @include media-breakpoint-down(lg) {
+        & {
+          font-size: 2.5 * $font-size-base;
+          padding-top: 3 * $spacer;
+        }
+      }
+    }
+
+    background: url(../images/na-midia.png);
+    background-position: bottom center;
+    background-size: contain;
+    background-color: $secondary;
+    background-repeat: no-repeat;
+    min-height: 40vw;
+    display: flex;
+    align-items: center;
+  }
+
+  section.section-year:nth-child(0) {
+    background-color: red($color: #000000);
+  }
+
+  section.section-year {
+    background: $primary-light;
+    padding: $spacer * 2 0 0 0;
+
+    h2 {
+      width: 30%;
+      background: $secondary;
+      color: white;
+      border-radius: $spacer $spacer 0 0;
+      padding: $spacer;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .year {
+      margin-top: $spacer * -7;
+    }
+
+    .carousel {
+      background: #eee;
+      padding: $spacer * 2 $spacer * 4;
+    }
+
+    .gatsby-image-wrapper-constrained {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .hstack {
+      flex-direction: column;
+    }
+  }
+}

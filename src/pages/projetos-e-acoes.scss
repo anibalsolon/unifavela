@@ -1,0 +1,112 @@
+@import '../header.scss';
+
+main[data-scope='projetos-e-acoes'] {
+  #section-hero {
+    h1 {
+      font-size: 4 * $font-size-base;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 900;
+      text-align: center; 
+
+      @include media-breakpoint-down(sm) {
+        font-size: $font-size-base * 2.5;
+      }
+    }
+
+    background: url(../images/projetos-e-acoes-1.png),
+      url(../images/projetos-e-acoes-2.png);
+    background-position: top left, top right;
+    background-size: contain, contain;
+    background-color: $secondary;
+    background-repeat: no-repeat;
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-down(sm) {
+      background: white;
+      min-height: 30vh;
+      h1 {
+        margin-top: $spacer * 2.75;
+        color: #426dfa;
+        margin-bottom: $spacer * 2;
+      }
+    }
+  }
+
+  #section-projetos {
+    h2 {
+      background: $secondary;
+      color: white;
+      padding: $spacer * 3;
+      text-align: center;
+      text-transform: none;
+    }
+
+    h3 {
+      color: $primary;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    .card {
+      background: $primary-light;
+
+      h3 {
+        color: white;
+      }
+
+      div:last-child {
+        bottom: 0;
+        border-radius: 0 0 $spacer $spacer;
+        margin-bottom: -2 * $spacer;
+        margin-left: -2 * $spacer;
+        margin-right: -2 * $spacer;
+      }
+    }
+  }
+  #section-projetos {
+    .container {
+      & > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $spacer * 2.5;
+        margin-top: $spacer * 3.75;
+        margin-bottom: $spacer * 3.75;
+
+        @include media-breakpoint-down(sm) {
+          grid-template-columns: 1fr;
+          margin-top: 0;
+        }
+      }
+    }
+
+    .projeto {
+      & > div {
+        display: flex;
+        flex-direction: column;
+        background-color: #426dfa;
+        border-radius: $spacer * 2;
+
+        h3 {
+          color: white;
+          background-color: #ffaa00;
+          padding: $spacer * 0.8 0;
+        }
+
+        p {
+          color: white;
+          padding: 0 $spacer * 2;
+          font-size: $font-size-base * 1.1;
+          text-align: center;
+        }
+
+        img {
+          border-radius: $spacer * 2 $spacer * 2 0 0;
+        }
+      }
+    }
+  }
+}
