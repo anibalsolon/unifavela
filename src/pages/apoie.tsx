@@ -4,7 +4,6 @@ import "./apoie.scss";
 
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
-export { Head } from "../components/layout";
 
 export default () => {
   return (
