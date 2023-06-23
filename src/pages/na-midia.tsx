@@ -4,8 +4,9 @@ import './na-midia.scss';
 
 import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/layout';
+export { Head } from '../components/layout';
 import Carousel from 'react-bootstrap/Carousel';
-import { Button, Card, Stack } from 'react-bootstrap';
+import { Stack } from 'react-bootstrap';
 
 export default () => {
   return (
