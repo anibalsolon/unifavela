@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "./footer";
 import Navbar from "./navbar";
+import { SEO } from "./seo"
 
 type LayoutProps = {
     scope?: string;
@@ -19,3 +20,7 @@ export default ({ scope, children }: LayoutProps) => {
         </>
     );
 }
+
+export const Head = () => (
+  <SEO />
+)

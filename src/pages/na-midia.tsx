@@ -4,8 +4,9 @@ import './na-midia.scss';
 
 import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/layout';
+export { Head } from '../components/layout';
 import Carousel from 'react-bootstrap/Carousel';
-import { Button, Card, Stack } from 'react-bootstrap';
+import { Stack } from 'react-bootstrap';
 
 export default () => {
   return (
@@ -18,7 +19,50 @@ export default () => {
       </section>
 
       <section className="section-year">
-        <h2 className='year'>2022</h2>
+        <h2 className="year">2023</h2>
+        <Carousel>
+          <Carousel.Item>
+            <Stack
+              direction="horizontal"
+              className="m-auto mb-4 w-75 h-100 justify-content-center align-items-center"
+              gap={4}
+            >
+              <a
+                href="https://agenciabrasil.ebc.com.br/educacao/noticia/2023-05/mudou-minha-visao-de-mundo-diz-ex-aluna-de-cursinho-popular"
+                target={'_blank'}
+              >
+                <StaticImage
+                  src="../images/siteAgencia.png"
+                  alt="Noticia site Agencia, Mudou minha visão de mundo, diz ex-aluna de cursinho popular"
+                />
+              </a>
+
+              <a
+                href="https://istoe.com.br/mudou-minha-visao-de-mundo-diz-ex-aluna-de-cursinho-popular/"
+                target={'_blank'}
+              >
+                <StaticImage
+                  src="../images/siteIsto.png"
+                  alt="Noticia ISTO É, “Mudou minha visão de mundo”, diz ex-aluna de cursinho popular"
+                />
+              </a>
+
+              <a
+                href="https://revistaensinosuperior.com.br/2023/05/30/unifavela-manda-jovens-da-mare-para-a-universidade/"
+                target={'_blank'}
+              >
+                <StaticImage
+                  src="../images/siteEnsino.png"
+                  alt="Noticia Ensino superior, UniFavela manda jovens da Maré para a universidade"
+                />
+              </a>
+            </Stack>
+          </Carousel.Item>
+        </Carousel>
+      </section>
+
+      <section className="section-year">
+        <h2 className="">2022</h2>
         <Carousel>
           <Carousel.Item>
             <Stack
