@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Email Signature</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="font-family: Arial, sans-serif; font-size: 14px; margin: 10px 0;">
+  <form class="unifavela-form" id="form">
+    <label for="nome">Qual o seu nome?</label>
+    <input type="text" id="nome">
+
+    <label for="cargo">Que cargo você ocupa na UniFavela?</label>
+    <input type="text" id="cargo">
+
+    <div>
+      <input type="checkbox" id="incluiTelefone">
+      <label for="incluiTelefone">Incluir telefone/celular</label>
+    </div>
+
+
+    <label for="telefone">Telefone/celular</label>
+    <div>
+      <input type="text" id="ddd" style="width:30px" placeholder="DDD">
+      <input type="text" id="telefone" placeholder="Telefone/celular">
+    </div>
+    <input type="submit" value="Criar assinatura" id="criarAssinatura">
+
+    <div id="signPlayground"></div>
+
+  </form>
+  <!-- <div style="border: 1px solid black; padding: 20px; width: fit-content; margin: 0 auto;"> -->
+    <!-- <table width="500" cellpadding="0" cellspacing="0" style="max-width: 500px;" id="unifavelaAssinatura">
+      <tr>
+        <td width="100"
+          style="vertical-align: middle; background-color: #102DB6; border-top-right-radius: 50%; border-bottom-right-radius: 50%; height:140px; margin-right: 16px;">
+            <img src="./unifavela.png" width="120px" style="margin-left: -16px;">
+        </td>
+        <td width="400" style="vertical-align: middle; padding-left: 16px;">
+          <div style="color: #102DB6; font-weight: bold; font-size: 24px;">Seu nome</div>
+          <div style="font-style: italic; font-size: 16px;">Unifavela Semeando o Ensino Popular</div>
+          <div style="font-weight: bold; font-size: 16px;">Cargo <span style="font-weight: normal; font-size: 15px">|
+              (21) 90000-0000</span></div>
+          <div></div>
+          <table>
+            <tr>
+              <td style="vertical-align: center;">
+                <a href="https://unifavela.com.br" target="_blank" rel="noopener noreferrer"
+                  style="text-decoration: none; color: #000;">
+                  <img src="./pointer.png" width="16">
+                </a>
+              </td>
+              <td style="vertical-align: center;">
+                <a href="https://unifavela.com.br" target="_blank" rel="noopener noreferrer"
+                  style="text-decoration: none; color: #000;">unifavela.com.br</a>
+              </td>
+              <td style="vertical-align: center;">
+                &nbsp;
+                <a href="https://www.instagram.com/unifavela" target="_blank" rel="noopener noreferrer"
+                  style="text-decoration: none; color: #000;">
+                  <img src="./brand-instagram.png" width="16">
+                </a>
+                <a href="https://twitter.com/unifavela" target="_blank" rel="noopener noreferrer"
+                  style="text-decoration: none; color: #000;">
+                  <img src="./brand-twitter.png" width="16px">
+                </a>
+              </td>
+              <td style="vertical-align: center;">
+                <span style="display: inline-block; margin: auto 0;">@unifavela</span>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table> -->
+
+    <button id="copyBtn" style="margin: 1rem auto; display: block" disabled>Copiar assinatura</button>
+  <!-- </div> -->
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
