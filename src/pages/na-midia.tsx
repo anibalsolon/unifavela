@@ -1,10 +1,10 @@
 import React from 'react';
 
 import './na-midia.scss';
+export { Head } from '../components/layout';
 
 import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/layout';
-export { Head } from '../components/layout';
 import Carousel from 'react-bootstrap/Carousel';
 import { Stack } from 'react-bootstrap';
 

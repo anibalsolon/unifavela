@@ -1,10 +1,10 @@
 import React from "react";
 
 import "./projetos-e-acoes.scss";
+export { Head } from "../components/layout";
 
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
-export { Head } from "../components/layout";
 
 import ODS2 from "../images/ods-2.svg";
 import ODS4 from "../images/ods-4.svg";

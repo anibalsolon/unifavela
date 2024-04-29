@@ -1,10 +1,10 @@
 import React from 'react';
 
 import './parceiros.scss';
+export { Head } from '../components/layout';
 
 import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/layout';
-export { Head } from '../components/layout';
 
 import FreundeLogo from '../images/parceiros/freunde-brasillianischer-strassenkinder.png';
 import InvernoLogo from '../images/parceiros/inverno.png';

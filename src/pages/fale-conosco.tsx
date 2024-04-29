@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./fale-conosco.scss";
+export { Head } from '../components/layout';
 
 import Layout from "../components/layout";
 

@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./depoimentos.scss";
+export { Head } from '../components/layout';
 
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";

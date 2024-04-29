@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import './quem-somos.scss';
+export { Head } from '../components/layout';
 
 import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/layout';
