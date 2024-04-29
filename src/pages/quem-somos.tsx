@@ -462,7 +462,7 @@ export default () => {
                   para a gestão da instituição.
                 </p>
                 <a
-                  href="./pdfs/UniFavela_Estatuto_2023.pdf"
+                  href="/pdfs/UniFavela_Estatuto_2023.pdf"
                   className="btn btn-secondary"
                 >
                   Acessar
@@ -478,25 +478,25 @@ export default () => {
                   </div>
                   <div className="col-6">
                     <a
-                      href="./pdfs/UniFavela_Certidao_FGTS.pdf"
+                      href="/pdfs/UniFavela_Certidao_FGTS.pdf"
                       className="btn btn-secondary d-block mb-2"
                     >
                       Certidão de Regularidade do FGTS
                     </a>
                     <a
-                      href="./pdfs/UniFavela_CNDT.pdf"
+                      href="/pdfs/UniFavela_CNDT.pdf"
                       className="btn btn-secondary d-block mb-2"
                     >
                       Certidão Negativa de Débitos Trabalhistas
                     </a>
                     <a
-                      href="./pdfs/UniFavela_CND_Uniao.pdf"
+                      href="/pdfs/UniFavela_CND_Uniao.pdf"
                       className="btn btn-secondary d-block mb-2"
                     >
                       Certidão Negativa de Débitos Federais
                     </a>
                     <a
-                      href="./pdfs/UniFavela_CND_RJ.pdf"
+                      href="/pdfs/UniFavela_CND_RJ.pdf"
                       className="btn btn-secondary d-block mb-2"
                     >
                       Certidão Negativa de Débitos Estaduais
@@ -511,11 +511,11 @@ export default () => {
                 <p>
                     Veja o que temos realizado nos últimos meses e anos.
                 </p>
-                {/* <a href="./pdfs/UniFavela_BoletimBimestral_Mai-Jun_2023.pdf" className="btn btn-secondary d-block mb-2">Boletim Bimestral Maio e Junho 2023</a>
-                <a href="./pdfs/UniFavela_BoletimBimestral_Mar-Abr_2023.pdf" className="btn btn-secondary d-block mb-2">Boletim Bimestral Março e Abril 2023</a>
-                <a href="./pdfs/UniFavela_BoletimBimestral_Jan-Fev_2023.pdf" className="btn btn-secondary d-block mb-2">Boletim Bimestral Janeiro e Fevereiro 2023</a> */}
-                <a href="./pdfs/UniFavela_RelatorioAnual_2022.pdf" className="btn btn-secondary d-block mb-2">Relatório Anual 2022</a>
-                <a href="./pdfs/UniFavela_RelatorioAnual_2023.pdf" className="btn btn-secondary d-block mb-2">Relatório Anual 2023</a>
+                {/* <a href="/pdfs/UniFavela_BoletimBimestral_Mai-Jun_2023.pdf" className="btn btn-secondary d-block mb-2">Boletim Bimestral Maio e Junho 2023</a>
+                <a href="/pdfs/UniFavela_BoletimBimestral_Mar-Abr_2023.pdf" className="btn btn-secondary d-block mb-2">Boletim Bimestral Março e Abril 2023</a>
+                <a href="/pdfs/UniFavela_BoletimBimestral_Jan-Fev_2023.pdf" className="btn btn-secondary d-block mb-2">Boletim Bimestral Janeiro e Fevereiro 2023</a> */}
+                <a href="/pdfs/UniFavela_RelatorioAnual_2022.pdf" className="btn btn-secondary d-block mb-2">Relatório Anual 2022</a>
+                <a href="/pdfs/UniFavela_RelatorioAnual_2023.pdf" className="btn btn-secondary d-block mb-2">Relatório Anual 2023</a>
               </Card>
             </div>
             <div className="">
@@ -528,16 +528,16 @@ export default () => {
                     </p>
                   </div>
                   <div className="col-6">
-                    <a href="./pdfs/UniFavela_DRE_2023.pdf" className="btn btn-secondary d-block mb-2">DRE 2023</a>
-                    <a href="./pdfs/UniFavela_BalancoPatrimonial_2023.pdf" className="btn btn-secondary d-block mb-2">Balanço Patrimonial 2023</a>
-                    <a href="./pdfs/UniFavela_Balancete_2023.pdf" className="btn btn-secondary d-block mb-2">Balancete 2023</a>
+                    <a href="/pdfs/UniFavela_DRE_2023.pdf" className="btn btn-secondary d-block mb-2">DRE 2023</a>
+                    <a href="/pdfs/UniFavela_BalancoPatrimonial_2023.pdf" className="btn btn-secondary d-block mb-2">Balanço Patrimonial 2023</a>
+                    <a href="/pdfs/UniFavela_Balancete_2023.pdf" className="btn btn-secondary d-block mb-2">Balancete 2023</a>
                     <hr />
-                    <a href="./pdfs/UniFavela_DRE_2022.pdf" className="btn btn-secondary d-block mb-2">DRE 2022</a>
-                    <a href="./pdfs/UniFavela_BalancoPatrimonial_2022.pdf" className="btn btn-secondary d-block mb-2">Balanço Patrimonial 2022</a>
-                    <a href="./pdfs/UniFavela_Auditoria_2022.pdf" className="btn btn-secondary d-block mb-2">Auditoria 2022</a>
+                    <a href="/pdfs/UniFavela_DRE_2022.pdf" className="btn btn-secondary d-block mb-2">DRE 2022</a>
+                    <a href="/pdfs/UniFavela_BalancoPatrimonial_2022.pdf" className="btn btn-secondary d-block mb-2">Balanço Patrimonial 2022</a>
+                    <a href="/pdfs/UniFavela_Auditoria_2022.pdf" className="btn btn-secondary d-block mb-2">Auditoria 2022</a>
                     <hr />
-                    <a href="./pdfs/UniFavela_Balancete_2021.pdf" className="btn btn-secondary d-block mb-2">Balancete 2021</a>
-                    <a href="./pdfs/UniFavela_Auditoria_2021.pdf" className="btn btn-secondary d-block mb-2">Auditoria 2021</a>
+                    <a href="/pdfs/UniFavela_Balancete_2021.pdf" className="btn btn-secondary d-block mb-2">Balancete 2021</a>
+                    <a href="/pdfs/UniFavela_Auditoria_2021.pdf" className="btn btn-secondary d-block mb-2">Auditoria 2021</a>
                   </div>
                 </div>
               </Card>
