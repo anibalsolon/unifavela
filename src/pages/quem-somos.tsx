@@ -516,6 +516,7 @@ export default () => {
                 <a href="/pdfs/UniFavela_BoletimBimestral_Jan-Fev_2023.pdf" className="btn btn-secondary d-block mb-2">Boletim Bimestral Janeiro e Fevereiro 2023</a> */}
                 <a href="/pdfs/UniFavela_RelatorioAnual_2022.pdf" className="btn btn-secondary d-block mb-2">Relatório Anual 2022</a>
                 <a href="/pdfs/UniFavela_RelatorioAnual_2023.pdf" className="btn btn-secondary d-block mb-2">Relatório Anual 2023</a>
+                <a href="/pdfs/UniFavela_RelatorioAnual_2024.pdf" className="btn btn-secondary d-block mb-2">Relatório Anual 2024</a>
               </Card>
             </div>
             <div className="">
